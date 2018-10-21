@@ -1,3 +1,18 @@
+:root {
+  /* Super Mario World Inspired */
+  --titlefont: 'Oswald', sans-serif;
+  --subheaderfont: sans-serif;
+  --sidepanel-background: #12b4cf;
+  --itemtitlefont: arial;
+  --itemunitretailfont: arial;
+  --retailfont: arial;
+  --ourpricefont: arial;
+  --baralt-color:  #EBBA7F;
+  --barfontalt-color: #7AA45E;
+  --maintitle-color: #FFD700;
+}
+
+
 .grid-container {
   display: grid;
   height: 100%;
@@ -17,8 +32,10 @@
   grid-gap: 1px 1px;
   grid-template-areas: ".";
   text-align: center;
-
-
+  font-family: var(--titlefont);
+  font-size: 50px;
+  line-height: 1;
+  font-weight: 500;
 }
 
 .Description {
@@ -29,7 +46,8 @@
   grid-gap: 1px 1px;
   grid-template-areas: ".";
   text-align: center;
-
+  font-family: var(--subheaderfont);
+  margin-bottom: 10px;
 }
 
 .Receipt {
@@ -39,13 +57,13 @@
   grid-template-rows: 1fr;
   /*grid-gap: 1px;*/
   grid-template-areas: ".";
-  background-color: #12b4cf;
+  background-color: var(--sidepanel-background);
 
 }
 
 .Donate {
   grid-area: 4 / 6 / 5 / 7;
-  background-color: #12b4cf;
+  background-color: var(--sidepanel-background);
 }
 
 .Items-List {
@@ -53,15 +71,36 @@
   grid-area: 3 / 1 / 5 / 6;
   grid-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-rows: 1fr 1fr;
-  grid-gap: 1px 1px;
-  grid-template-areas: "Item1 Item1 Item1 Item1 Item1" "Item1 Item1 Item1 Item1 Item1";*/
+  grid-gap: 15px 1px;
+
+  grid-template-areas: "Item1 Item1 Item1 Item1 Item1" "Item1 Item1 Item1 Item1 Item1";
+  font-family: sans-serif;
+  text-align: center;
 
 }
 
-div .Items-List {
-
+.Item-Name {
+  font-weight: bold;
+  font-family: var(--itemtitlefont);
 }
-.Item1 {
-  /*grid-area: Item1;*/
 
- }
+.Item-Img {
+  max-width: 150px;
+}
+
+.Item-Units {
+  font-style: italic;
+  font-family: var(--itemunitretailfont);
+  font-size: 10px;
+  margin-bottom: 12px;
+}
+
+.Item-Retail {
+  font-style: italic;
+  font-family: var(--itemunitretailfont);
+  font-size: 10px;
+}
+
+strong {
+  display:inline !important;
+}
