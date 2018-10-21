@@ -6,7 +6,7 @@
   --itemtitlefont: arial;
   --itemunitretailfont: arial;
   --retailfont: arial;
-  --ourpricefont: arial;
+  --ourpricefont: Oswald;
   --ourpricecolor: #004551;
   --baralt-color:  #EBBA7F;
   --barfontalt-color: #7AA45E;
@@ -18,7 +18,7 @@
   display: grid;
   height: 100%;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.5fr 0.5fr 1fr 1fr;
+  grid-template-rows: 1fr 0.5fr 3fr 3fr;
   grid-gap: 1px 1px;
   grid-template-areas: ". . . ." ". . . .";
 
@@ -27,7 +27,7 @@
 
 .Virtual-Curbside-Donation {
   display: grid;
-  grid-area: 1 / 1 / 2 / 6;
+  grid-area: 1 / 1 / 1 / 6;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   grid-gap: 1px 1px;
@@ -38,6 +38,7 @@
   line-height: 1;
   font-weight: 500;
   margin-bottom: 0;
+  padding-bottom: 0px;
 }
 
 .Description {
@@ -49,7 +50,8 @@
   grid-template-areas: ".";
   text-align: center;
   font-family: var(--subheaderfont);
-  margin-bottom: 0px;
+  margin-bottom: 20px;
+  padding-bottom: 0px;
 }
 
 .Receipt {
@@ -99,7 +101,6 @@
   grid-template-areas: "Item1 Item1 Item1 Item1 Item1" "Item1 Item1 Item1 Item1 Item1";
   font-family: sans-serif;
   text-align: center;
-
 }
 
 .Item-Name {
@@ -108,7 +109,10 @@
 }
 
 .Item-Img {
-  max-width: 150px;
+  /*max-width: 150px;*/
+  max-height: 140px;
+  max-width: 160px;
+  /*vertical-align: bottom;*/
 }
 
 .Item-Units {
@@ -126,10 +130,14 @@
 }
 
 .Our-Price {
-  font-weight: bold;
+  font-weight: 500;
   font-family: var(--ourpricefont);
   color: var(--ourpricecolor);
-  font-size: 16px;
+  font-size: 20px;
+}
+
+.Item {
+  vertical-align: bottom;
 }
 
 strong {
