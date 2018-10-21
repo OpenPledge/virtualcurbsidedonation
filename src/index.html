@@ -13,6 +13,8 @@
     <link href="css/grid-layout.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600" rel="stylesheet">
+    <script type="text/javascript" src="js/index.js">
+    </script>
   </head>
   <body>
 
@@ -26,8 +28,9 @@
 Help provide the community with the most needed food items this holiday season.
   </div>
   <div class="Receipt">
-    <div></div>
+    <div id="cartItems">
 
+    </div>
     <img class="topimage" src="img/2_Top_Virtual_Curbside_Receipt.png">
     <img class="singleline" src="img/3_SingleLine_Virtual_Curbside_Receipt.png">
     <img class="singleline" src="img/3_SingleLine_Virtual_Curbside_Receipt.png">
@@ -36,7 +39,7 @@ Help provide the community with the most needed food items this holiday season.
   <div class="Donate">
     PAYPAL ....
     
-    <a href="#" class="donatebutton">DONATE</a>
+    <a href="#" onclick="donateTotal();" class="donatebutton">DONATE</a>
 
 
   </div>
@@ -47,7 +50,7 @@ Help provide the community with the most needed food items this holiday season.
       <div class="Item-Units">case of (6) - 16lbs ea</div>
       <div class="Our-Price">OUR PRICE: $85</div>
       <div class="Item-Retail">retail: $120</div>
-      <a href="#" class="addbutton">add to cart</a>
+      <a id="0" href="#" onclick="addToCart(0);" class="addbutton">add to cart</a>
     </div>
     <div class="Item">
       <img class="Item-Img" src="img/ham.png" />
@@ -55,7 +58,7 @@ Help provide the community with the most needed food items this holiday season.
       <div class="Item-Units">case of (6) - 10lbs ea</div>
       <div class="Our-Price">OUR PRICE: $60</div>
       <div class="Item-Retail">retail: $85</div>
-      <a href="#" class="addbutton">add to cart</a>
+      <a href="#" onclick="addToCart(1);" class="addbutton">add to cart</a>
     </div>
     <div class="Item">
       <img class="Item-Img" src="img/chicken.png" />
@@ -63,7 +66,7 @@ Help provide the community with the most needed food items this holiday season.
       <div class="Item-Units">12lbs</div>
       <div class="Our-Price">OUR PRICE: $20</div>
       <div class="Item-Retail">retail: $30</div>
-      <a href="#" class="addbutton">add to cart</a>
+      <a href="#" onclick="addToCart(2);" class="addbutton">add to cart</a>
     </div>
     <div class="Item">
       <img class="Item-Img" src="img/rice.png" />
@@ -71,7 +74,7 @@ Help provide the community with the most needed food items this holiday season.
       <div class="Item-Units">40lb bag</div>
       <div class="Our-Price">OUR PRICE: $50</div>
       <div class="Item-Retail">retail: $75</div>
-      <a href="#" class="addbutton">add to cart</a>
+      <a href="#" onclick="addToCart(3);" class="addbutton">add to cart</a>
     </div>
     <div class="Item">
       <img class="Item-Img" src="img/beans.png" />
@@ -79,7 +82,7 @@ Help provide the community with the most needed food items this holiday season.
       <div class="Item-Units">40lb bag</div>
       <div class="Our-Price">OUR PRICE: $70</div>
       <div class="Item-Retail">retail: $100</div>
-      <a href="#" class="addbutton">add to cart</a>
+      <a href="#" onclick="addToCart(4);" class="addbutton">add to cart</a>
     </div>
     <div class="Item">
       <img class="Item-Img" src="img/milk.png">
@@ -87,7 +90,7 @@ Help provide the community with the most needed food items this holiday season.
       <div class="Item-Units">case of (24) - 1gal</div>
       <div class="Our-Price">OUR PRICE: $80</div>
       <div class="Item-Retail">retail: $118</div>
-      <a href="#" class="addbutton">add to cart</a>
+      <a href="#" onclick="addToCart(5);" class="addbutton">add to cart</a>
     </div>
     <div class="Item">
       <img class="Item-Img" src="img/onions.png">
@@ -95,7 +98,7 @@ Help provide the community with the most needed food items this holiday season.
       <div class="Item-Units">30lb bag</div>
       <div class="Our-Price">OUR PRICE: $30</div>
       <div class="Item-Retail">retail: $45</div>
-      <a href="#" class="addbutton">add to cart</a>
+      <a href="#" onclick="addToCart(6);" class="addbutton">add to cart</a>
     </div>
     <div class="Item">
       <img class="Item-Img" src="img/potato.png">
@@ -103,7 +106,7 @@ Help provide the community with the most needed food items this holiday season.
       <div class="Item-Units">40lb bag</div>
       <div class="Our-Price">OUR PRICE: $65</div>
       <div class="Item-Retail">retail: $90</div>
-      <a href="#" class="addbutton">add to cart</a>
+      <a href="#" onclick="addToCart(7);" class="addbutton">add to cart</a>
     </div>
     <div class="Item">
       <img class="Item-Img" src="img/veggies.png">
@@ -111,7 +114,8 @@ Help provide the community with the most needed food items this holiday season.
       <div class="Item-Units">case of (24) - 15oz ea</div>
       <div class="Our-Price">OUR PRICE: $25</div>
       <div class="Item-Retail">retail: $38</div>
-      <a href="#" class="addbutton">add to cart</a>
+      <a href="#" onclick="addToCart(8);" class="addbutton">add to cart</a>
+
     </div>
     <div class="Item">
       <img class="Item-Img" src="img/tomato.png">
@@ -119,7 +123,7 @@ Help provide the community with the most needed food items this holiday season.
       <div class="Item-Units">case of (24) - 28oz ea</div>
       <div class="Our-Price">OUR PRICE: $35</div>
       <div class="Item-Retail">retail: $55</div>
-      <a href="#" class="addbutton">add to cart</a>
+      <a href="#" onclick="addToCart(9);" class="addbutton">add to cart</a>
     </div>
 
   </div>
