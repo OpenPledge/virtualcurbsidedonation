@@ -15,7 +15,7 @@ var itemList = [
  },
  {
    "Image": "img/chicken.png",
-   "Items Needed": "Chicken Breasts & Legs",
+   "Items Needed": "Chicken",
    "Serving Units": "12lbs",
    "Our Price": "$20",
    "Retail Price": "$30"
