@@ -8,9 +8,6 @@
   --retailfont: arial;
   --ourpricefont: Oswald;
   --ourpricecolor: #004551;
-  --baralt-color:  #EBBA7F;
-  --barfontalt-color: #7AA45E;
-  --maintitle-color: #FFD700;
 }
 
 
@@ -89,6 +86,7 @@
 .Donate {
   grid-area: 4 / 6 / 5 / 7;
   background-color: var(--sidepanel-background);
+  text-align: center;
 }
 
 .Items-List {
@@ -139,6 +137,7 @@
 .Item {
   align-items: end;
   margin-bottom: 0px;
+  
 }
 
 strong {
