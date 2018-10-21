@@ -7,6 +7,7 @@
   --itemunitretailfont: arial;
   --retailfont: arial;
   --ourpricefont: arial;
+  --ourpricecolor: #004551;
   --baralt-color:  #EBBA7F;
   --barfontalt-color: #7AA45E;
   --maintitle-color: #FFD700;
@@ -17,7 +18,7 @@
   display: grid;
   height: 100%;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.75fr 0.25fr 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr 1fr 1fr;
   grid-gap: 1px 1px;
   grid-template-areas: ". . . ." ". . . .";
 
@@ -36,18 +37,19 @@
   font-size: 50px;
   line-height: 1;
   font-weight: 500;
+  margin-bottom: 0;
 }
 
 .Description {
   display: grid;
-  grid-area: 2 / 1 / 3 / 6;
+  grid-area: 2 / 1 / 2 / 6;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  grid-gap: 1px 1px;
+  /*grid-gap: 1px;*/
   grid-template-areas: ".";
   text-align: center;
   font-family: var(--subheaderfont);
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .Receipt {
@@ -99,6 +101,14 @@
   font-style: italic;
   font-family: var(--itemunitretailfont);
   font-size: 10px;
+  margin-bottom: 5px;
+}
+
+.Our-Price {
+  font-weight: bold;
+  font-family: var(--ourpricefont);
+  color: var(--ourpricecolor);
+  font-size: 16px;
 }
 
 strong {
