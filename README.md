@@ -1,2 +1,2 @@
-# virtualcurbsidedonation
-St. Anthony's Virtual Curbside
+# virtualcurbside
+St. Anthony's Project - Virtual Curbside Donation
