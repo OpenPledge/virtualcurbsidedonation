@@ -29,7 +29,7 @@
   grid-template-areas: ".";
   text-align: center;
   font-family: var(--titlefont);
-  font-size: 48px;
+  font-size: 50px;
   line-height: 1;
   font-weight: 500;
 
@@ -43,7 +43,7 @@
   grid-template-areas: ".";
   text-align: center;
   font-family: var(--subheaderfont);
-  margin-bottom: 20px;
+  /*margin-top: 10px;*/
 }
 
 .teamHeader {
@@ -109,7 +109,7 @@
 
 .Item-Img {
   background-color: white;
-  height: 120px;
+  height: 110px;
   max-width: 130px;
 }
 
