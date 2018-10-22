@@ -13,6 +13,8 @@
     <link href="css/grid-layout.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600" rel="stylesheet">
+    <script type="text/javascript" src="js/itemList.js">
+    </script>
     <script type="text/javascript" src="js/index.js">
     </script>
   </head>
@@ -38,8 +40,25 @@ Help provide the community with the most needed food items this holiday season.
   </div>
   <div class="Donate">
     PAYPAL ....
-    
-    <a href="#" onclick="donateTotal();" class="donatebutton">DONATE</a>
+    <form id="donateForm" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+
+      <!-- Identify your business so that you can collect the payments. -->
+
+      <!-- Specify Cart and Upload options to support multi-line checkout with quantities. -->
+      <input type="hidden" name="cmd" value="_cart">
+      <input type="hidden" name="upload" value="1">
+      <input type="hidden" name="business"
+             value="donations@kcparkfriends.org">
+      <input type="hidden" name="currency_code" value="USD">
+
+      <!-- Display the payment button. -->
+      <input type="submit" value="PayPal"
+             src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
+             alt="Donate" class="donatebutton">
+      <img alt="" width="1" height="1"
+           src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+
+    </form>
 
 
   </div>
