@@ -44,7 +44,7 @@
 	font-family:Arial;
 	font-size:26px;
 	font-weight:600;
-	padding:9px 33px;
+	padding:5px 33px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #5b8a3c;
 
@@ -60,7 +60,7 @@
 	background-color:#d77450;
 	font-size:30px;
 	font-weight:700;
-	padding:12px 33px;
+	padding: 5px 33px;
 }
 .donatebutton:active {
 	position:relative;
@@ -103,4 +103,16 @@
 .removebutton:active {
 	position:relative;
 	top:1px;
+}
+
+.team {
+	padding-bottom: 20px;
+}
+
+.teamPics {
+  border-radius: 50%;
+	width: 55px;
+	height: 55px;
+	border: 2.5px solid white;
+	background-color: white;
 }
