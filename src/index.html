@@ -15,6 +15,8 @@
     <link href="css/grid-layout.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600" rel="stylesheet">
+    <script type="text/javascript" src="js/itemList.js">
+    </script>
     <script type="text/javascript" src="js/index.js">
 
     </script>
@@ -30,9 +32,10 @@
     See how your contribution goes further with our bulk purchasing power. </br>
 Help provide the community with the most needed food items this holiday season.
   </div>
+
   <div class="Receipt">
     <div id="cartItems">
-
+      <!-- Cart Items show up here -->
     </div>
     <img class="topimage" src="img/2_Top_Virtual_Curbside_Receipt.png">
     <img class="singleline" src="img/3_SingleLine_Virtual_Curbside_Receipt.png">
@@ -40,9 +43,28 @@ Help provide the community with the most needed food items this holiday season.
     <img class="bottomline" src="img/4_BottomLine_Virtual_Curbside_Receipt.png">
   </div>
   <div class="Donate">
-    paypal....</br>
+    PAYPAL ....
+    <form id="donateForm" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 
-    <a href="#" onclick="donateTotal();" class="donatebutton">DONATE</a></br></br>
+      <!-- Identify your business so that you can collect the payments. -->
+
+      <!-- Specify Cart and Upload options to support multi-line checkout with quantities. -->
+      <input type="hidden" name="cmd" value="_cart">
+      <input type="hidden" name="upload" value="1">
+      <input type="hidden" name="business"
+             value="donations@kcparkfriends.org">
+      <input type="hidden" name="return" value="https://www.stanthonysf.org/donate/">
+      <input type="hidden" name="currency_code" value="USD">
+      <input type="hidden" name="no_shipping" value="1">
+
+      <!-- Display the payment button. -->
+      <input type="submit" value="Donate"
+             alt="Donate" class="donatebutton">
+      <img alt="" width="1" height="1"
+           src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+
+    </form>
+
     <hr />
 
     <div class = "teamHeader"><strong><font size ="3">Designed by</font></strong><br /><font size ="2">Kickstart Coding
