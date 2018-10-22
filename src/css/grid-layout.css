@@ -16,7 +16,6 @@
   height: 100%;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 0.5fr 3fr 3fr;
-  grid-gap: 1px 1px;
   grid-template-areas: ". . . ." ". . . .";
 
 
@@ -27,15 +26,13 @@
   grid-area: 1 / 1 / 1 / 6;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  grid-gap: 1px 1px;
   grid-template-areas: ".";
   text-align: center;
   font-family: var(--titlefont);
-  font-size: 50px;
+  font-size: 45px;
   line-height: 1;
   font-weight: 500;
-  margin-bottom: 0;
-  padding-bottom: 0px;
+
 }
 
 .Description {
@@ -43,12 +40,10 @@
   grid-area: 2 / 1 / 2 / 6;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  /*grid-gap: 1px;*/
   grid-template-areas: ".";
   text-align: center;
   font-family: var(--subheaderfont);
   margin-bottom: 20px;
-  padding-bottom: 0px;
 }
 
 .Receipt {
@@ -56,7 +51,6 @@
   grid-area: 1 / 6 / 4 / 7;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  /*grid-gap: 1px;*/
   grid-template-areas: ".";
   background-color: var(--sidepanel-background);
 
@@ -94,7 +88,6 @@
   grid-area: 3 / 1 / 5 / 6;
   grid-columns: 1fr 1fr 1fr 1fr 2fr;
   grid-rows: 1fr 1fr;
-  grid-gap: 15px 1px;
 
   grid-template-areas: "Item1 Item1 Item1 Item1 Item1" "Item1 Item1 Item1 Item1 Item1";
   font-family: sans-serif;
@@ -103,13 +96,15 @@
 
 .Item-Name {
   font-weight: bold;
+  font-size: 20px;
   font-family: var(--itemtitlefont);
 }
 
 .Item-Img {
-  /*max-width: 150px;*/
-  max-height: 140px;
-  max-width: 140px;
+  background-color: white;
+  height: 140px;
+  width: 140px;
+  object-fit: scale-down;
   /*vertical-align: bottom;*/
 }
 
@@ -132,6 +127,7 @@
   font-family: var(--ourpricefont);
   color: var(--ourpricecolor);
   font-size: 20px;
+  margin-bottom: -3px;
 }
 
 .Item {
