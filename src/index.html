@@ -7,14 +7,11 @@
 
     <title>Virtual Curbside</title>
 
-
-    <meta name="description" content="Source code generated using layoutit.com">
-    <meta name="author" content="LayoutIt!">
-
     <link rel="shortcut icon" href="img/favicon.png">
     <link href="css/grid-layout.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script type="text/javascript" src="js/itemList.js">
     </script>
     <script type="text/javascript" src="js/index.js">
@@ -34,8 +31,11 @@ Help provide the community with the most needed food items this holiday season.
   </div>
 
   <div class="Receipt">
-    <div id="cartItems">
+    <div id="cartItems" class="cartItems">
       <!-- Cart Items show up here -->
+    </div>
+    <div id="cartTotal" class="cartTotal">
+      <!-- Total amount shows up here -->
     </div>
     <img class="topimage" src="img/2_Top_Virtual_Curbside_Receipt.png">
     <img class="singleline" src="img/3_SingleLine_Virtual_Curbside_Receipt.png">
@@ -46,9 +46,7 @@ Help provide the community with the most needed food items this holiday season.
     PAYPAL ....
     <form id="donateForm" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 
-      <!-- Identify your business so that you can collect the payments. -->
-
-      <!-- Specify Cart and Upload options to support multi-line checkout with quantities. -->
+      <!-- Specify  cmd_ = cart and upload = 1 options to support multi-line checkout with quantities. -->
       <input type="hidden" name="cmd" value="_cart">
       <input type="hidden" name="upload" value="1">
       <input type="hidden" name="business"
