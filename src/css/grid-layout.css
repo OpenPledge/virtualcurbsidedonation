@@ -17,7 +17,6 @@
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 0.5fr 3fr 3fr;
   grid-template-areas: ". . . ." ". . . .";
-  grid-row-gap: 10px;
 
 }
 
@@ -123,16 +122,16 @@
 }
 
 .Our-Price {
-  font-weight: 500;
+  font-weight: 600;
   font-family: var(--ourpricefont);
   color: var(--ourpricecolor);
-  font-size: 20px;
+  font-size: 24px;
   margin-bottom: -3px;
 }
 
 .Item {
   align-items: end;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 
 }
 

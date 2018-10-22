@@ -3,10 +3,10 @@
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
-	font-family:Arial;
-	font-size:16px;
-	font-weight:bold;
-	padding:6px 12px;
+	font-family: Oswald;
+	font-size:20px;
+	font-weight: 400;
+	padding:4px 12px;
 	text-decoration:none;
 }
 .addbutton:hover {
@@ -18,18 +18,21 @@
 }
 
 .donatebutton {
-	background-color:#6e645c;
+	background-color:#d77450;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
-	font-family:Arial;
-	font-size:16px;
+	font-family: Oswald;
+	font-size:30px;
 	font-weight:bold;
-	padding:6px 12px;
+	padding:6px 30px;
 	text-decoration:none;
 }
 .donatebutton:hover {
 	background-color:#d77450;
+	border: 2px solid white;
+	opacity: 0.9;
+
 }
 .donatebutton:active {
 	position:relative;
