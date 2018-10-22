@@ -3,17 +3,18 @@ var cart = [];
 
 function updateCartList(){
     let cartList = document.getElementById('cartItems');
+    let cartTotal = document.getElementById('cartTotal');
     let cartItems = "";
     let id = 0;
     for(let item of itemList){
         if(item.quantity > 0) {
             cartItems += `<li> ${item.quantity} ${item.unitsReceipt} ${item.nameReceipt} `;
-            cartItems += ` <a onclick="removeFromCart(${id})" href="#" class="removebutton">x</a> </li>`;
+            cartItems += ` <a onclick="removeFromCart(${id})" href="#"><i class="material-icons icon">close</i></a> </li>`;
         }
         id++;
     }
     cartList.innerHTML = `<ul> ${cartItems} </ul>`;
-    cartList.innerHTML += `<br> Total: $${donationTotal}`;
+    cartTotal.innerHTML = `Total: $${donationTotal}`;
 
 }
 
