@@ -1,11 +1,11 @@
-Image,Items Needed,Serving Units,Our Price,Retail Price
-img/FrozenTurkey.png,Whole Turkey,case of (6) – 16lbs ea,$85,$120
-img/ham.png,Whole Ham,case of (6) – 10lbs ea,$60,$85
-img/chicken.png,Chicken Breasts & Legs,12lbs,$20,$30
-img/rice.png,Rice,40lb bag,$50,$75
-img/beans.png,Beans,40lb bag,$70,$100
-img/milk.png,Milk,case of (24) – 1gal,$80,$118
-img/onions.png,Onions,30lb bag,$30,$45
-img/potato.png,Potatoes,40lb bag,$65,$90
-img/veggies.png,Canned Vegetables,case of (24) – 15oz ea,$25,$38
-img/tomato.png,Canned Tomatoes,case of (24) – 28oz ea,$35,$55
+quantity,image,itemsNeeded,servingUnits,ourPrice,retailPrice,unitsReceipt,nameReceipt
+0,img/turkey.png,Whole Turkey,case of (6) – 16lbs ea,85,120,case(s),Turkey
+0,img/ham.png,Whole Ham,case of (6) – 10lbs ea,60,85,case(s),Ham
+0,img/chicken.png,Chicken,12lbs tray,20,30,tray(s),Chicken
+0,img/rice.png,Rice,40lb bag,50,75,bag(s),Rice
+0,img/beans.png,Beans,40lb bag,70,100,bag(s),Beans
+0,img/milk.png,Milk,case of (24) – 1gal,80,118,case(s),Milk
+0,img/onions.png,Onions,30lb bag,30,45,bag(s),Onions
+0,img/potato.png,Potatoes,40lb bag,65,90,bag(s),Potatoes
+0,img/veggies.png,Canned Vegetables,case of (24) – 15oz ea,25,38,case(s),Veggies
+0,img/tomato.png,Canned Tomatoes,case of (24) – 28oz ea,35,55,case(s),Tomatoes
