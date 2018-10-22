@@ -1,19 +1,13 @@
 .addbutton {
-	background-color:#12b3cf;
-	-moz-border-radius:28px;
-	-webkit-border-radius:28px;
-	border-radius:28px;
-	border: none;
+	background-color:#6e645c;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
-	font-family: Arial;
-  font-weight: bold;
-	font-size:15px;
-	padding:6px 14px;
+	font-family:Arial;
+	font-size:16px;
+	font-weight:bold;
+	padding:6px 12px;
 	text-decoration:none;
-	align-items: end;
-
 }
 .addbutton:hover {
 	background-color:#d77450;
@@ -23,6 +17,30 @@
 	top:1px;
 }
 
+.donatebutton {
+	background-color:#6e645c;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	font-weight:bold;
+	padding:6px 12px;
+	text-decoration:none;
+}
+.donatebutton:hover {
+	background-color:#d77450;
+}
+.donatebutton:active {
+	position:relative;
+	top:1px;
+}
+
+
+6CD0E1
+
+
+/*
 .donatebutton {
 	-moz-box-shadow: 0px 10px 4px -7px #000000;
 	-webkit-box-shadow: 0px 10px 4px -7px #000000;
@@ -61,7 +79,7 @@
 }
 .donatebutton:active {
 	position:relative;
-	top:1px;
+	top:1px;6cdoe1*/
 }
 
 .removebutton {
