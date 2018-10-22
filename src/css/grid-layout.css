@@ -28,7 +28,7 @@
   grid-template-areas: ".";
   text-align: center;
   font-family: var(--titlefont);
-  font-size: 45px;
+  font-size: 48px;
   line-height: 1;
   font-weight: 500;
 
@@ -138,4 +138,3 @@
 strong {
   display:inline !important;
 }
-
