@@ -8,12 +8,14 @@ function updateCartList(){
     let id = 0;
     for(let item of itemList){
         if(item.quantity > 0) {
-            cartItems += `<li> ${item.quantity} ${item.unitsReceipt} ${item.nameReceipt} `;
-            cartItems += ` <a onclick="removeFromCart(${id})" href="#"><i class="material-icons icon">close</i></a> </li>`;
+            cartItems += `<div>${item.quantity}</div>`;
+            cartItems += `<div>${item.unitsReceipt}</div>`;
+            cartItems += `<div>${item.nameReceipt}</div>`;
+            cartItems += `<div><a onclick="removeFromCart(${id})" href="#"><i class="material-icons icon">close</i></a></div>`;
         }
         id++;
     }
-    cartList.innerHTML = `<ul> ${cartItems} </ul>`;
+    cartList.innerHTML = `<div class="cartRow">${cartItems}</div>`;
     cartTotal.innerHTML = `Total: $${donationTotal}`;
 
 }
@@ -62,7 +64,7 @@ function updateDonateButton(){
             amount.type = "hidden";
             amount.name = "amount_" + id;
             // Adding cart info
-            item_name.value = item.itemsNeeded + `(${item.servingUnits})`;
+            item_name.value = `Donation of: ${item.itemsNeeded} (${item.servingUnits})`;
             quantity.value = item.quantity;
             amount.value = item.ourPrice;
             // Add input elements into the donate button form
