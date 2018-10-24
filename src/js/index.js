@@ -7,9 +7,14 @@ function updateCartList(){
     let cartItems = "";
     let id = 0;
     for(let item of itemList){
-        if(item.quantity > 0) {
+        if(item.quantity === 1) {
             cartItems += `<div>${item.quantity}</div>`;
             cartItems += `<div>${item.unitsReceipt}</div>`;
+            cartItems += `<div>${item.nameReceipt}</div>`;
+            cartItems += `<div><a onclick="removeFromCart(${id})" href="#"><i class="material-icons icon">close</i></a></div>`;
+        } else if (item.quantity > 1) {
+            cartItems += `<div>${item.quantity}</div>`;
+            cartItems += `<div>${item.unitsReceipt}s</div>`;
             cartItems += `<div>${item.nameReceipt}</div>`;
             cartItems += `<div><a onclick="removeFromCart(${id})" href="#"><i class="material-icons icon">close</i></a></div>`;
         }
@@ -79,6 +84,3 @@ function updateDonateButton(){
 }
 
 console.log(donationTotal)
-
-
-
