@@ -103,14 +103,14 @@
 	opacity: .6;
 }
 .cartItems {
+	top: 20px;
 	font-family: Oswald, Arial;
 	font-size: 16px;
 	text-decoration:none;
+
 }
 .cartRow {
-	display: grid;
-	grid-template-rows: 100%;
-	grid-template-columns: 5% 20% 65% 5%;
+
 }
 
 .icon {
@@ -122,4 +122,6 @@
 	font-size: 26px;
 	text-decoration:none;
 	text-align: center;
+	margin-top: 60px;
+
 }

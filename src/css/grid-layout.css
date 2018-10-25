@@ -55,6 +55,8 @@
 }
 .Receipt {
   display: grid;
+  width: 285px;
+  height: 550px;
   grid-area: 1 / 6 / 4 / 7;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
@@ -64,30 +66,50 @@
 }
 
 .topimage {
-  position: relative;
-  padding-top: 10px;
-  top: 10px;
-  width: 100%;
-  height: 10px;
+    background-image: url("../img/2_Top_Virtual_Curbside_Receipt.png");
+    background-size: 100% 100%;
+    position: relative;
+    width: 285px;
+    height: 100px;
+
+}
+.emptyline{
+    background-image: url("../img/3_SingleLine_Virtual_Curbside_Receipt.png");
+    background-size: 100% 100%;
+    position: relative;
+    width: 285px;
 }
 
 .singleline {
-  position: relative;
-  top: 10px;
-  width: 100%;
-  height: 10px;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 7% 15% 30% 5%;
+    background-image: url("../img/3_SingleLine_Virtual_Curbside_Receipt.png");
+    background-size: 100% 100%;
+    position: relative;
+    width: 285px;
+}
+.singleline > div {
+    margin-left: 65px;
+    width: 200px;
 }
 
+
 .bottomline {
-  position: relative;
-  width: 100%;
-  height: 80px;
+    background-image: url("../img/4_BottomLine_Virtual_Curbside_Receipt2.png");
+    background-size: 100% 100%;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    vertial-align: bottom;
 }
 
 .Donate {
   grid-area: 4 / 6 / 5 / 7;
   background-color: var(--sidepanel-background);
   text-align: center;
+  height: 80%;
+  width: 285px;
 }
 
 .Items-List {
