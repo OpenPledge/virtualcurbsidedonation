@@ -84,7 +84,7 @@
   height: 80px;
 }
 
-.Donate {
+/*.Donate {
   grid-area: 4 / 6 / 5 / 7;
   background-color: var(--sidepanel-background);
   text-align: center;
@@ -92,14 +92,18 @@
 
 .Items-List {
   display: grid;
+  grid-auto-columns: auto;
+  grid-auto-rows: auto;
   grid-area: 3 / 1 / 5 / 6;
-  grid-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-rows: 1fr 1fr;
+  /*grid-columns: 1fr 1fr 1fr 1fr 1fr;*/
+  /*grid-columns: auto;*/
+  /*grid-rows: 1fr 1fr;*/
+  /*grid-rows: auto;*/
 
-  grid-template-areas: "Item Item Item Item Item" "Item Item Item Item Item";
-  font-family: sans-serif;
-  text-align: center;
-}
+  /*grid-template-areas: "Item Item Item Item Item" "Item Item Item Item Item";*/
+  /*font-family: sans-serif;
+  text-align: center;*/
+/*}*/
 
 .Item-Name {
   font-weight: bold;
