@@ -159,15 +159,40 @@
       <input type="hidden" name="currency_code" value="USD">
       <input type="hidden" name="no_shipping" value="1">
 
-      <!-- Display the payment button. -->
-      <input type="submit" value="Donate"
+      <!-- Manipulate these two input elements:  -->
+      <input type="hidden" id="donateName" name="item_name" value="Please add items to your basket.">
+      <input type="hidden" id="donateTotal" name="amount" value="0.00">
+
+      <!-- Display the payment button: -->
+      <input type="submit" name="submit" value="Donate"
              alt="Donate" class="donatebutton">
       <img alt="" width="1" height="1"
            src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
 
     </form>
-    </div>
+
+    <hr />
+
+    <div class = "teamHeader"><span style="font-size: 3.5ex; font-weight: bold;">Designed by</span><br /><span style="font-size: 2ex;">Kickstart Coding
+    Inaugural Cohort <br />Volunteer Team</span></div>
+<div class= "team">
+    <a href="https://shaneleblanc.net">
+      <img class ="teamPics" src="img/team/shane.jpeg" alt="Shane LeBlanc" /></a>
+    <a href="https://www.linkedin.com/in/maddy-ford/">
+      <img class ="teamPics" src="img/team/maddy.jpeg" alt="Maddy Ford" hspace="10"/></a>
+    <a href="https://www.linkedin.com/in/mtucker-18/">
+      <img class ="teamPics" src="img/team/tucker.jpeg" alt="Matthew Tucker" /></a>
+    </br>
+    <a href="https://www.linkedin.com/in/liam-patten">
+      <img class ="teamPics" src="img/team/Liam.jpeg" alt="Liam Patten"/></a>
+    <a href="https://www.linkedin.com/in/cdovinh">
+      <img class ="teamPics" src="img/team/cindy.jpeg" alt="Cindy Dovinh"  hspace="10"/></a>
+    <a href="https://kickstartcoding.com">
+    <img class ="teamPics" src="img/team/kickstart.png" alt="Kickstart Coding"/></a>
   </div>
+  </div>
+  <div id="groceryList" class="Items-List">
+
 
     <hr />
 
