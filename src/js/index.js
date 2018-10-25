@@ -4,6 +4,7 @@ function updateCartList(){
     let cartList = document.getElementById('cartItems');
     let cartTotal = document.getElementById('cartTotal');
     let cartItems = "";
+    let emptySpace = "";
     let id = 0;
     for(let item of itemList){
         if(item.quantity === 1) {
@@ -19,7 +20,7 @@ function updateCartList(){
         }
         id++;
     }
-    cartList.innerHTML = `<div class="cartRow">${cartItems}</div>`;
+    cartList.innerHTML = `${emptySpace} <div class="singleline">${cartItems}</div>`;
     cartTotal.innerHTML = `Total: $${donationTotal}`;
 
 }
@@ -41,7 +42,9 @@ function addToCart(id){
     updateDonateButton();
 }
 
-
+window.onload = function(){
+    updateCartList();
+}
 
 function updateDonateButton(){
     // Uses the DOM to modify the PayPal donate button with the total amount
