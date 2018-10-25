@@ -2,7 +2,7 @@ var itemList = [
   {
     "quantity": 0,
     "image": "img/turkey.png",
-    "itemsNeeded": "Whole Turkey",
+    "itemName": "Whole Turkey",
     "servingUnits": "case of (6) – 16lbs ea",
     "ourPrice": 85,
     "retailPrice": 120,
@@ -12,7 +12,7 @@ var itemList = [
   {
     "quantity": 0,
     "image": "img/ham.png",
-    "itemsNeeded": "Whole Ham",
+    "itemName": "Whole Ham",
     "servingUnits": "case of (6) – 10lbs ea",
     "ourPrice": 60,
     "retailPrice": 85,
@@ -22,7 +22,7 @@ var itemList = [
   {
     "quantity": 0,
     "image": "img/chicken.png",
-    "itemsNeeded": "Chicken",
+    "itemName": "Chicken",
     "servingUnits": "12lbs tray",
     "ourPrice": 20,
     "retailPrice": 30,
@@ -32,7 +32,7 @@ var itemList = [
   {
     "quantity": 0,
     "image": "img/rice.png",
-    "itemsNeeded": "Rice",
+    "itemName": "Rice",
     "servingUnits": "40lb bag",
     "ourPrice": 50,
     "retailPrice": 75,
@@ -42,7 +42,7 @@ var itemList = [
   {
     "quantity": 0,
     "image": "img/beans.png",
-    "itemsNeeded": "Beans",
+    "itemName": "Beans",
     "servingUnits": "40lb bag",
     "ourPrice": 70,
     "retailPrice": 100,
@@ -52,7 +52,7 @@ var itemList = [
   {
     "quantity": 0,
     "image": "img/milk.png",
-    "itemsNeeded": "Milk",
+    "itemName": "Milk",
     "servingUnits": "case of (24) – 1gal",
     "ourPrice": 80,
     "retailPrice": 118,
@@ -62,7 +62,7 @@ var itemList = [
   {
     "quantity": 0,
     "image": "img/onions.png",
-    "itemsNeeded": "Onions",
+    "itemName": "Onions",
     "servingUnits": "30lb bag",
     "ourPrice": 30,
     "retailPrice": 45,
@@ -72,7 +72,7 @@ var itemList = [
   {
     "quantity": 0,
     "image": "img/potato.png",
-    "itemsNeeded": "Potatoes",
+    "itemName": "Potatoes",
     "servingUnits": "40lb bag",
     "ourPrice": 65,
     "retailPrice": 90,
@@ -82,7 +82,7 @@ var itemList = [
   {
     "quantity": 0,
     "image": "img/veggies.png",
-    "itemsNeeded": "Canned Vegetables",
+    "itemName": "Canned Vegetables",
     "servingUnits": "case of (24) – 15oz ea",
     "ourPrice": 25,
     "retailPrice": 38,
@@ -92,7 +92,7 @@ var itemList = [
   {
     "quantity": 0,
     "image": "img/tomato.png",
-    "itemsNeeded": "Canned Tomatoes",
+    "itemName": "Canned Tomatoes",
     "servingUnits": "case of (24) – 28oz ea",
     "ourPrice": 35,
     "retailPrice": 55,

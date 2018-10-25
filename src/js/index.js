@@ -59,3 +59,28 @@ function updateDonateButton(){
     totalAmount.value = donationTotal;
     combinedNames.value = paypalDescription;
 }
+
+window.onload = function() {
+  loadItems();
+  console.log('hello world');
+}
+
+function loadItems(){
+  let groceryList = document.getElementById('groceryList');
+  let groceryItems = "";
+  id = 0;
+
+  for(let item of itemList){
+    groceryItems += `<div class ="Item">`;
+    groceryItems += `<div class="container"><img class="Item-Img" src ='${item.image}'></div>`;
+    groceryItems += `<div class="Item-Name">${item.itemName}</div>`;
+    groceryItems += `<div class="Item-Units">${item.servingUnits}</div>`;
+    groceryItems += `<div class="Our-Price">OUR PRICE: $${item.ourPrice}</div>`;
+    groceryItems += `<div class="Item-Retail">retail: $${item.retailPrice}</div>`;
+    groceryItems += `<a href="#" onclick="addToCart(${id});" class="addbutton">add to cart</a>`;
+    groceryItems += `</div>`;
+    id++
+  }
+  groceryList.innerHTML = `${groceryItems}`;
+
+}
