@@ -30,63 +30,6 @@
     <span>Help provide the community with the <strong>most needed</strong> food items this holiday season.</span>
   </div>
 
-  <div class="Receipt">
-    <div id="cartItems" class="cartItems">
-      <!-- Cart Items show up here -->
-    </div>
-    <div id="cartTotal" class="cartTotal">
-      <!-- Total amount shows up here -->
-    </div>
-    <img class="topimage" src="img/2_Top_Virtual_Curbside_Receipt.png">
-    <img class="singleline" src="img/3_SingleLine_Virtual_Curbside_Receipt.png">
-    <img class="singleline" src="img/3_SingleLine_Virtual_Curbside_Receipt.png">
-    <img class="bottomline" src="img/4_BottomLine_Virtual_Curbside_Receipt.png">
-  </div>
-  <div class="Donate">
-    <!-- PayPal Logo : <a href="https://www.paypal.com/webapps/mpp/paypal-popup" title="How PayPal Works" onclick="javascript:window.open('https://www.paypal.com/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;"><img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_37x23.jpg" border="0" alt="PayPal Logo"></a><!-- PayPal Logo -->
-
-    <form id="donateForm" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-
-      <input type="hidden" name="business"
-             value="devoconfirmations@stanthonysf.org">
-      <input type="hidden" name="cmd" value="_donations">
-      <input type="hidden" name="item_number" value="St. Anthony's Virtual Curbside Food Donation">
-      <input type="hidden" name="return" value="https://www.stanthonysf.org/donate/">
-      <input type="hidden" name="currency_code" value="USD">
-      <input type="hidden" name="no_shipping" value="1">
-
-      <!-- Manipulate these two input elements:  -->
-      <input type="hidden" id="donateName" name="item_name" value="Please add items to your basket.">
-      <input type="hidden" id="donateTotal" name="amount" value="0.00">
-
-      <!-- Display the payment button: -->
-      <input type="submit" name="submit" value="Donate"
-             alt="Donate" class="donatebutton">
-      <img alt="" width="1" height="1"
-           src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
-
-    </form>
-
-    <hr />
-
-    <div class = "teamHeader"><span style="font-size: 3.5ex; font-weight: bold;">Designed by</span><br /><span style="font-size: 2ex;">Kickstart Coding
-    Inaugural Cohort <br />Volunteer Team</span></div>
-<div class= "team">
-    <a href="https://shaneleblanc.net">
-      <img class ="teamPics" src="img/team/shane.jpeg" alt="Shane LeBlanc" /></a>
-    <a href="https://www.linkedin.com/in/maddy-ford/">
-      <img class ="teamPics" src="img/team/maddy.jpeg" alt="Maddy Ford" hspace="10"/></a>
-    <a href="https://www.linkedin.com/in/mtucker-18/">
-      <img class ="teamPics" src="img/team/tucker.jpeg" alt="Matthew Tucker" /></a>
-    </br>
-    <a href="https://www.linkedin.com/in/liam-patten">
-      <img class ="teamPics" src="img/team/Liam.jpeg" alt="Liam Patten"/></a>
-    <a href="https://www.linkedin.com/in/cdovinh">
-      <img class ="teamPics" src="img/team/cindy.jpeg" alt="Cindy Dovinh"  hspace="10"/></a>
-    <a href="https://kickstartcoding.com">
-    <img class ="teamPics" src="img/team/kickstart.png" alt="Kickstart Coding"/></a>
-  </div>
-  </div>
   <div class="Items-List">
     <div class="Item">
       <div class="container"><img class="Item-Img" src="img/turkey.png" /></div>
@@ -112,7 +55,7 @@
       <div class="Item-Retail">retail: $30</div>
       <a href="#" onclick="addToCart(2);" class="addbutton">add to cart</a>
     </div>
-    <div class="Item">
+    <!--<div class="Item">
       <div class ="container"><img class="Item-Img" src="img/rice.png" /></div>
       <div class="Item-Name">Rice</div>
       <div class="Item-Units">40lb bag</div>
@@ -159,7 +102,6 @@
       <div class="Our-Price">OUR PRICE: $25</div>
       <div class="Item-Retail">retail: $38</div>
       <a href="#" onclick="addToCart(8);" class="addbutton">add to cart</a>
-
     </div>
     <div class="Item">
       <div class="container"><img class="Item-Img" src="img/tomato.png"></div>
@@ -168,8 +110,55 @@
       <div class="Our-Price">OUR PRICE: $35</div>
       <div class="Item-Retail">retail: $55</div>
       <a href="#" onclick="addToCart(9);" class="addbutton">add to cart</a>
-    </div>
+    </div>-->
 
+  </div>
+  <div class="Receipt">
+    <div id="cartItems" class="cartItems">
+      <!-- Cart Items show up here -->
+    </div>
+    <div id="cartTotal" class="cartTotal">
+      <!-- Total amount shows up here -->
+    </div>
+    <img class="topimage" src="img/2_Top_Virtual_Curbside_Receipt.png">
+    <img class="singleline" src="img/3_SingleLine_Virtual_Curbside_Receipt.png">
+    <img class="singleline" src="img/3_SingleLine_Virtual_Curbside_Receipt.png">
+    <img class="bottomline" src="img/4_BottomLine_Virtual_Curbside_Receipt.png">
+  </div>
+  <div class="Donate">
+    PAYPAL ....
+    <form id="donateForm" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+
+      <!-- Specify  cmd_ = cart and upload = 1 options to support multi-line checkout with quantities. -->
+      <input type="hidden" name="cmd" value="_cart">
+      <input type="hidden" name="upload" value="1">
+      <input type="hidden" name="business"
+             value="devoconfirmations@stanthonysf.org">
+      <input type="hidden" name="return" value="https://www.stanthonysf.org/donate/">
+      <input type="hidden" name="currency_code" value="USD">
+      <input type="hidden" name="no_shipping" value="1">
+
+      <!-- Display the payment button. -->
+      <input type="submit" value="Donate"
+             alt="Donate" class="donatebutton">
+      <img alt="" width="1" height="1"
+           src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+
+    </form>
+
+    <hr />
+
+    <div class = "teamHeader"><strong><font size ="3">Designed by</font></strong><br /><font size ="2">Kickstart Coding
+    Inaugural Cohort <br />Volunteer Team</font></div>
+<div class= "team">
+    <img class ="teamPics" src="img/team/shane.jpeg" alt="Shane LeBlanc" />
+    <img class ="teamPics" src="img/team/maddy.jpeg" alt="Maddy Ford" hspace="10"/>
+    <img class ="teamPics" src="img/team/tucker.jpeg" alt="Matthew Tucker" />
+    </br>
+    <img class ="teamPics" src="img/team/Liam.jpeg" alt="Liam Patten"/>
+    <img class ="teamPics" src="img/team/cindy.jpeg" alt="Cindy Dovinh"  hspace="10"/>
+    <img class ="teamPics" src="img/team/kickstart.png" alt="Kickstart Coding"/>
+  </div>
   </div>
 </div>
 
