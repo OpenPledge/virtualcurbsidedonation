@@ -1,5 +1,4 @@
-var donationTotal = 0;
-var cart = [];
+let donationTotal = 0;
 
 function updateCartList(){
     let cartList = document.getElementById('cartItems');
@@ -12,7 +11,7 @@ function updateCartList(){
             cartItems += `<div>${item.unitsReceipt}</div>`;
             cartItems += `<div>${item.nameReceipt}</div>`;
             cartItems += `<div><a onclick="removeFromCart(${id})" href="#"><i class="material-icons icon">close</i></a></div>`;
-        } else if (item.quantity > 1) {
+        } else if (item.quantity > 1) { //Add an s to the end of the units if >1
             cartItems += `<div>${item.quantity}</div>`;
             cartItems += `<div>${item.unitsReceipt}s</div>`;
             cartItems += `<div>${item.nameReceipt}</div>`;
@@ -35,7 +34,6 @@ function updateQuantity(item, newQuantity){
     itemList[item].quantity = newQuantity;
 }
 function addToCart(id){
-    cart.push(id);
     itemList[id].quantity += 1;
     let itemPrice = Number(itemList[id].ourPrice);
     donationTotal += itemPrice;
@@ -52,14 +50,12 @@ function updateDonateButton(){
     let paypalDescription = '';
     itemList.forEach(item => {
         if (item.quantity > 0) {
-            paypalDescription += `${item.quantity}x ${item.unitsReceipt} ${item.nameReceipt} `;
+            paypalDescription += `${item.quantity}x ${item.nameReceipt} `;
         }
     });
 
     let totalAmount = document.getElementById('donateTotal');
-    let combinedNames = document.getElementById('donateName')
+    let combinedNames = document.getElementById('donateName');
     totalAmount.value = donationTotal;
     combinedNames.value = paypalDescription;
-
-
 }
