@@ -46,17 +46,20 @@ Help provide the community with the most needed food items this holiday season.
     PAYPAL ....
     <form id="donateForm" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 
-      <!-- Specify  cmd_ = cart and upload = 1 options to support multi-line checkout with quantities. -->
-      <input type="hidden" name="cmd" value="_cart">
-      <input type="hidden" name="upload" value="1">
       <input type="hidden" name="business"
              value="devoconfirmations@stanthonysf.org">
+      <input type="hidden" name="cmd" value="_donations">
+      <input type="hidden" name="item_number" value="St. Anthony's Virtual Curbside Food Donation">
       <input type="hidden" name="return" value="https://www.stanthonysf.org/donate/">
       <input type="hidden" name="currency_code" value="USD">
       <input type="hidden" name="no_shipping" value="1">
 
-      <!-- Display the payment button. -->
-      <input type="submit" value="Donate"
+      <!-- Manipulate these two input elements:  -->
+      <input type="hidden" id="donateName" name="item_name" value="Please add items to your basket.">
+      <input type="hidden" id="donateTotal" name="amount" value="0.00">
+
+      <!-- Display the payment button: -->
+      <input type="image" name="submit" value="Donate"
              alt="Donate" class="donatebutton">
       <img alt="" width="1" height="1"
            src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
