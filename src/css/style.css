@@ -142,3 +142,10 @@ a	{
 a:hover {
 	color: #d77450;
 }
+
+.team-name {
+  font-size: 1em;
+  text-align: center;
+  font-family: var(--teamheaderfont);
+  color: white;
+}

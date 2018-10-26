@@ -52,6 +52,12 @@
   color: white;
 }
 
+.team {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+}
+
 .Receipt {
   display: grid;
   grid-area: 1 / 6 / 4 / 7;
