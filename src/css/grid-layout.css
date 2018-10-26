@@ -176,6 +176,12 @@
     margin: 0 auto;
 }
 
+.team {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+}
+
 /* if viewed on an iPad */
 @media screen and (max-width: 768px) {
   .grid-container {
