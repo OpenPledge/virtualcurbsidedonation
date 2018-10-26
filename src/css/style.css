@@ -7,7 +7,7 @@
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
-	font-family: Arial;
+	font-family: Oswald;
   font-weight: bold;
 	font-size:15px;
 	padding:6px 14px;
@@ -36,7 +36,7 @@
 }
 .donatebutton:hover {
 	background-color:#4b8f29;
-	
+
 }
 .donatebutton:active {
 	position:relative;
