@@ -11,12 +11,14 @@
   --ourpricecolor: #004551;
 }
 
+
 .grid-container {
   display: grid;
   height: 100%;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1.25fr;
-  grid-template-rows: 0.5fr 0.5fr 2fr 2fr;
+  grid-template-rows: 0.25fr 0.25fr 1fr 1fr;
   grid-template-areas: ". . . ." ". . . .";
+
 }
 
 .Virtual-Curbside-Donation {
@@ -30,6 +32,7 @@
   font-size: 50px;
   line-height: 1;
   font-weight: 500;
+
 }
 
 .Description {
@@ -40,7 +43,7 @@
   grid-template-areas: ".";
   text-align: center;
   font-family: var(--subheaderfont);
-  margin-top: 10px;
+  /*margin-top: 10px;*/
 }
 
 .teamHeader {
@@ -50,41 +53,64 @@
   font-size: 12px;
   color: white;
 }
-
 .Receipt {
   display: grid;
+  width: 285px;
+  height: 550px;
   grid-area: 1 / 6 / 4 / 7;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: ".";
   background-color: var(--sidepanel-background);
+
 }
 
 .topimage {
-  position: relative;
-  padding-top: 10px;
-  top: 10px;
-  width: 100%;
-  height: 10px;
+    background-image: url("../img/topreceipt.png");
+    background-size: 100% 100%;
+    position: relative;
+    width: 285px;
+    height: 50px;
+
+}
+.emptyline{
+    background-image: url("../img/blankreceipt.png");
+    background-size: 100% 100%;
+    position: relative;
+    width: 285px;
 }
 
 .singleline {
-  position: relative;
-  top: 10px;
-  width: 100%;
-  height: 10px;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 7% 15% 30% 5%;
+    background-image: url("../img/middlereceipt.png");
+    background-size: 100% 100%;
+    position: relative;
+    width: 285px;
+}
+.singleline > div {
+    margin-left: 65px;
+    width: 200px;
 }
 
+
 .bottomline {
-  position: relative;
-  width: 100%;
-  height: 80px;
+    background-image: url("../img/bottomreceipt.png");
+    background-size: 100% 100%;
+    background-position: center bottom;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    vertial-align: bottom;
 }
 
 .Donate {
   grid-area: 4 / 6 / 5 / 7;
   background-color: var(--sidepanel-background);
   text-align: center;
+  height: 80%;
+  width: 285px;
 }
 
 .Items-List {
@@ -92,10 +118,10 @@
   grid-area: 3 / 1 / 5 / 6;
   grid-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-rows: 1fr 1fr;
+
   grid-template-areas: "Item Item Item Item Item" "Item Item Item Item Item";
   font-family: sans-serif;
   text-align: center;
-  padding: 20px 5px 20px 5px;
 }
 
 .Item-Name {
@@ -110,11 +136,13 @@
   max-width: 130px;
 }
 
+
 .Item-Units {
   font-style: italic;
   font-family: var(--itemunitretailfont);
   font-size: 10px;
   margin-bottom: 12px;
+
 }
 
 .Item-Retail {
@@ -135,6 +163,7 @@
 .Item {
   align-items: end;
   margin-bottom: 0px;
+
 }
 
 /* if viewed on an iPad */

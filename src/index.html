@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Virtual Curbside</title>
 
@@ -15,178 +15,89 @@
     <script type="text/javascript" src="js/itemList.js">
     </script>
     <script type="text/javascript" src="js/index.js">
+
     </script>
   </head>
-
   <body>
 
-    <div class="grid-container">
-      <div class="Virtual-Curbside-Donation">
-        VIRTUAL CURBSIDE DONATION
-      </div>
 
-      <div class="Description">
-        <span>See how your contribution goes further with our bulk purchasing power.</span>
-        <span>Help provide the community with the <strong>most needed</strong> food items this holiday season.</span>
-      </div>
+<div class="grid-container">
+  <div class="Virtual-Curbside-Donation">
+    VIRTUAL CURBSIDE DONATION
+  </div>
+  <div class="Description">
+    See how your contribution goes further with our bulk purchasing power.<br>
+    Help provide the community with the most needed food items this holiday season.
+  </div>
 
-      <div class="Items-List">
-        <div class="Item">
-          <div class="container"><img class="Item-Img" src="img/turkey.png" /></div>
-          <div class="Item-Name">Whole Turkey</div>
-          <div class="Item-Units">case of (6) - 16lbs ea</div>
-          <div class="Our-Price">OUR PRICE: $85</div>
-          <div class="Item-Retail">retail: $120</div>
-          <a id="0" href="#" onclick="addToCart(0);" class="addbutton">add to cart</a>
-        </div>
+  <div class="Receipt">
+    <div class="emptyspace"></div>
+    <div class="topimage"></div>
+    <div id="cartItems" class="cartItems">
 
-        <div class="Item">
-          <div class ="container"><img class="Item-Img" src="img/ham.png" /></div>
-          <div class="Item-Name">Whole Ham</div>
-          <div class="Item-Units">case of (6) - 10lbs ea</div>
-          <div class="Our-Price">OUR PRICE: $60</div>
-          <div class="Item-Retail">retail: $85</div>
-          <a href="#" onclick="addToCart(1);" class="addbutton">add to cart</a>
-        </div>
 
-        <div class="Item">
-          <div class ="container"><img class="Item-Img" src="img/chicken.png" /></div>
-          <div class="Item-Name">Chicken</div>
-          <div class="Item-Units">12lbs</div>
-          <div class="Our-Price">OUR PRICE: $20</div>
-          <div class="Item-Retail">retail: $30</div>
-          <a href="#" onclick="addToCart(2);" class="addbutton">add to cart</a>
-        </div>
 
-        <div class="Item">
-          <div class ="container"><img class="Item-Img" src="img/rice.png" /></div>
-          <div class="Item-Name">Rice</div>
-          <div class="Item-Units">40lb bag</div>
-          <div class="Our-Price">OUR PRICE: $50</div>
-          <div class="Item-Retail">retail: $75</div>
-          <a href="#" onclick="addToCart(3);" class="addbutton">add to cart</a>
-        </div>
-
-        <div class="Item">
-          <div class ="container"><img class="Item-Img" src="img/beans.png" /></div>
-          <div class="Item-Name">Beans</div>
-          <div class="Item-Units">40lb bag</div>
-          <div class="Our-Price">OUR PRICE: $70</div>
-          <div class="Item-Retail">retail: $100</div>
-          <a href="#" onclick="addToCart(4);" class="addbutton">add to cart</a>
-        </div>
-
-        <div class="Item">
-          <div  class ="container"><img class="Item-Img" src="img/milk.png"></div>
-          <div class="Item-Name">Milk</div>
-          <div class="Item-Units">case of (24) - 1gal</div>
-          <div class="Our-Price">OUR PRICE: $80</div>
-          <div class="Item-Retail">retail: $118</div>
-          <a href="#" onclick="addToCart(5);" class="addbutton">add to cart</a>
-        </div>
-
-        <div class="Item">
-          <div class ="container"><img class="Item-Img" src="img/onions.png"></div>
-          <div class="Item-Name">Onions</div>
-          <div class="Item-Units">30lb bag</div>
-          <div class="Our-Price">OUR PRICE: $30</div>
-          <div class="Item-Retail">retail: $45</div>
-          <a href="#" onclick="addToCart(6);" class="addbutton">add to cart</a>
-        </div>
-
-        <div class="Item">
-          <div class="container"><img class="Item-Img" src="img/potato.png"></div>
-          <div class="Item-Name">Potatoes</div>
-          <div class="Item-Units">40lb bag</div>
-          <div class="Our-Price">OUR PRICE: $65</div>
-          <div class="Item-Retail">retail: $90</div>
-          <a href="#" onclick="addToCart(7);" class="addbutton">add to cart</a>
-        </div>
-
-        <div class="Item">
-          <div class="container"><img class="Item-Img" src="img/veggies.png"></div>
-          <div class="Item-Name">Canned Vegetables</div>
-          <div class="Item-Units">case of (24) - 15oz ea</div>
-          <div class="Our-Price">OUR PRICE: $25</div>
-          <div class="Item-Retail">retail: $38</div>
-          <a href="#" onclick="addToCart(8);" class="addbutton">add to cart</a>
-        </div>
-
-        <div class="Item">
-          <div class="container"><img class="Item-Img" src="img/tomato.png"></div>
-          <div class="Item-Name">Canned Tomatoes</div>
-          <div class="Item-Units">case of (24) - 28oz ea</div>
-          <div class="Our-Price">OUR PRICE: $35</div>
-          <div class="Item-Retail">retail: $55</div>
-          <a href="#" onclick="addToCart(9);" class="addbutton">add to cart</a>
-        </div>
-
-      </div>
-
-      <!-- <hr /> -->
-
-      <div class="Receipt">
-        <div id="cartItems" class="cartItems">
-          <!-- Cart Items show up here -->
-        </div>
-        <div id="cartTotal" class="cartTotal">
-          <!-- Total amount shows up here -->
-        </div>
-        <img class="topimage" src="img/2_Top_Virtual_Curbside_Receipt.png">
-        <img class="singleline" src="img/3_SingleLine_Virtual_Curbside_Receipt.png">
-        <img class="singleline" src="img/3_SingleLine_Virtual_Curbside_Receipt.png">
-        <img class="bottomline" src="img/4_BottomLine_Virtual_Curbside_Receipt.png">
-      </div>
-
-      <div class="Donate">
-        <!-- PayPal Logo : <a href="https://www.paypal.com/webapps/mpp/paypal-popup" title="How PayPal Works" onclick="javascript:window.open('https://www.paypal.com/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;"><img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_37x23.jpg" border="0" alt="PayPal Logo"></a><!-- PayPal Logo -->
-
-        <form id="donateForm" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-
-          <input type="hidden" name="business"
-                 value="devoconfirmations@stanthonysf.org">
-          <input type="hidden" name="cmd" value="_donations">
-          <input type="hidden" name="item_number" value="St. Anthony's Virtual Curbside Food Donation">
-          <input type="hidden" name="return" value="https://www.stanthonysf.org/donate/">
-          <input type="hidden" name="currency_code" value="USD">
-          <input type="hidden" name="no_shipping" value="1">
-
-          <!-- Manipulate these two input elements:  -->
-          <input type="hidden" id="donateName" name="item_name" value="Please add items to your basket.">
-          <input type="hidden" id="donateTotal" name="amount" value="0.00">
-
-          <!-- Display the payment button: -->
-          <input type="submit" name="submit" value="Donate"
-                 alt="Donate" class="donatebutton">
-          <img alt="" width="1" height="1"
-               src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
-
-        </form>
-
-        <hr />
-
-        <div class = "teamHeader"><span style="font-size: 3.5ex; font-weight: bold;">Designed by</span><br /><span style="font-size: 2ex;">Kickstart Coding
-        Inaugural Cohort <br />Volunteer Team</span></div>
-    <div class= "team">
-        <a href="https://shaneleblanc.net">
-          <img class ="teamPics" src="img/team/shane.jpeg" alt="Shane LeBlanc" /></a>
-        <a href="https://www.linkedin.com/in/maddy-ford/">
-          <img class ="teamPics" src="img/team/maddy.jpeg" alt="Maddy Ford" hspace="10"/></a>
-        <a href="https://www.linkedin.com/in/mtucker-18/">
-          <img class ="teamPics" src="img/team/tucker.jpeg" alt="Matthew Tucker" /></a>
-        </br>
-        <a href="https://www.linkedin.com/in/liam-patten">
-          <img class ="teamPics" src="img/team/Liam.jpeg" alt="Liam Patten"/></a>
-        <a href="https://www.linkedin.com/in/cdovinh">
-          <img class ="teamPics" src="img/team/cindy.jpeg" alt="Cindy Dovinh"  hspace="10"/></a>
-        <a href="https://kickstartcoding.com">
-        <img class ="teamPics" src="img/team/kickstart.png" alt="Kickstart Coding"/></a>
-      </div>
-      </div>
-      <div id="groceryList" class="Items-List">
-
-      </div>
+      <!-- Cart Items show up here -->
     </div>
+    <div class="bottomline">
+
+      <div id="cartTotal" class="cartTotal">
+
+    </div>
+
+      <!-- Total amount shows up here -->
+    </div>
+  </div>
+  <div class="Donate">
+    <!-- PayPal Logo : <a href="https://www.paypal.com/webapps/mpp/paypal-popup" title="How PayPal Works" onclick="javascript:window.open('https://www.paypal.com/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;"><img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_37x23.jpg" border="0" alt="PayPal Logo"></a><!-- PayPal Logo -->
+
+    <form id="donateForm" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+
+      <input type="hidden" name="business"
+             value="devoconfirmations@stanthonysf.org">
+      <input type="hidden" name="cmd" value="_donations">
+      <input type="hidden" name="item_number" value="St. Anthony's Virtual Curbside Food Donation">
+      <input type="hidden" name="return" value="https://www.stanthonysf.org/donate/">
+      <input type="hidden" name="currency_code" value="USD">
+      <input type="hidden" name="no_shipping" value="1">
+
+      <!-- Manipulate these two input elements:  -->
+      <input type="hidden" id="donateName" name="item_name" value="Please add items to your basket.">
+      <input type="hidden" id="donateTotal" name="amount" value="0.00">
+
+      <!-- Display the payment button: -->
+      <input type="submit" name="submit" value="Donate"
+             alt="Donate" class="donatebutton">
+      <img alt="" width="1" height="1"
+           src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+
+    </form>
+
+    <hr />
+
+    <div class = "teamHeader"><span style="font-size: 3.5ex; font-weight: bold;">Designed by</span><br /><span style="font-size: 2ex;">Kickstart Coding
+    Inaugural Cohort <br />Volunteer Team</span></div>
+<div class= "team">
+    <a href="https://shaneleblanc.net">
+      <img class ="teamPics" src="img/team/shane.jpeg" alt="Shane LeBlanc" /></a>
+    <a href="https://www.linkedin.com/in/maddy-ford/">
+      <img class ="teamPics" src="img/team/maddy.jpeg" alt="Maddy Ford" hspace="10"/></a>
+    <a href="https://www.linkedin.com/in/mtucker-18/">
+      <img class ="teamPics" src="img/team/tucker.jpeg" alt="Matthew Tucker" /></a>
+    </br>
+    <a href="https://www.linkedin.com/in/liam-patten">
+      <img class ="teamPics" src="img/team/Liam.jpeg" alt="Liam Patten"/></a>
+    <a href="https://www.linkedin.com/in/cdovinh">
+      <img class ="teamPics" src="img/team/cindy.jpeg" alt="Cindy Dovinh"  hspace="10"/></a>
+    <a href="https://kickstartcoding.com">
+    <img class ="teamPics" src="img/team/kickstart.png" alt="Kickstart Coding"/></a>
+  </div>
+  </div>
+  <div id="groceryList" class="Items-List">
+
+
+  </div>
+</div>
 
   </body>
 </html>
