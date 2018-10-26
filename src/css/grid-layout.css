@@ -11,7 +11,6 @@
   --ourpricecolor: #004551;
 }
 
-
 .grid-container {
   display: grid;
   height: 100%;
@@ -142,7 +141,7 @@
 @media screen and (max-width: 768px) {
   .grid-container {
     grid-template-columns: 1fr 1fr 1fr 2fr;
-    grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
   }
 
   .Virtual-Curbside-Donation {
@@ -185,23 +184,68 @@
 }
 
 /* if viewed on a small phone */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 414px) {
   .grid-container {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.2fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 0.1fr);
   }
 
   .Virtual-Curbside-Donation {
-    grid-area: 1 / 1 / 1 / 2;
+    grid-area: 1 / 1 / 1 / 4;
   }
 
   .Description {
-    grid-area: 2 / 1 / 2 / 2;
+    grid-area: 2 / 1 / 2 / 4;
   }
 
   .Items-List {
     display: grid;
-    grid-area: 3 / 1 / 3 / 2;
+    grid-area: 3 / 1 / 3 / 4;
+    grid-columns: 1fr 1fr;
+    grid-rows: auto;
+    grid-template-areas: "Item Item Item";
+  }
+
+  .Our-Price {
+    font-size: 14px;
+  }
+
+  .cartItems {
+    grid-area: 3 / 1 / 3 / 4;
+  }
+
+  .cartTotal {
+    grid-area: 3 / 1 / 3 / 4;
+  }
+
+  .Receipt {
+    grid-area: 4 / 1 / 4 / 4;
+  }
+
+  .Donate {
+    grid-area: 5 / 1 / 5 / 4;
+    text-align: center;
+  }
+}
+
+/* if viewed on a small phone */
+@media screen and (max-width: 320px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 0.1fr);
+  }
+
+  .Virtual-Curbside-Donation {
+    grid-area: 1 / 1 / 1 / 3;
+  }
+
+  .Description {
+    grid-area: 2 / 1 / 2 / 3;
+  }
+
+  .Items-List {
+    display: grid;
+    grid-area: 3 / 1 / 3 / 3;
     grid-columns: 1fr 1fr;
     grid-rows: auto;
     grid-template-areas: "Item Item";
@@ -212,19 +256,19 @@
   }
 
   .cartItems {
-    grid-area: 4 / 1 / 4 / 2;
+    grid-area: 3 / 1 / 3 / 3;
   }
 
   .cartTotal {
-    grid-area: 5 / 1 / 5 / 2;
+    grid-area: 3 / 1 / 3 / 3;
   }
 
   .Receipt {
-    grid-area: 6 / 1 / 6 / 2;
+    grid-area: 4 / 1 / 4 / 3;
   }
 
   .Donate {
-    grid-area: 7 / 1 / 7 / 2;
+    grid-area: 5 / 1 / 5 / 3;
     text-align: center;
   }
 }
