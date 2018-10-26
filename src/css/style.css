@@ -125,3 +125,20 @@
 	margin-top: 60px;
 
 }
+
+.email-support {
+	background-color: #6CD0E1;
+	font-family: Oswald;
+	font-size: 16px;
+	align-content: space-between;
+	padding-top: 10px;
+}
+
+a	{
+	text-decoration: none;
+
+}
+
+a:hover {
+	color: #d77450;
+}
