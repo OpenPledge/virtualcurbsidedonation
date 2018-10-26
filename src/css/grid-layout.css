@@ -166,6 +166,16 @@
 
 }
 
+.team-name-image {
+    text-align: justify;
+    width: [width of img];
+}
+
+.team-name-image img {
+    display: block;
+    margin: 0 auto;
+}
+
 /* if viewed on an iPad */
 @media screen and (max-width: 768px) {
   .grid-container {
