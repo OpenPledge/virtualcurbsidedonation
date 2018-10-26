@@ -7,7 +7,7 @@
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
-	font-family: Arial;
+	font-family: Oswald;
   font-weight: bold;
 	font-size:15px;
 	padding:6px 14px;
@@ -36,7 +36,7 @@
 }
 .donatebutton:hover {
 	background-color:#4b8f29;
-	
+
 }
 .donatebutton:active {
 	position:relative;
@@ -124,4 +124,21 @@
 	text-align: center;
 	margin-top: 60px;
 
+}
+
+.email-support {
+	background-color: #6CD0E1;
+	font-family: Oswald;
+	font-size: 16px;
+	align-content: space-between;
+	padding-top: 10px;
+}
+
+a	{
+	text-decoration: none;
+
+}
+
+a:hover {
+	color: #d77450;
 }
