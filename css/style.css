@@ -82,10 +82,9 @@
 }
 
 .team {
-	padding-bottom: 20px;
-  display: flex;
-  flex-flow: wrap;
-  justify-content: space-around;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .team-name {
