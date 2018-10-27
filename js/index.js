@@ -11,12 +11,12 @@ function updateCartList(){
             cartItems += `<div>${item.quantity}</div>`;
             cartItems += `<div>${item.unitsReceipt}</div>`;
             cartItems += `<div>${item.nameReceipt}</div>`;
-            cartItems += `<div><a onclick="removeFromCart(${id})" href="#"><i class="material-icons icon">close</i></a></div>`;
+            cartItems += `<div><a onclick="removeFromCart(${id})"><i class="material-icons icon">close</i></a></div>`;
         } else if (item.quantity > 1) { //Add an s to the end of the units if >1
             cartItems += `<div>${item.quantity}</div>`;
             cartItems += `<div>${item.unitsReceipt}s</div>`;
             cartItems += `<div>${item.nameReceipt}</div>`;
-            cartItems += `<div><a onclick="removeFromCart(${id})" href="#"><i class="material-icons icon">close</i></a></div>`;
+            cartItems += `<div><a onclick="removeFromCart(${id})"><i class="material-icons icon">close</i></a></div>`;
         }
         id++;
     }
@@ -80,7 +80,7 @@ function loadItems(){
     groceryItems += `<div class="Item-Units">${item.servingUnits}</div>`;
     groceryItems += `<div class="Our-Price">OUR PRICE: $${item.ourPrice}</div>`;
     groceryItems += `<div class="Item-Retail">retail: $${item.retailPrice}</div>`;
-    groceryItems += `<a href="#" onclick="addToCart(${id});" class="addbutton">add to cart</a>`;
+    groceryItems += `<a onclick="addToCart(${id});" class="addbutton">add to cart</a>`;
     groceryItems += `</div>`;
     id++
   }

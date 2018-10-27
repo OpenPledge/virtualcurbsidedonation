@@ -112,6 +112,11 @@
 
 	opacity: .6;
 }
+
+
+.team-name:hover {
+	opacity: .6;
+}
 .cartItems {
 	top: 20px;
 	font-family: Oswald, Arial;
@@ -139,7 +144,7 @@
 .email-support {
 	background-color: #6CD0E1;
 	font-family: Oswald;
-	font-size: 16px;
+	font-size: 20px;
 	padding-top: 10px;
   text-align: center;
 }

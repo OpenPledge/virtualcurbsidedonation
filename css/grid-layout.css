@@ -60,6 +60,7 @@
   grid-template-rows: 1fr;
   grid-template-areas: ".";
   background-color: var(--sidepanel-background);
+  align-items: end;
 
 }
 
@@ -215,6 +216,7 @@
 
   .Receipt {
     grid-area: 1 / 4 / 3 / 4;
+    align-items: end;
   }
 
   .Donate {
