@@ -183,10 +183,19 @@ html, body {
 }
 
 .team {
-  display: flex;
-  flex-flow: wrap;
-  /*justify-content: space-around;*/
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	background-color:#12b3cf;
+  text-align: center;
+  padding-top: 10px;
 }
+
+/*.team {
+  grid-area: 1 / 5 / 7 / 5;
+  background-color: var(--sidepanel-background);
+  text-align: center;
+}*/
 
 /* if viewed on an iPad */
 @media screen and (max-width: 768px) {
@@ -233,6 +242,7 @@ html, body {
     grid-area: 3 / 4 / 6 / 4;
     text-align: center;
   }
+
 }
 
 /* if viewed on a small phone */

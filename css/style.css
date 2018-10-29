@@ -82,14 +82,6 @@
 	top:1px;
 }
 
-.team {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-	background-color:#12b3cf;
-	margin-top: 20px;
-}
-
 .team-name {
   text-align: center;
   font-family: 'Oswald';
