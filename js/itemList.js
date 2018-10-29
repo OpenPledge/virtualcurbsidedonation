@@ -2,7 +2,7 @@ var itemList = [
   {
     "quantity": 0,
     "image": "img/turkey.png",
-    "itemName": "Whole Turkey",
+    "itemName": "Turkey",
     "servingUnits": "case of (6) – 16lbs ea",
     "ourPrice": 85,
     "retailPrice": 120,
@@ -12,7 +12,7 @@ var itemList = [
   {
     "quantity": 0,
     "image": "img/ham.png",
-    "itemName": "Whole Ham",
+    "itemName": "Ham",
     "servingUnits": "case of (6) – 10lbs ea",
     "ourPrice": 60,
     "retailPrice": 85,
@@ -82,8 +82,8 @@ var itemList = [
   {
     "quantity": 0,
     "image": "img/veggies.png",
-    "itemName": "Canned Vegetables",
-    "servingUnits": "case of (24) – 15oz ea",
+    "itemName": "Vegetables",
+    "servingUnits": "case of (24) – 15oz cans",
     "ourPrice": 25,
     "retailPrice": 38,
     "unitsReceipt": "case",
@@ -92,8 +92,8 @@ var itemList = [
   {
     "quantity": 0,
     "image": "img/tomato.png",
-    "itemName": "Canned Tomatoes",
-    "servingUnits": "case of (24) – 28oz ea",
+    "itemName": "Tomatoes",
+    "servingUnits": "case of (24) – 28oz cans",
     "ourPrice": 35,
     "retailPrice": 55,
     "unitsReceipt": "case",
