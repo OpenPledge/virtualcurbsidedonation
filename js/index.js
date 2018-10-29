@@ -8,14 +8,17 @@ function updateCartList(){
     let id = 0;
     for(let item of itemList){
         if(item.quantity === 1) {
-            cartItems += `<div>${item.quantity}</div>`;
+            cartItems += `<div><input type="number" min="0" max="9" size="2" value="${item.quantity}" /></div>`;
             cartItems += `<div>${item.unitsReceipt}</div>`;
             cartItems += `<div>${item.nameReceipt}</div>`;
+            cartItems += `<div>$${item.quantity*item.ourPrice}</div>`
             cartItems += `<div><a onclick="removeFromCart(${id})"><i class="material-icons icon">close</i></a></div>`;
+
         } else if (item.quantity > 1) { //Add an s to the end of the units if >1
-            cartItems += `<div>${item.quantity}</div>`;
+            cartItems += `<div><input type="number" min="0" max="9" size="2" value="${item.quantity}" /></div>`;
             cartItems += `<div>${item.unitsReceipt}s</div>`;
             cartItems += `<div>${item.nameReceipt}</div>`;
+            cartItems += `<div>$${item.quantity*item.ourPrice}</div>`
             cartItems += `<div><a onclick="removeFromCart(${id})"><i class="material-icons icon">close</i></a></div>`;
         }
         id++;
