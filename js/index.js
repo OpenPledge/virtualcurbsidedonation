@@ -83,10 +83,17 @@ function loadItems(){
     groceryItems += `<div class="Item-Units">${item.servingUnits}</div>`;
     groceryItems += `<div class="Our-Price">OUR PRICE: $${item.ourPrice}</div>`;
     groceryItems += `<div class="Item-Retail">retail: $${item.retailPrice}</div>`;
-    groceryItems += `<a onclick="addToCart(${id});" class="addbutton">add to cart</a>`;
+    groceryItems += `<a onclick="addToCart(${id});myFunction();" class="addbutton">add to cart</a>`;
     groceryItems += `</div>`;
     id++
   }
   groceryList.innerHTML = `${groceryItems}`;
 
+}
+
+// snackbar function
+function myFunction() {
+    var x = document.getElementById("snackbar");
+    x.className = "show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
 }
