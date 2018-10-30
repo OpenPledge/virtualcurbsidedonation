@@ -187,7 +187,7 @@ hr {
 
 #snackbar {
 		visibility: hidden;
-		min-width: 25%;
+		min-width: 10%;
 		margin-left: -125px;
 		background-color: green;
 		color: #fff;
@@ -196,7 +196,7 @@ hr {
 		padding: 16px;
 		position: fixed;
 		z-index: 1;
-		left: 50%;
+		left: 80%;
 		top: 30px;
 		font-size: 17px;
 }
