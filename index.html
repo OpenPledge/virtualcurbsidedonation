@@ -14,6 +14,50 @@
     <script type="text/javascript" src="js/itemList.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
 
+    <style>
+      #snackbar {
+          visibility: hidden;
+          min-width: 25%;
+          margin-left: -125px;
+          background-color: green;
+          color: #fff;
+          text-align: center;
+          border-radius: 2px;
+          padding: 16px;
+          position: fixed;
+          z-index: 1;
+          left: 50%;
+          top: 30px;
+          font-size: 17px;
+      }
+
+      #snackbar.show {
+          visibility: visible;
+          -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+          animation: fadein 0.5s, fadeout 0.5s 2.5s;
+      }
+
+      @-webkit-keyframes fadein {
+          from {top: 0; opacity: 0;}
+          to {top: 30px; opacity: 1;}
+      }
+
+      @keyframes fadein {
+          from {top: 0; opacity: 0;}
+          to {top: 30px; opacity: 1;}
+      }
+
+      @-webkit-keyframes fadeout {
+          from {top: 30px; opacity: 1;}
+          to {top: 0; opacity: 0;}
+      }
+
+      @keyframes fadeout {
+          from {top: 30px; opacity: 1;}
+          to {top: 0; opacity: 0;}
+      }
+    </style>
+
   </head>
   <body>
     <div class="grid-container">
@@ -62,7 +106,15 @@
       <img alt="" width="1" height="1"
            src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
     </form>
+
+    <!-- Snackbar Test Area -->
+      <button onclick="myFunction()">Snackbar Test</button>
+
+      <div id="snackbar">You just added a turkey to your cart</div>
+    <!-- Snackbar Test Area -->
+
     <hr />
+
     <div class = "teamHeader"><span style="font-size: 3.5ex;">Designed by</span><br /><span style="font-size: 1.5em;">Kickstart Coding
     Volunteer Team</span></div>
     <div class= "team">
@@ -117,6 +169,14 @@
     </div>
   </footer>
 </div>
+
+    <script>
+    function myFunction() {
+        var x = document.getElementById("snackbar");
+        x.className = "show";
+        setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    }
+    </script>
 
   </body>
 </html>
