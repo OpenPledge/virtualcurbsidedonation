@@ -45,6 +45,7 @@ function updateQuantityFromTextBox(id){
     itemList[id].quantity = newQuantity;
     donationTotal += item.quantity * item.ourPrice;
     updateCartList();
+    updateDonateButton();
 }
 function addToCart(id){
     // Type casting is necessary here due to javascript quirks! Without, it would read quantity as a string, and if you added 1 to 10 it would become 101!
