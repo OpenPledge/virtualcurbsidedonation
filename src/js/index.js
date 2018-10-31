@@ -76,3 +76,20 @@ function updateDonateButton(){
     totalAmount.value = donationTotal;
     combinedNames.value = paypalDescription;
 }
+
+function updateDonateButton(){
+    // Uses the DOM to modify the PayPal donate button with the total amount
+    // paypalDescription collects all item's names + quantities and puts it into item_name field
+
+    let paypalDescription = '';
+    itemList.forEach(item => {
+        if (item.quantity > 0) {
+            paypalDescription += `${item.quantity}x ${item.nameReceipt} `;
+        }
+    });
+
+    let totalAmount = document.getElementById('donateTotal');
+    let combinedNames = document.getElementById('donateName');
+    totalAmount.value = donationTotal;
+    combinedNames.value = paypalDescription;
+}
