@@ -8,14 +8,17 @@ function updateCartList(){
     let id = 0;
     for(let item of itemList){
         if(item.quantity === 1) {
-            cartItems += `<div><input id="quantity-${id}" onchange="updateQuantity(${id})" type="number" min="0" max="9" size="2" value="${item.quantity}" /></div>`;
+            cartItems += `<div>
+            <input id="quantity-${id}" onchange="updateQuantityFromTextBox(${id})" type="number" min="0" max="9" size="2" value="${item.quantity}" />
+            </div>`;
             cartItems += `<div>${item.unitsReceipt}</div>`;
             cartItems += `<div>${item.nameReceipt}</div>`;
             cartItems += `<div>$${item.quantity*item.ourPrice}</div>`
             cartItems += `<div><a onclick="removeFromCart(${id})"><i class="material-icons icon">close</i></a></div>`;
-
         } else if (item.quantity > 1) { //Add an s to the end of the units if >1
-            cartItems += `<div><input id="quantity-${id}" onchange="updateQuantity(${id})" type="number" min="0" max="9" size="2" value="${item.quantity}" /></div>`;
+            cartItems += `<div>
+            <input id="quantity-${id}" onchange="updateQuantityFromTextBox(${id})" type="number" min="0" max="9" size="2" value="${item.quantity}" />
+            </div>`;
             cartItems += `<div>${item.unitsReceipt}s</div>`;
             cartItems += `<div>${item.nameReceipt}</div>`;
             cartItems += `<div>$${item.quantity*item.ourPrice}</div>`
@@ -34,13 +37,13 @@ function removeFromCart(id){
     updateCartList();
 }
 
-function updateQuantity(id){
+function updateQuantityFromTextBox(id){
     let quantityBox = document.getElementById(`quantity-${id}`);
     let newQuantity = parseInt(quantityBox.value);
-    let item = itemList[id]
+    let item = itemList[id];
     donationTotal -= item.quantity * item.ourPrice;
-      itemList[id].quantity = newQuantity;
-      donationTotal += item.quantity * item.ourPrice;
+    itemList[id].quantity = newQuantity;
+    donationTotal += item.quantity * item.ourPrice;
     updateCartList();
 }
 function addToCart(id){
@@ -50,10 +53,6 @@ function addToCart(id){
     donationTotal += itemPrice;
     updateCartList();
     updateDonateButton();
-}
-
-window.onload = function(){
-    updateCartList();
 }
 
 function updateDonateButton(){
@@ -74,14 +73,15 @@ function updateDonateButton(){
 }
 
 window.onload = function() {
-  loadItems();
-  console.log('hello world');
+    updateCartList();
+    loadItems();
+    console.log('hello world');
 }
 
 function loadItems(){
   let groceryList = document.getElementById('groceryList');
   let groceryItems = "";
-  id = 0;
+  let id = 0;
 
   for(let item of itemList){
     groceryItems += `<div class ="Item">`;
@@ -100,7 +100,7 @@ function loadItems(){
 
 // snackbar function
 function myFunction() {
-    var x = document.getElementById("snackbar");
+    let x = document.getElementById("snackbar");
     x.className = "show";
     setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
 }
