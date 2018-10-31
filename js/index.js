@@ -9,7 +9,7 @@ function updateCartList(){
     for(let item of itemList){
         if(item.quantity === 1) {
             cartItems += `<div>
-            <input id="quantity-${id}" onchange="updateQuantityFromTextBox(${id})" type="number" min="0" max="9" size="2" value="${item.quantity}" />
+            <input id="quantity-${id}" class="quantityBox" onchange="updateQuantityFromTextBox(${id})" type="number" min="0" max="9" size="2" value="${item.quantity}" />
             </div>`;
             cartItems += `<div>${item.unitsReceipt}</div>`;
             cartItems += `<div>${item.nameReceipt}</div>`;
@@ -17,7 +17,7 @@ function updateCartList(){
             cartItems += `<div><a onclick="removeFromCart(${id})"><i class="material-icons icon">close</i></a></div>`;
         } else if (item.quantity > 1) { //Add an s to the end of the units if >1
             cartItems += `<div>
-            <input id="quantity-${id}" onchange="updateQuantityFromTextBox(${id})" type="number" min="0" max="9" size="2" value="${item.quantity}" />
+            <input id="quantity-${id}" class="quantityBox" onchange="updateQuantityFromTextBox(${id})" type="number" min="0" max="9" size="2" value="${item.quantity}" />
             </div>`;
             cartItems += `<div>${item.unitsReceipt}s</div>`;
             cartItems += `<div>${item.nameReceipt}</div>`;

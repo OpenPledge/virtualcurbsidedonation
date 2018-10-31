@@ -15,6 +15,9 @@
 	align-items: end;
 
 }
+.quantityBox {
+	width: 22px;
+}
 .addbutton:hover {
 	background-color:#6CD0E1;
 	color: #ffffff;
