@@ -8,14 +8,14 @@ function updateCartList(){
     let id = 0;
     for(let item of itemList){
         if(item.quantity === 1) {
-            cartItems += `<div><input type="number" min="0" max="9" size="2" value="${item.quantity}" /></div>`;
+            cartItems += `<div><input id="quantity-${id}" onchange="updateQuantity(${id})" type="number" min="0" max="9" size="2" value="${item.quantity}" /></div>`;
             cartItems += `<div>${item.unitsReceipt}</div>`;
             cartItems += `<div>${item.nameReceipt}</div>`;
             cartItems += `<div>$${item.quantity*item.ourPrice}</div>`
             cartItems += `<div><a onclick="removeFromCart(${id})"><i class="material-icons icon">close</i></a></div>`;
 
         } else if (item.quantity > 1) { //Add an s to the end of the units if >1
-            cartItems += `<div><input type="number" min="0" max="9" size="2" value="${item.quantity}" /></div>`;
+            cartItems += `<div><input id="quantity-${id}" onchange="updateQuantity(${id})" type="number" min="0" max="9" size="2" value="${item.quantity}" /></div>`;
             cartItems += `<div>${item.unitsReceipt}s</div>`;
             cartItems += `<div>${item.nameReceipt}</div>`;
             cartItems += `<div>$${item.quantity*item.ourPrice}</div>`
@@ -34,11 +34,18 @@ function removeFromCart(id){
     updateCartList();
 }
 
-function updateQuantity(item, newQuantity){
-    itemList[item].quantity = newQuantity;
+function updateQuantity(id){
+    let quantityBox = document.getElementById(`quantity-${id}`);
+    let newQuantity = parseInt(quantityBox.value);
+    let item = itemList[id]
+    donationTotal -= item.quantity * item.ourPrice;
+      itemList[id].quantity = newQuantity;
+      donationTotal += item.quantity * item.ourPrice;
+    updateCartList();
 }
 function addToCart(id){
-    itemList[id].quantity += 1;
+    // Type casting is necessary here due to javascript quirks! Without, it would read quantity as a string, and if you added 1 to 10 it would become 101!
+    itemList[id].quantity = parseInt(itemList[id].quantity) + 1;
     let itemPrice = Number(itemList[id].ourPrice);
     donationTotal += itemPrice;
     updateCartList();
