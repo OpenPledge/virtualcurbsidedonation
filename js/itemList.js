@@ -92,7 +92,7 @@ var itemList = [
   {
     "quantity": 0,
     "image": "img/corn.png",
-    "itemName": "Canned Corn",
+    "itemName": "Corn",
     "servingUnits": "case of (24) – 15oz cans",
     "ourPrice": 25,
     "retailPrice": 38,
