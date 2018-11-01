@@ -144,7 +144,7 @@ html, body {
 .Item-Units {
   font-style: italic;
   font-family: var(--itemunitretailfont);
-  font-size: 10px;
+  font-size: 14px;
   margin-bottom: 12px;
 
 }
@@ -152,7 +152,7 @@ html, body {
 .Item-Retail {
   font-style: italic;
   font-family: var(--itemunitretailfont);
-  font-size: 10px;
+  font-size: 14px;
   margin-bottom: 5px;
 }
 
