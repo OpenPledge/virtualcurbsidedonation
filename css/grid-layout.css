@@ -19,8 +19,8 @@ html, body {
 .grid-container {
   display: grid;
   height: 100%;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1.25fr;
-  grid-template-rows: 0.5fr 0.5fr 2fr 2fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-areas: ". . . ." ". . . .";
 
 }
