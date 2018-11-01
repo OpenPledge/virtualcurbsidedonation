@@ -117,6 +117,6 @@ var itemList = [
     "ourPrice": 15,
     "retailPrice": 21,
     "unitsReceipt": "jar",
-    "nameReceipt": "Peanut Butter"
+    "nameReceipt": "PB"
   }
 ]

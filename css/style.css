@@ -92,12 +92,13 @@
 
 .team-name {
   text-align: center;
-  font-family: 'Oswald';
-	font-weight: 400;
-  font-size: 1em;
+  font-family: arial;
+	font-weight: 600;
+  font-size: 14px;
   color: white;
 	background-color:#12b3cf;
-	margin-top: -8px;
+	margin-top: 4px;
+
 }
 
 .teamPics {
