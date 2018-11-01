@@ -160,7 +160,7 @@ html, body {
   font-weight: 500;
   font-family: var(--ourpricefont);
   color: var(--ourpricecolor);
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: -3px;
 }
 

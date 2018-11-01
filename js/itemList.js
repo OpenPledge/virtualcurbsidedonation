@@ -83,11 +83,21 @@ var itemList = [
     "quantity": 0,
     "image": "img/veggies.png",
     "itemName": "Vegetables",
+    "servingUnits": "15lb bag",
+    "ourPrice": 10,
+    "retailPrice": 15,
+    "unitsReceipt": "bag",
+    "nameReceipt": "Veggies"
+  },
+  {
+    "quantity": 0,
+    "image": "img/corn.png",
+    "itemName": "Canned Corn",
     "servingUnits": "case of (24) – 15oz cans",
     "ourPrice": 25,
     "retailPrice": 38,
     "unitsReceipt": "case",
-    "nameReceipt": "Veggies"
+    "nameReceipt": "Corn"
   },
   {
     "quantity": 0,
@@ -98,5 +108,15 @@ var itemList = [
     "retailPrice": 55,
     "unitsReceipt": "case",
     "nameReceipt": "Tomatoes"
+  },
+   {
+    "quantity": 0,
+    "image": "img/peanutbutter.jpeg",
+    "itemName": "Peanut Butter",
+    "servingUnits": "64oz jar",
+    "ourPrice": 15,
+    "retailPrice": 21,
+    "unitsReceipt": "jar",
+    "nameReceipt": "Peanut Butter"
   }
 ]
