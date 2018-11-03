@@ -38,7 +38,9 @@ function updateCartList(){
 
 }
 
+
 database.ref().push(item)
+console.log(item)
 
 function removeFromCart(id){
     donationTotal -= itemList[id].ourPrice * itemList[id].quantity;
