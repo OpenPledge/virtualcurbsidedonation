@@ -1,3 +1,10 @@
+<script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  firebase.initializeApp(process.env.config);
+</script>
+
+const apiKey = `${process.env.config.apiKey}`
 let donationTotal = 0;
 
 function updateCartList(){
@@ -30,6 +37,8 @@ function updateCartList(){
     cartTotal.innerHTML = `Total: $${donationTotal}`;
 
 }
+
+database.ref().push(item)
 
 function removeFromCart(id){
     donationTotal -= itemList[id].ourPrice * itemList[id].quantity;
