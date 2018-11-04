@@ -73,7 +73,6 @@ function updateDonateButton(){
     let combinedNames = document.getElementById('donateName');
     totalAmount.value = donationTotal;
     combinedNames.value = paypalDescription;
-    dbSubmit();
 
 }
 
