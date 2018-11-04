@@ -1,10 +1,6 @@
-<script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  firebase.initializeApp(process.env.config);
-</script>
+// const apiKey = `${process.env.config.apiKey}`
 
-const apiKey = `${process.env.config.apiKey}`
+let database = firebase.database();
 let donationTotal = 0;
 
 function updateCartList(){
@@ -38,9 +34,6 @@ function updateCartList(){
 
 }
 
-
-database.ref().push(item)
-console.log(item)
 
 function removeFromCart(id){
     donationTotal -= itemList[id].ourPrice * itemList[id].quantity;
@@ -82,7 +75,14 @@ function updateDonateButton(){
     let combinedNames = document.getElementById('donateName');
     totalAmount.value = donationTotal;
     combinedNames.value = paypalDescription;
+
 }
+
+function test() {
+  database.ref().push(donationTotal);
+  console.log(donationTotal);
+}
+
 
 window.onload = function() {
     updateCartList();

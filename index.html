@@ -51,8 +51,8 @@
              value="Please add items to your basket.">
       <input type="hidden" id="donateTotal" name="amount" value="0.00">
       <!-- Display the payment button: -->
-      <input type="submit" name="submit" value="DONATE NOW  "
-             alt="Donate" class="donatebutton2">
+      <button type="submit" name="submit" value="DONATE NOW  "
+             alt="Donate" class="donatebutton2" onClick="test();">Submit</button>
       <img alt="" width="1" height="1"
            src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
     </form>
@@ -115,5 +115,18 @@
     </footer>
   </div>
 
+  <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: `{process.env.apiKey}`,
+      authDomain: "virtual-curbside.firebaseapp.com",
+      databaseURL: "https://virtual-curbside.firebaseio.com",
+      projectId: "virtual-curbside",
+      storageBucket: "virtual-curbside.appspot.com",
+      messagingSenderId: `{process.env.messagingSenderId}`
+    };
+    firebase.initializeApp(config);
+  </script>
   </body>
 </html>
