@@ -1,5 +1,3 @@
-// const apiKey = `${process.env.config.apiKey}`
-
 let database = firebase.database();
 let donationTotal = 0;
 
@@ -75,10 +73,12 @@ function updateDonateButton(){
     let combinedNames = document.getElementById('donateName');
     totalAmount.value = donationTotal;
     combinedNames.value = paypalDescription;
+    dbSubmit();
 
 }
 
-function test() {
+// Method for submitting item to db - this can be running item total once we have that generated in html
+function dbSubmit() {
   database.ref().push(donationTotal);
   console.log(donationTotal);
 }
