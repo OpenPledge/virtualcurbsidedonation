@@ -203,6 +203,12 @@ hr {
 		font-size: 17px;
 }
 
+.thankyou {
+	font-size: 1.5em;
+	font-family: 'Herr Von Muellerhoff', cursive;
+	text-align: center;
+}
+
 #snackbar.show {
 		visibility: visible;
 		-webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;

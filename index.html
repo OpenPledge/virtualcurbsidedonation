@@ -12,6 +12,7 @@
   <link href="css/style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   <link href="https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff" rel="stylesheet">
 
   <script type="text/javascript" src="js/itemList.js"></script>
   <script type="text/javascript" src="js/index.js"></script>
@@ -19,7 +20,7 @@
 </head>
   <body>
     <div class="grid-container">
-      <div class="Receipt">
+      <div id="Receipt" class="Receipt">
         <div class="topimage"></div>
         <div id="cartItems" class="cartItems">
           <div class="singleline"></div>
@@ -27,6 +28,7 @@
         </div>
         <div class="bottomline">
           <div id="cartTotal" class="cartTotal">Total: </div>
+          <div class ="thankyou">Thank you for your generous donation!</div>
       <!-- Total amount shows up here -->
         </div>
 
@@ -106,7 +108,10 @@
     </div>
 
     <!-- Snackbar Text Area -->
-    <div id="snackbar">Item added to cart</div>
+    <div id="snackbar">
+      Item added!
+      <a href="#Receipt" id="close">(click to view cart)</a>
+    </div>
 
     </div>
     <footer>
