@@ -203,6 +203,10 @@ hr {
 		font-size: 17px;
 }
 
+/* #close {
+  visibility: hidden;
+} */
+
 #snackbar.show {
 		visibility: visible;
 		-webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
