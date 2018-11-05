@@ -203,9 +203,11 @@ hr {
 		font-size: 17px;
 }
 
-/* #close {
-  visibility: hidden;
-} */
+.thankyou {
+	font-size: 1.5em;
+	font-family: 'Herr Von Muellerhoff', cursive;
+	text-align: center;
+}
 
 #snackbar.show {
 		visibility: visible;
