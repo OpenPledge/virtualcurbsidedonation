@@ -191,8 +191,9 @@ hr {
 		visibility: hidden;
 		min-width: 10%;
 		/*margin-left: -125px;*/
-		background-color: #D77450;
+		background-color: #6CD0E1;
 		color: #fff;
+		font-family: 'Oswald';
 		text-align: center;
 		border-radius: 2px;
 		padding: 16px;
@@ -200,13 +201,7 @@ hr {
 		z-index: 1;
 		right: 0%;
 		top: 0px;
-		font-size: 17px;
-}
-
-.thankyou {
-	font-size: 1.5em;
-	font-family: 'Herr Von Muellerhoff', cursive;
-	text-align: center;
+		font-size: 19px;
 }
 
 #snackbar.show {

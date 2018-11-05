@@ -28,57 +28,58 @@
         </div>
         <div class="bottomline">
           <div id="cartTotal" class="cartTotal">Total: </div>
-          <div class ="thankyou">Thank you for your generous donation!</div>
+          <div class ="thankyou">Thank you for your donation!</div>
       <!-- Total amount shows up here -->
         </div>
 
       </div>
 
+      <div id="groceryList" class="Items-List">
+      </div>
 
       <div class="Donate">
     <!-- PayPal Logo : <a href="https://www.paypal.com/webapps/mpp/paypal-popup" title="How PayPal Works" onclick="javascript:window.open('https://www.paypal.com/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;"><img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_37x23.jpg" border="0" alt="PayPal Logo"></a><!-- PayPal Logo -->
 
-    <form id="donateForm" action="https://www.paypal.com/cgi-bin/webscr"
-          method="post">
-      <input type="hidden" name="business"
-             value="devoconfirmations@stanthonysf.org">
-      <input type="hidden" name="cmd" value="_donations">
-      <input type="hidden" name="item_number"
-             value="St. Anthony's Virtual Curbside Food Donation">
-      <input type="hidden" name="return" value="https://www.stanthonysf.org/donate/">
-      <input type="hidden" name="currency_code" value="USD">
-      <input type="hidden" name="no_shipping" value="1">
-      <!-- Manipulate these two input elements:  -->
-      <input type="hidden" id="donateName" name="item_name"
-             value="Please add items to your basket.">
-      <input type="hidden" id="donateTotal" name="amount" value="0.00">
-      <!-- Display the payment button: -->
-      <input type="submit" name="submit" value="DONATE NOW  "
-             alt="Donate" class="donatebutton2">
-      <img alt="" width="1" height="1"
-           src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
-    </form>
+        <form id="donateForm" action="https://www.paypal.com/cgi-bin/webscr"
+              method="post">
+        <input type="hidden" name="business"
+               value="devoconfirmations@stanthonysf.org">
+        <input type="hidden" name="cmd" value="_donations">
+        <input type="hidden" name="item_number"
+               value="St. Anthony's Virtual Curbside Food Donation">
+        <input type="hidden" name="return" value="https://www.stanthonysf.org/donate/">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="no_shipping" value="1">
+        <!-- Manipulate these two input elements:  -->
+        <input type="hidden" id="donateName" name="item_name"
+               value="Please add items to your basket.">
+        <input type="hidden" id="donateTotal" name="amount" value="0.00">
+        <!-- Display the payment button: -->
+        <input type="submit" name="submit" value="DONATE NOW  "
+               alt="Donate" class="donatebutton2">
+        <img alt="" width="1" height="1"
+             src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+      </form>
 
-    <hr />
+      <hr />
 
-    <div class = "teamHeader"><span style="font-size: 3.5ex;">Designed by</span><br /><span style="font-size: 1.5em;">Kickstart Coding
-    Volunteer Team</span></div>
-    <div class= "team">
+      <div class = "teamHeader"><span style="font-size: 3.5ex;">Designed by</span><br /><span style="font-size: 1.5em;">Kickstart Coding
+        Volunteer Team</span></div>
+      <div class= "team">
         <div>
           <a href="https://shaneleblanc.net" target="_blank">
           <img class ="teamPics" src="img/team/shane.jpeg" alt="Shane LeBlanc" />
           <h1 class="team-name">Shane</h1>
-        </a>
-
+          </a>
         </div>
         <div>
-        <a href="https://www.linkedin.com/in/maddy-ford/" target="_blank">
+          <a href="https://www.linkedin.com/in/maddy-ford/" target="_blank">
           <img class ="teamPics" src="img/team/maddy.jpeg" alt="Maddy Ford" hspace="10" />
           <h1 class="team-name">Maddy</h1>
           </a>
         </div>
         <div>
-        <a href="https://www.linkedin.com/in/mtucker-18/" target="_blank">
+          <a href="https://www.linkedin.com/in/mtucker-18/" target="_blank">
           <img class ="teamPics" src="img/team/tucker.jpeg" alt="Matthew Tucker" />
           <h1 class="team-name">Tucker</h1>
           </a>
@@ -103,8 +104,6 @@
         </div>
       </div>
     </div>
-    <div id="groceryList" class="Items-List">
-    </div>
 
     <!-- Snackbar Text Area -->
     <div id="snackbar">
@@ -121,7 +120,5 @@
           <a href ="mailto: curbside@stanthonysf.org">curbside@stanthonysf.org</a></div>
       </div>
     </footer>
-  </div>
-
   </body>
 </html>
