@@ -1,0 +1,236 @@
+.addbutton {
+	background-color:#12b3cf;
+	/*-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;*/
+	border: none;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: Oswald;
+  font-weight: 400;
+	font-size:18px;
+	padding:6px 14px;
+	text-decoration:none;
+	align-items: end;
+
+}
+.addbutton:hover {
+	background-color:#6CD0E1;
+	color: #ffffff;
+}
+.addbutton:active {
+	position:relative;
+	top:1px;
+}
+.donatebutton {
+	background-color:#d77450;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:26px;
+	font-weight:bold;
+	padding:11px 34px;
+	text-decoration:none;
+	border: none;
+}
+.donatebutton:hover {
+	background-color:#4b8f29;
+
+}
+.donatebutton:active {
+	position:relative;
+	top:1px;
+}
+
+.removebutton {
+	-moz-box-shadow:inset 0px 0px 14px -3px #f2fadc;
+	-webkit-box-shadow:inset 0px 0px 14px -3px #f2fadc;
+	box-shadow:inset 0px 0px 14px -3px #f2fadc;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dbe6c4), color-stop(1, #9ba892));
+	background:-moz-linear-gradient(top, #6E645C 5%, #9ba892 100%);
+	background:-webkit-linear-gradient(top, #6E645C 5%, #9ba892 100%);
+	background:-o-linear-gradient(top, #6E645C 5%, #9ba892 100%);
+	background:-ms-linear-gradient(top, #6E645C 5%, #9ba892 100%);
+	background:linear-gradient(to bottom, #6E645C 5%, #9ba892 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dbe6c4', endColorstr='#9ba892',GradientType=0);
+	background-color:#6E645C;
+	border:1px solid #b2b8ad;
+	display:inline-block;
+	cursor:pointer;
+	color:#6E645;
+	font-family:Arial;
+	font-size:7px;
+	font-weight:bold;
+	padding:0px 0px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ced9bf;
+}
+.removebutton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #9ba892), color-stop(1, #dbe6c4));
+	background:-moz-linear-gradient(top, #9ba892 5%, #dbe6c4 100%);
+	background:-webkit-linear-gradient(top, #9ba892 5%, #dbe6c4 100%);
+	background:-o-linear-gradient(top, #9ba892 5%, #dbe6c4 100%);
+	background:-ms-linear-gradient(top, #9ba892 5%, #dbe6c4 100%);
+	background:linear-gradient(to bottom, #9ba892 5%, #dbe6c4 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#9ba892', endColorstr='#dbe6c4',GradientType=0);
+	background-color:#9ba892;
+}
+.removebutton:active {
+	position:relative;
+	top:1px;
+}
+
+.team {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+	background-color:#12b3cf;
+	margin-top: 20px;
+}
+
+.team-name {
+  text-align: center;
+  font-family: arial;
+	font-weight: 600;
+  font-size: 14px;
+  color: white;
+	background-color:#12b3cf;
+	margin-top: 4px;
+
+}
+
+.teamPics {
+  /*border-radius: 40%;*/
+	width: 68px;
+	height: 68px;
+	/*border: 3px solid white;*/
+	background-color: white;
+	/*margin-left: 15%;*/
+}
+
+.teamPics:hover {
+
+
+	opacity: .6;
+}
+
+
+.team-name:hover {
+	opacity: .6;
+}
+.cartItems {
+	top: 20px;
+	font-family: Oswald, Arial;
+	font-size: 16px;
+	text-decoration:none;
+
+}
+.cartRow {
+
+}
+
+.icon {
+	vertical-align: text-bottom;
+}
+
+.cartTotal {
+	font-family: Oswald, Arial;
+	font-size: 26px;
+	text-decoration:none;
+	text-align: center;
+	margin-top: 60px;
+
+}
+
+.email-support {
+	background-color: #6CD0E1;
+	font-family: Oswald;
+	font-size: 24px;
+  text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+a	{
+	text-decoration: none;
+
+}
+
+a:hover {
+	color: #d77450;
+}
+
+.donatebutton2 {
+	color: white !important;
+	background-color: #6E645C;
+	padding: 15px;
+	width: 60%;
+	margin-left: 20%;
+	margin-bottom: 10px;
+	border: none;
+	font-size: 24px;
+	font-weight: 400;
+	font-family: 'Oswald';
+	line-height: 1;
+	text-align: center;
+	display: block;
+}
+
+.donatebutton2:hover {
+	background-color: #D77450;
+}
+
+hr {
+	border-top: 1px solid;
+	color: white;
+}
+
+#snackbar {
+		visibility: hidden;
+		min-width: 10%;
+		/*margin-left: -125px;*/
+		background-color: #D77450;
+		color: #fff;
+		text-align: center;
+		border-radius: 2px;
+		padding: 16px;
+		position: fixed;
+		z-index: 1;
+		right: 0%;
+		top: 0px;
+		font-size: 17px;
+}
+
+.thankyou {
+	font-size: 1.5em;
+	font-family: 'Herr Von Muellerhoff', cursive;
+	text-align: center;
+}
+
+#snackbar.show {
+		visibility: visible;
+		-webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+		animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+		from {top: 0px; opacity: 0;}
+		to {top:0px; opacity: 1;}
+}
+
+@keyframes fadein {
+		from {top: 0; opacity: 0;}
+		to {top: 0px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+		from {top: 0px; opacity: 1;}
+		to {top: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+		from {top: 0px; opacity: 1;}
+		to {top: 0; opacity: 0;}
+}

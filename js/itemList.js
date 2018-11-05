@@ -2,7 +2,7 @@ var itemList = [
   {
     "quantity": 0,
     "image": "img/turkey.png",
-    "itemsNeeded": "Whole Turkey",
+    "itemName": "Turkey",
     "servingUnits": "case of (6) – 16lbs ea",
     "ourPrice": 85,
     "retailPrice": 120,
@@ -12,7 +12,7 @@ var itemList = [
   {
     "quantity": 0,
     "image": "img/ham.png",
-    "itemsNeeded": "Whole Ham",
+    "itemName": "Ham",
     "servingUnits": "case of (6) – 10lbs ea",
     "ourPrice": 60,
     "retailPrice": 85,
@@ -22,7 +22,7 @@ var itemList = [
   {
     "quantity": 0,
     "image": "img/chicken.png",
-    "itemsNeeded": "Chicken",
+    "itemName": "Chicken",
     "servingUnits": "12lbs tray",
     "ourPrice": 20,
     "retailPrice": 30,
@@ -32,7 +32,7 @@ var itemList = [
   {
     "quantity": 0,
     "image": "img/rice.png",
-    "itemsNeeded": "Rice",
+    "itemName": "Rice",
     "servingUnits": "40lb bag",
     "ourPrice": 50,
     "retailPrice": 75,
@@ -42,7 +42,7 @@ var itemList = [
   {
     "quantity": 0,
     "image": "img/beans.png",
-    "itemsNeeded": "Beans",
+    "itemName": "Beans",
     "servingUnits": "40lb bag",
     "ourPrice": 70,
     "retailPrice": 100,
@@ -52,7 +52,7 @@ var itemList = [
   {
     "quantity": 0,
     "image": "img/milk.png",
-    "itemsNeeded": "Milk",
+    "itemName": "Milk",
     "servingUnits": "case of (24) – 1gal",
     "ourPrice": 80,
     "retailPrice": 118,
@@ -62,7 +62,7 @@ var itemList = [
   {
     "quantity": 0,
     "image": "img/onions.png",
-    "itemsNeeded": "Onions",
+    "itemName": "Onions",
     "servingUnits": "30lb bag",
     "ourPrice": 30,
     "retailPrice": 45,
@@ -72,7 +72,7 @@ var itemList = [
   {
     "quantity": 0,
     "image": "img/potato.png",
-    "itemsNeeded": "Potatoes",
+    "itemName": "Potatoes",
     "servingUnits": "40lb bag",
     "ourPrice": 65,
     "retailPrice": 90,
@@ -82,21 +82,41 @@ var itemList = [
   {
     "quantity": 0,
     "image": "img/veggies.png",
-    "itemsNeeded": "Canned Vegetables",
-    "servingUnits": "case of (24) – 15oz ea",
-    "ourPrice": 25,
-    "retailPrice": 38,
-    "unitsReceipt": "case",
+    "itemName": "Vegetables",
+    "servingUnits": "15lb bag",
+    "ourPrice": 10,
+    "retailPrice": 15,
+    "unitsReceipt": "bag",
     "nameReceipt": "Veggies"
   },
   {
     "quantity": 0,
+    "image": "img/corn.png",
+    "itemName": "Corn",
+    "servingUnits": "case of (24) – 15oz",
+    "ourPrice": 25,
+    "retailPrice": 38,
+    "unitsReceipt": "case",
+    "nameReceipt": "Corn"
+  },
+  {
+    "quantity": 0,
     "image": "img/tomato.png",
-    "itemsNeeded": "Canned Tomatoes",
-    "servingUnits": "case of (24) – 28oz ea",
+    "itemName": "Tomatoes",
+    "servingUnits": "case of (24) – 28oz",
     "ourPrice": 35,
     "retailPrice": 55,
     "unitsReceipt": "case",
     "nameReceipt": "Tomatoes"
+  },
+   {
+    "quantity": 0,
+    "image": "img/peanutbutter.jpeg",
+    "itemName": "Peanut Butter",
+    "servingUnits": "64oz jar",
+    "ourPrice": 15,
+    "retailPrice": 21,
+    "unitsReceipt": "jar",
+    "nameReceipt": "PB"
   }
 ]

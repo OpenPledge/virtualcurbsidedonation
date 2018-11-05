@@ -1,0 +1,296 @@
+:root {
+  /* Super Mario World Inspired */
+  --titlefont: 'Oswald', sans-serif;
+  --subheaderfont: Georgia;
+  --teamheaderfont: arial;
+  --sidepanel-background: #12b4cf;
+  --itemtitlefont: arial;
+  --itemunitretailfont: sans-serif;
+  --retailfont: arial;
+  --ourpricefont: Oswald;
+  --ourpricecolor: #004551;
+  --thankyoufont: 'Herr Von Muellerhoff', cursive;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.grid-container {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: ". . . ." ". . . .";
+}
+
+.teamHeader {
+  text-align: center;
+  font-family: var(--teamheaderfont);
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: white;
+  font-weight: 500;
+  background-color: #12b4cf;
+}
+
+.Receipt {
+  display: grid;
+  grid-area: 1 / 6 / 4 / 7;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr;
+  grid-template-areas: ".";
+  background-color: var(--sidepanel-background);
+  align-items: end;
+  margin-bottom: 100px;
+}
+
+.topimage {
+    background-image: url("../img/topreceipt.png");
+    background-size: 100% 100%;
+    position: relative;
+    height: 50px;
+}
+
+.emptyline{
+    background-image: url("../img/blankreceipt.png");
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.singleline {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 14% 12% 24% 10% 5%;
+    background-image: url("../img/blankreceipt.png");
+    background-size: 100% 100%;
+    position: relative;
+    width: 30vw;
+}
+
+.singleline > div {
+    margin-left: 5vw;
+}
+
+.bottomline {
+    background-image: url("../img/bottomreceipt.png");
+    background-size: 100% 100%;
+    background-position: center bottom;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    vertial-align: bottom;
+}
+
+.Donate {
+  grid-area: 4 / 6 / 7 / 7;
+  background-color: var(--sidepanel-background);
+  text-align: center;
+  margin-top: -100px;
+}
+
+.Items-List {
+  display: grid;
+  grid-area: 3 / 1 / 5 / 6;
+  grid-columns: 1fr 1fr 1fr;
+  grid-rows: 1fr 1fr 1fr;
+  padding: 20px 5px 30px 5px;
+  grid-template-areas: "Item Item Item Item" "Item Item Item Item" "Item Item Item Item";
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.Item-Name {
+  font-weight: 600;
+  font-size: 24px;
+  font-family: var(--itemtitlefont);
+}
+
+.Item-Img {
+  background-color: white;
+  height: 110px;
+  max-width: 130px;
+  padding-top: 20px;
+}
+
+
+.Item-Units {
+  font-style: italic;
+  font-family: var(--itemunitretailfont);
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.Item-Retail {
+  font-style: italic;
+  font-family: var(--itemunitretailfont);
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.Our-Price {
+  font-weight: 500;
+  font-family: var(--ourpricefont);
+  color: var(--ourpricecolor);
+  font-size: 20px;
+  margin-bottom: -3px;
+}
+
+.Item {
+  align-items: end;
+  margin-bottom: 0px;
+}
+
+.team-name-image {
+    text-align: justify;
+    width: [width of img];
+}
+
+.team-name-image img {
+    display: block;
+    margin: 0 auto;
+}
+
+.team {
+  display: flex;
+  flex-flow: wrap;
+}
+
+/* if viewed on an iPad */
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+  }
+
+  .Items-List {
+    margin-top: 20px;
+    display: grid;
+    grid-area: 1 / 1 / 4 / 4;
+    grid-columns: 1fr 1fr 1fr 1fr;
+    grid-rows: auto;
+    grid-template-areas: "Item Item Item Item";
+    grid-gap: 10px;
+  }
+
+  .Our-Price {
+    font-size: 14px;
+  }
+
+  .singleline {
+    width: 40vw;
+  }
+
+  .singleline > div {
+    margin-left: 55px;
+  }
+
+  .cartTotal {
+    grid-area: 5 / 1 / 5 / 2;
+  }
+
+  .Receipt {
+    grid-area: 1 / 4 / 3 / 4;
+    align-items: end;
+  }
+
+  .Donate {
+    grid-area: 3 / 4 / 6 / 4;
+    text-align: center;
+  }
+}
+
+/* if viewed on a small phone */
+@media screen and (min-width: 371px) and (max-width: 767px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 0.1fr);
+  }
+
+  .Virtual-Curbside-Donation {
+    grid-area: 1 / 1 / 1 / 4;
+    font-size: 40px;
+  }
+
+  .Description {
+    grid-area: 2 / 1 / 2 / 4;
+  }
+
+  .Items-List {
+    display: grid;
+    grid-area: 3 / 1 / 3 / 4;
+    grid-columns: 1fr 1fr;
+    grid-rows: auto;
+    grid-template-areas: "Item Item Item";
+  }
+
+  .Our-Price {
+    font-size: 14px;
+  }
+
+  .singleline {
+    grid-area: 3 / 1 / 3 / 1;
+    width: 100%;
+  }
+
+  .singleline > div {
+    margin-left: 15vw;
+  }
+
+  .cartTotal {
+    grid-area: 3 / 1 / 3 / 4;
+  }
+
+  .Receipt {
+    grid-area: 4 / 1 / 4 / 4;
+    padding-bottom: 20px;
+  }
+
+  .Donate {
+    grid-area: 5 / 1 / 5 / 4;
+    text-align: center;
+  }
+}
+
+/* if viewed on a small phone */
+@media screen and (max-width: 370px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 0.1fr);
+  }
+
+  .Items-List {
+    display: grid;
+    grid-area: 1 / 1 / 1 / 3;
+    /* grid-columns: 1fr 1fr;
+    grid-rows: auto; */
+    grid-template-areas: "Item Item";
+  }
+
+  .Our-Price {
+    font-size: 14px;
+  }
+
+  .singleline {
+    grid-area : 2 / 1 / 2 / 3;
+    width: 100%;
+  }
+
+  .singleline > div {
+    margin-left: 15vw;
+  }
+
+  .cartTotal {
+    grid-area: 2 / 1 / 2 / 3;
+  }
+
+  .Receipt {
+    grid-area: 2 / 1 / 2 / 3;
+  }
+
+  .Donate {
+    grid-area: 3 / 1 / 3 / 3;
+    text-align: center;
+  }
+}
