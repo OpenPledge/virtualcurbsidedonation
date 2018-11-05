@@ -154,6 +154,12 @@ html, body {
   flex-flow: wrap;
 }
 
+.thankyou {
+	font-size: 2.5em;
+	font-family: 'Herr Von Muellerhoff', cursive;
+	text-align: center;
+}
+
 /* if viewed on an iPad */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .grid-container {
@@ -274,5 +280,9 @@ html, body {
   .Donate {
     grid-area: 3 / 1 / 3 / 3;
     text-align: center;
+  }
+
+  .thankyou {
+    font-size: 1.5em;
   }
 }
