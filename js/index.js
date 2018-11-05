@@ -1,4 +1,3 @@
-let database = firebase.database();
 let donationTotal = 0;
 
 function updateCartList(){
@@ -31,7 +30,6 @@ function updateCartList(){
     cartTotal.innerHTML = `Total: $${donationTotal}`;
 
 }
-
 
 function removeFromCart(id){
     donationTotal -= itemList[id].ourPrice * itemList[id].quantity;
@@ -73,15 +71,7 @@ function updateDonateButton(){
     let combinedNames = document.getElementById('donateName');
     totalAmount.value = donationTotal;
     combinedNames.value = paypalDescription;
-
 }
-
-// Method for submitting item to db - this can be running item total once we have that generated in html
-function dbSubmit() {
-  database.ref().push(donationTotal);
-  console.log(donationTotal);
-}
-
 
 window.onload = function() {
     updateCartList();
