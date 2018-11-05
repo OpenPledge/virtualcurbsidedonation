@@ -9,20 +9,20 @@ function updateCartList(){
     let id = 0;
     for(let item of itemList){
         if(item.quantity === 1) {
-            cartItems += `<div>
+            cartItems += `<div id="quantity">
             <input id="quantity-${id}" onchange="updateQuantityFromTextBox(${id})" type="number" min="0" max="9" size="2" value="${item.quantity}" />
             </div>`;
-            cartItems += `<div>${item.unitsReceipt}</div>`;
-            cartItems += `<div>${item.nameReceipt}</div>`;
-            cartItems += `<div>$${item.quantity*item.ourPrice}</div>`
+            cartItems += `<div id="unit">${item.unitsReceipt}</div>`;
+            cartItems += `<div id="itemTitle">${item.nameReceipt}</div>`;
+            cartItems += `<div id="subtotal">$${item.quantity*item.ourPrice}</div>`
             cartItems += `<div><a onclick="removeFromCart(${id})"><i class="material-icons icon">close</i></a></div>`;
         } else if (item.quantity > 1) { //Add an s to the end of the units if >1
-            cartItems += `<div>
+            cartItems += `<div id="quantity">
             <input id="quantity-${id}" onchange="updateQuantityFromTextBox(${id})" type="number" min="0" max="9" size="2" value="${item.quantity}" />
             </div>`;
-            cartItems += `<div>${item.unitsReceipt}s</div>`;
-            cartItems += `<div>${item.nameReceipt}</div>`;
-            cartItems += `<div>$${item.quantity*item.ourPrice}</div>`
+            cartItems += `<div id="unit">${item.unitsReceipt}s</div>`;
+            cartItems += `<div id="itemTitle">${item.nameReceipt}</div>`;
+            cartItems += `<div id="subtotal">$${item.quantity*item.ourPrice}</div>`
             cartItems += `<div><a onclick="removeFromCart(${id})"><i class="material-icons icon">close</i></a></div>`;
         }
         id++;
@@ -73,13 +73,18 @@ function updateDonateButton(){
     let combinedNames = document.getElementById('donateName');
     totalAmount.value = donationTotal;
     combinedNames.value = paypalDescription;
-
 }
 
 // Method for submitting item to db - this can be running item total once we have that generated in html
 function dbSubmit() {
-  database.ref().push(donationTotal);
-  console.log(donationTotal);
+  let cartList = document.getElementById('cartItems');
+  console.log(cartList);
+  let subtotal = document.getElementById('subtotal').innerHTML;
+  let name = document.getElementById('itemTitle').innerHTML;
+  console.log(subtotal);
+  // database.ref().push(subtotal);
+  // database.ref().push(name);
+  console.log('success')
 }
 
 

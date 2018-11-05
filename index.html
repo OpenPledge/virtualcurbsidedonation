@@ -12,10 +12,7 @@
   <link href="css/style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-   <link href="https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff" rel="stylesheet">
-
-  <script type="text/javascript" src="js/itemList.js"></script>
-  <script type="text/javascript" src="js/index.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff" rel="stylesheet">
 
 </head>
   <body>
@@ -60,6 +57,8 @@
         <img alt="" width="1" height="1"
              src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
       </form>
+
+      <button onClick='dbSubmit()'>Finalize items</button>
 
       <hr />
 
@@ -120,5 +119,22 @@
           <a href ="mailto: curbside@stanthonysf.org">curbside@stanthonysf.org</a></div>
       </div>
     </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+  <script>
+    // Initializing Firebase
+    var config = {
+      apiKey: `{process.env.apiKey}`,
+      authDomain: "virtualcurbside-d2842.firebaseapp.com",
+      databaseURL: "https://virtualcurbside-d2842.firebaseio.com",
+      projectId: "virtualcurbside-d2842",
+      storageBucket: "virtualcurbside-d2842.appspot.com",
+      messagingSenderId: `{process.env.messagingSenderId}`
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script type="text/javascript" src="js/itemList.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+
   </body>
 </html>
