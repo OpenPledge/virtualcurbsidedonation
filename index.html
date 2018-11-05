@@ -19,7 +19,7 @@
 </head>
   <body>
     <div class="grid-container">
-      <div class="Receipt">
+      <div id="Receipt" class="Receipt">
         <div class="topimage"></div>
         <div id="cartItems" class="cartItems">
           <div class="singleline"></div>
@@ -105,7 +105,10 @@
     </div>
 
     <!-- Snackbar Text Area -->
-    <div id="snackbar">Item added to cart</div>
+    <div id="snackbar">
+      Item added! <br />
+      <a href="#Receipt" id="close">(click to view cart)</a>
+    </div>
 
     </div>
     <footer>

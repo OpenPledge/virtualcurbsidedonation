@@ -256,23 +256,14 @@ html, body {
 @media screen and (max-width: 370px) {
   .grid-container {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(5, 0.1fr);
-  }
-
-  .Virtual-Curbside-Donation {
-    grid-area: 1 / 1 / 1 / 3;
-    font-size: 35px;
-  }
-
-  .Description {
-    grid-area: 2 / 1 / 2 / 3;
+    grid-template-rows: repeat(3, 0.1fr);
   }
 
   .Items-List {
     display: grid;
-    grid-area: 3 / 1 / 3 / 3;
-    grid-columns: 1fr 1fr;
-    grid-rows: auto;
+    grid-area: 1 / 1 / 1 / 3;
+    /* grid-columns: 1fr 1fr;
+    grid-rows: auto; */
     grid-template-areas: "Item Item";
   }
 
@@ -281,24 +272,24 @@ html, body {
   }
 
   .singleline {
-    grid-area : 3 / 1 / 2 / 3;
+    grid-area : 2 / 1 / 2 / 3;
     width: 100%;
   }
 
   .singleline > div {
     margin-left: 15vw;
   }
-  
+
   .cartTotal {
-    grid-area: 3 / 1 / 3 / 3;
+    grid-area: 2 / 1 / 2 / 3;
   }
 
   .Receipt {
-    grid-area: 4 / 1 / 4 / 3;
+    grid-area: 2 / 1 / 2 / 3;
   }
 
   .Donate {
-    grid-area: 5 / 1 / 5 / 3;
+    grid-area: 3 / 1 / 3 / 3;
     text-align: center;
   }
 }
