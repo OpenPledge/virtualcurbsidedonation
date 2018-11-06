@@ -112,7 +112,7 @@ var itemList = [
    {
     "quantity": 0,
     "image": "img/peanutbutter.jpeg",
-    "itemName": "Peanut Butter",
+    "itemName": "Peanut&nbsp;Butter",
     "servingUnits": "64oz jar",
     "ourPrice": 15,
     "retailPrice": 21,
