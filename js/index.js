@@ -1,5 +1,19 @@
 let database = firebase.database();
 let donationTotal = 0;
+let donationSummary = {
+    "Turkey": 0,
+    "Ham": 0,
+    "Chicken": 0,
+    "Rice": 0,
+    "Beans": 0,
+    "Milk": 0,
+    "Onions": 0,
+    "Potatoes": 0,
+    "Veggies": 0,
+    "Corn": 0,
+    "Tomatoes": 0,
+    "PB": 0,
+  };
 
 function updateCartList(){
     let cartList = document.getElementById('cartItems');
@@ -16,6 +30,7 @@ function updateCartList(){
             cartItems += `<div id="itemTitle">${item.nameReceipt}</div>`;
             cartItems += `<div id="subtotal">$${item.quantity*item.ourPrice}</div>`
             cartItems += `<div><a onclick="removeFromCart(${id})"><i class="material-icons icon">close</i></a></div>`;
+            donationSummary[item.nameReceipt] = item.quantity;
         } else if (item.quantity > 1) { //Add an s to the end of the units if >1
             cartItems += `<div id="quantity">
             <input id="quantity-${id}" onchange="updateQuantityFromTextBox(${id})" type="number" min="0" max="9" size="2" value="${item.quantity}" />
@@ -24,9 +39,11 @@ function updateCartList(){
             cartItems += `<div id="itemTitle">${item.nameReceipt}</div>`;
             cartItems += `<div id="subtotal">$${item.quantity*item.ourPrice}</div>`
             cartItems += `<div><a onclick="removeFromCart(${id})"><i class="material-icons icon">close</i></a></div>`;
+            donationSummary[item.nameReceipt] = item.quantity;
         }
         id++;
     }
+    console.log(donationSummary);
     cartList.innerHTML = `${emptySpace} <div class="singleline">${cartItems}</div>`;
     cartTotal.innerHTML = `Total: $${donationTotal}`;
 
@@ -79,12 +96,12 @@ function updateDonateButton(){
 function dbSubmit() {
   let cartList = document.getElementById('cartItems');
   console.log(cartList);
-  let subtotal = document.getElementById('subtotal').innerHTML;
-  let name = document.getElementById('itemTitle').innerHTML;
-  console.log(subtotal);
-  // database.ref().push(subtotal);
-  // database.ref().push(name);
-  console.log('success')
+  // let subtotal = document.getElementById('subtotal').innerHTML;
+  // let name = document.getElementById('itemTitle').innerHTML;
+  // console.log(subtotal);
+  // // database.ref().push(subtotal);
+  // // database.ref().push(name);
+  // console.log('success')
 }
 
 
@@ -104,9 +121,9 @@ function loadItems(){
     groceryItems += `<div class="container"><img class="Item-Img" src ='${item.image}'></div>`;
     groceryItems += `<div class="Item-Name">${item.itemName}</div>`;
     groceryItems += `<div class="Item-Units">${item.servingUnits}</div>`;
-    groceryItems += `<div class="Our-Price"><font color ="black">OUR PRICE:</font> $${item.ourPrice}</div>`;
+    groceryItems += `<div class="Our-Price"><font color ="black">OUR PRICE</font>: $${item.ourPrice}</div>`;
     groceryItems += `<div class="Item-Retail">retail: $${item.retailPrice}</div>`;
-    groceryItems += `<a href="javascript:void(0);" onclick="addToCart(${id});myFunction();" class="addbutton">add to cart</a>`;
+    groceryItems += `<a onclick="addToCart(${id});myFunction();" class="addbutton">add to cart</a>`;
     groceryItems += `</div>`;
     id++
   }
