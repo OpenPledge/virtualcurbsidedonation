@@ -9,7 +9,7 @@
   --retailfont: arial;
   --ourpricefont: Oswald;
   --ourpricecolor: #12b4cf;
-  --thankyoufont: 'Herr Von Muellerhoff', cursive;
+  --thankyoufont: sans-serif;
 }
 
 html, body {
@@ -156,9 +156,10 @@ html, body {
 }
 
 .thankyou {
-	font-size: 2.0em;
-	font-family: 'Herr Von Muellerhoff', cursive;
+	font-size: 1.0em;
+	font-style: italic;
 	text-align: center;
+  font-family: var(--itemunitretailfont);
 }
 
 #close {
