@@ -13,6 +13,7 @@
 	padding:6px 14px;
 	text-decoration:none;
 	align-items: end;
+	cursor: pointer;
 
 }
 .addbutton:hover {
@@ -121,7 +122,6 @@
 	opacity: .6;
 }
 .cartItems {
-	top: 20px;
 	font-family: Oswald, Arial;
 	font-size: 16px;
 	text-decoration:none;
