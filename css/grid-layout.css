@@ -131,7 +131,7 @@ html, body {
   font-weight: 500;
   font-family: var(--ourpricefont);
   color: var(--ourpricecolor);
-  font-size: 20px;
+  font-size: 1.5em;
   margin-bottom: -3px;
 }
 
@@ -199,7 +199,7 @@ html, body {
   }
 
   .Our-Price {
-    font-size: 14px;
+    font-size: .8em;
   }
 
   .singleline {
@@ -225,7 +225,7 @@ html, body {
   }
 
   .thankyou {
-    font-size: 1em;
+    font-size: .7em;
   }
 }
 
@@ -246,7 +246,7 @@ html, body {
     font-size: 1.1em;
   }
   .Our-Price {
-    font-size: 14px;
+    font-size: 1.0em;
   }
 
   .Item-Units {
@@ -282,7 +282,7 @@ html, body {
   }
 
   .thankyou {
-    font-size: 1.7em;
+    font-size: 1em;
   }
 }
 
@@ -299,8 +299,20 @@ html, body {
     grid-template-areas: "Item Item";
   }
 
+  .Item-Name {
+    font-size: 1.1em;
+  }
   .Our-Price {
-    font-size: 14px;
+    font-size: 1.0em;
+  }
+
+  .Item-Units {
+    font-size: .8em;
+  }
+
+
+  .Item-Retail {
+    font-size: .8em;
   }
 
   .singleline {
@@ -326,6 +338,6 @@ html, body {
   }
 
   .thankyou {
-    font-size: 1.5em;
+    font-size: 1em;
   }
 }
