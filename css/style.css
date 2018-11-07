@@ -204,6 +204,11 @@ hr {
 		font-size: 19px;
 }
 
+.valign-center {
+	display: inline-flex;
+	align-items: center;
+}
+
 #snackbar.show {
 		visibility: visible;
 		-webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
