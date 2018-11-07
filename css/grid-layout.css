@@ -9,7 +9,7 @@
   --retailfont: arial;
   --ourpricefont: Oswald;
   --ourpricecolor: #12b4cf;
-  --thankyoufont: 'Herr Von Muellerhoff', cursive;
+  --thankyoufont: sans-serif;
 }
 
 html, body {
@@ -101,7 +101,7 @@ html, body {
 
 .Item-Name {
   font-weight: 600;
-  font-size: 24px;
+  font-size: 1.5em;
   font-family: var(--itemtitlefont);
   color: #12b4cf;
 }
@@ -116,14 +116,14 @@ html, body {
 .Item-Units {
   font-style: italic;
   font-family: var(--itemunitretailfont);
-  font-size: 14px;
+  font-size: 1em;
   margin-bottom: 12px;
 }
 
 .Item-Retail {
   font-style: italic;
   font-family: var(--itemunitretailfont);
-  font-size: 14px;
+  font-size: 1em;
   margin-bottom: 5px;
 }
 
@@ -131,7 +131,7 @@ html, body {
   font-weight: 500;
   font-family: var(--ourpricefont);
   color: var(--ourpricecolor);
-  font-size: 20px;
+  font-size: 1.5em;
   margin-bottom: -3px;
 }
 
@@ -156,9 +156,10 @@ html, body {
 }
 
 .thankyou {
-	font-size: 2.0em;
-	font-family: 'Herr Von Muellerhoff', cursive;
+	font-size: 1.0em;
+	font-style: italic;
 	text-align: center;
+  font-family: var(--itemunitretailfont);
 }
 
 #close {
@@ -184,8 +185,21 @@ html, body {
     grid-gap: 10px;
   }
 
+  .Item-Name {
+    font-size: .8em;
+  }
+
+
+  .Item-Units {
+    font-size: .7em;
+  }
+
+  .Item-Retail {
+    font-size: .7em;
+  }
+
   .Our-Price {
-    font-size: 14px;
+    font-size: .8em;
   }
 
   .singleline {
@@ -211,7 +225,7 @@ html, body {
   }
 
   .thankyou {
-    font-size: 1.5em;
+    font-size: .7em;
   }
 }
 
@@ -228,8 +242,31 @@ html, body {
     grid-template-areas: "Item Item Item";
   }
 
+  .Item-Name {
+    font-size: 1.1em;
+  }
   .Our-Price {
-    font-size: 14px;
+    font-size: 1.0em;
+  }
+
+  .Item-Units {
+    font-size: .8em;
+  }
+
+
+  .Item-Retail {
+    font-size: .8em;
+
+  }
+
+  .Item-Units {
+    font-size: .8em;
+  }
+
+
+  .Item-Retail {
+    font-size: .8em;
+
   }
 
   .singleline {
@@ -256,7 +293,9 @@ html, body {
   }
 
   .thankyou {
-    font-size: 1.7em;
+
+    font-size: .8em;
+
   }
 }
 
@@ -273,8 +312,20 @@ html, body {
     grid-template-areas: "Item Item";
   }
 
+  .Item-Name {
+    font-size: 1.1em;
+  }
   .Our-Price {
-    font-size: 14px;
+    font-size: 1.0em;
+  }
+
+  .Item-Units {
+    font-size: .8em;
+  }
+
+
+  .Item-Retail {
+    font-size: .8em;
   }
 
   .singleline {
@@ -300,6 +351,7 @@ html, body {
   }
 
   .thankyou {
-    font-size: 1.5em;
+    font-size: .75em;
+
   }
 }
