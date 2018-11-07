@@ -206,7 +206,8 @@ hr {
 
 .valign-center {
 	display: inline-flex;
-	align-items: center;
+	/*align-items: center;*/
+	vertical-align: middle;
 }
 
 #snackbar.show {
