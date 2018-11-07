@@ -14,6 +14,7 @@ var itemList = [
     "image": "img/ham.png",
     "itemName": "Ham",
     "servingUnits": "case of (6)",
+
     "ourPrice": 60,
     "retailPrice": 85,
     "unitsReceipt": "case",
