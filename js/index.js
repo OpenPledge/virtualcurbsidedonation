@@ -1,4 +1,22 @@
+const firestore = firebase.firestore();
 let donationTotal = 0;
+const settings = {timestampsInSnapshots: true};
+firestore.settings(settings);
+
+let donationSummary = {
+    "Turkey": 0,
+    "Ham": 0,
+    "Chicken": 0,
+    "Rice": 0,
+    "Beans": 0,
+    "Milk": 0,
+    "Onions": 0,
+    "Potatoes": 0,
+    "Veggies": 0,
+    "Corn": 0,
+    "Tomatoes": 0,
+    "PB": 0,
+  };
 
 function updateCartList(){
     let cartList = document.getElementById('cartItems');
@@ -8,32 +26,34 @@ function updateCartList(){
     let id = 0;
     for(let item of itemList){
         if(item.quantity === 1) {
-            cartItems += `<div>
+            cartItems += `<div id="quantity">
             <input id="quantity-${id}" onchange="updateQuantityFromTextBox(${id})" type="number" min="0" max="9" size="2" value="${item.quantity}" />
             </div>`;
-            cartItems += `<div>${item.unitsReceipt}</div>`;
-            cartItems += `<div>${item.nameReceipt}</div>`;
-            cartItems += `<div>$${item.quantity*item.ourPrice}</div>`
+            cartItems += `<div id="unit">${item.unitsReceipt}</div>`;
+            cartItems += `<div id="itemTitle">${item.nameReceipt}</div>`;
+            cartItems += `<div id="subtotal">$${item.quantity*item.ourPrice}</div>`
             cartItems += `<div><a onclick="removeFromCart(${id})"><i class="material-icons icon">close</i></a></div>`;
+            donationSummary[item.nameReceipt] = item.quantity;
         } else if (item.quantity > 1) { //Add an s to the end of the units if >1
-            cartItems += `<div>
+            cartItems += `<div id="quantity">
             <input id="quantity-${id}" onchange="updateQuantityFromTextBox(${id})" type="number" min="0" max="9" size="2" value="${item.quantity}" />
             </div>`;
-            cartItems += `<div>${item.unitsReceipt}s</div>`;
-            cartItems += `<div>${item.nameReceipt}</div>`;
-            cartItems += `<div>$${item.quantity*item.ourPrice}</div>`
+            cartItems += `<div id="unit">${item.unitsReceipt}s</div>`;
+            cartItems += `<div id="itemTitle">${item.nameReceipt}</div>`;
+            cartItems += `<div id="subtotal">$${item.quantity*item.ourPrice}</div>`
             cartItems += `<div><a onclick="removeFromCart(${id})"><i class="material-icons icon">close</i></a></div>`;
+            donationSummary[item.nameReceipt] = item.quantity;
         }
         id++;
     }
     cartList.innerHTML = `${emptySpace} <div class="singleline">${cartItems}</div>`;
     cartTotal.innerHTML = `Total: $${donationTotal}`;
-
 }
 
 function removeFromCart(id){
     donationTotal -= itemList[id].ourPrice * itemList[id].quantity;
     itemList[id].quantity = 0;
+    donationSummary[itemList[id].nameReceipt] = itemList[id].quantity;
     updateCartList();
 }
 
@@ -44,9 +64,11 @@ function updateQuantityFromTextBox(id){
     donationTotal -= item.quantity * item.ourPrice;
     itemList[id].quantity = newQuantity;
     donationTotal += item.quantity * item.ourPrice;
+    donationSummary[itemList[id].nameReceipt] = newQuantity;
     updateCartList();
     updateDonateButton();
 }
+
 function addToCart(id){
     // Type casting is necessary here due to javascript quirks! Without, it would read quantity as a string, and if you added 1 to 10 it would become 101!
     itemList[id].quantity = parseInt(itemList[id].quantity) + 1;
@@ -73,6 +95,29 @@ function updateDonateButton(){
     combinedNames.value = paypalDescription;
 }
 
+// Method for submitting item to db - this is a running item total
+function dbSubmit() {
+  for (let item in donationSummary) {
+    if (donationSummary[item] > 0) {
+      let itemDoc = firestore.collection('donationSummary').doc(item);
+      let getItemDoc = itemDoc.get()
+      .then(doc => {
+        if (!doc.exists) {
+          console.log('No such document!');
+        } else {
+          let currentAmount = doc.data();
+          let newAmount = currentAmount['quantity'] + donationSummary[item];
+          let donationItems = firestore.collection("donationSummary").doc(item).update({'quantity': newAmount});
+        }
+      })
+      .catch(err => {
+        console.log('Error getting document', err);
+      });
+    }
+  }
+}
+
+
 window.onload = function() {
     updateCartList();
     loadItems();
@@ -89,9 +134,9 @@ function loadItems(){
     groceryItems += `<div class="container"><img class="Item-Img" src ='${item.image}'></div>`;
     groceryItems += `<div class="Item-Name">${item.itemName}</div>`;
     groceryItems += `<div class="Item-Units">${item.servingUnits}</div>`;
-    groceryItems += `<div class="Our-Price"><font color ="black">OUR PRICE:</font> $${item.ourPrice}</div>`;
+    groceryItems += `<div class="Our-Price"><font color ="black">OUR PRICE</font>: $${item.ourPrice}</div>`;
     groceryItems += `<div class="Item-Retail">retail: $${item.retailPrice}</div>`;
-    groceryItems += `<a href="javascript:void(0);" onclick="addToCart(${id});myFunction();" class="addbutton">add to cart</a>`;
+    groceryItems += `<a onclick="addToCart(${id});myFunction();" class="addbutton">add to cart</a>`;
     groceryItems += `</div>`;
     id++
   }
