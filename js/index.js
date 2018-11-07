@@ -43,16 +43,15 @@ function updateCartList(){
         }
         id++;
     }
-    console.log(donationSummary);
     cartList.innerHTML = `${emptySpace} <div class="singleline">${cartItems}</div>`;
     cartTotal.innerHTML = `Total: $${donationTotal}`;
-
 }
 
 
 function removeFromCart(id){
     donationTotal -= itemList[id].ourPrice * itemList[id].quantity;
     itemList[id].quantity = 0;
+    donationSummary[itemList[id].nameReceipt] = itemList[id].quantity;
     updateCartList();
 }
 
@@ -63,9 +62,11 @@ function updateQuantityFromTextBox(id){
     donationTotal -= item.quantity * item.ourPrice;
     itemList[id].quantity = newQuantity;
     donationTotal += item.quantity * item.ourPrice;
+    donationSummary[itemList[id].nameReceipt] = newQuantity;
     updateCartList();
     updateDonateButton();
 }
+
 function addToCart(id){
     // Type casting is necessary here due to javascript quirks! Without, it would read quantity as a string, and if you added 1 to 10 it would become 101!
     itemList[id].quantity = parseInt(itemList[id].quantity) + 1;
@@ -94,14 +95,8 @@ function updateDonateButton(){
 
 // Method for submitting item to db - this can be running item total once we have that generated in html
 function dbSubmit() {
-  let cartList = document.getElementById('cartItems');
-  console.log(cartList);
-  // let subtotal = document.getElementById('subtotal').innerHTML;
-  // let name = document.getElementById('itemTitle').innerHTML;
-  // console.log(subtotal);
-  // // database.ref().push(subtotal);
-  // // database.ref().push(name);
-  // console.log('success')
+  let donationItems = db.collection("donationSummary").doc("Ham").update({quantity: donationSummary["Ham"]});
+  console.log("success!");
 }
 
 
