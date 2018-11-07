@@ -123,7 +123,7 @@ html, body {
 .Item-Retail {
   font-style: italic;
   font-family: var(--itemunitretailfont);
-  font-size: 14px;
+  font-size: 1em;
   margin-bottom: 5px;
 }
 
@@ -185,6 +185,19 @@ html, body {
     grid-gap: 10px;
   }
 
+  .Item-Name {
+    font-size: .8em;
+  }
+
+
+  .Item-Units {
+    font-size: .7em;
+  }
+
+  .Item-Retail {
+    font-size: .7em;
+  }
+
   .Our-Price {
     font-size: 14px;
   }
@@ -229,8 +242,20 @@ html, body {
     grid-template-areas: "Item Item Item";
   }
 
+  .Item-Name {
+    font-size: 1.1em;
+  }
   .Our-Price {
     font-size: 14px;
+  }
+
+  .Item-Units {
+    font-size: .8em;
+  }
+
+
+  .Item-Retail {
+    font-size: .8em;
   }
 
   .singleline {
