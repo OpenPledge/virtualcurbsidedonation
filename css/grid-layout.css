@@ -9,7 +9,7 @@
   --retailfont: arial;
   --ourpricefont: Oswald;
   --ourpricecolor: #12b4cf;
-  --thankyoufont: 'Herr Von Muellerhoff', cursive;
+  --thankyoufont: sans-serif;
 }
 
 html, body {
@@ -101,7 +101,7 @@ html, body {
 
 .Item-Name {
   font-weight: 600;
-  font-size: 24px;
+  font-size: 1.5em;
   font-family: var(--itemtitlefont);
   color: #12b4cf;
 }
@@ -116,7 +116,7 @@ html, body {
 .Item-Units {
   font-style: italic;
   font-family: var(--itemunitretailfont);
-  font-size: 14px;
+  font-size: 1em;
   margin-bottom: 12px;
 }
 
@@ -156,9 +156,10 @@ html, body {
 }
 
 .thankyou {
-	font-size: 2.0em;
-	font-family: 'Herr Von Muellerhoff', cursive;
+	font-size: 1.0em;
+	font-style: italic;
 	text-align: center;
+  font-family: var(--itemunitretailfont);
 }
 
 #close {
@@ -211,7 +212,7 @@ html, body {
   }
 
   .thankyou {
-    font-size: 1.5em;
+    font-size: 1em;
   }
 }
 
