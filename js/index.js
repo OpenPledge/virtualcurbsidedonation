@@ -53,6 +53,7 @@ function updateCartList(){
 function removeFromCart(id){
     donationTotal -= itemList[id].ourPrice * itemList[id].quantity;
     itemList[id].quantity = 0;
+    donationSummary[itemList[id].nameReceipt] = itemList[id].quantity;
     updateCartList();
 }
 
@@ -63,6 +64,7 @@ function updateQuantityFromTextBox(id){
     donationTotal -= item.quantity * item.ourPrice;
     itemList[id].quantity = newQuantity;
     donationTotal += item.quantity * item.ourPrice;
+    donationSummary[itemList[id].nameReceipt] = newQuantity;
     updateCartList();
     updateDonateButton();
 }
