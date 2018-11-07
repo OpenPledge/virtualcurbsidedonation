@@ -1,5 +1,14 @@
-let database = firebase.database();
+const firestore = firebase.firestore();
 let donationTotal = 0;
+
+const settings = {timestampsInSnapshots: true};
+firestore.settings(settings);
+// // Old:
+// const date = snapshot.get('created_at');
+// // New:
+// const timestamp = snapshot.get('created_at');
+// const date = timestamp.toDate();
+
 let donationSummary = {
     "Turkey": 0,
     "Ham": 0,
@@ -95,8 +104,21 @@ function updateDonateButton(){
 
 // Method for submitting item to db - this can be running item total once we have that generated in html
 function dbSubmit() {
-  let donationItems = db.collection("donationSummary").doc("Ham").update({quantity: donationSummary["Ham"]});
-  console.log("success!");
+  // let testInsert = firestore.collection("donationSummary").doc("Chicken").set({'quantity': 0});
+  let hamDoc = firestore.collection('donationSummary').doc('Ham');
+  let getHamDoc = hamDoc.get()
+  .then(doc => {
+    if (!doc.exists) {
+      console.log('No such document!');
+    } else {
+      let currentAmount = doc.data();
+      let newAmount = currentAmount['quantity'] + donationSummary["Ham"];
+      let donationItems = firestore.collection("donationSummary").doc("Ham").update({'quantity': newAmount});
+    }
+  })
+  .catch(err => {
+    console.log('Error getting document', err);
+  });
 }
 
 
