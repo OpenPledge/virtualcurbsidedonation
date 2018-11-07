@@ -95,7 +95,7 @@ function updateDonateButton(){
 
 // Method for submitting item to db - this can be running item total once we have that generated in html
 function dbSubmit() {
-  db.collection("donationSummary").doc("Ham").set({quantity: donationSummary["Ham"]});
+  let donationItems = db.collection("donationSummary").doc("Ham").update({quantity: donationSummary["Ham"]});
   console.log("success!");
 }
 
