@@ -256,6 +256,7 @@ html, body {
 
   .Item-Retail {
     font-size: .8em;
+
   }
 
   .Item-Units {
@@ -265,6 +266,7 @@ html, body {
 
   .Item-Retail {
     font-size: .8em;
+
   }
 
   .singleline {
@@ -291,7 +293,9 @@ html, body {
   }
 
   .thankyou {
-    font-size: 1em;
+
+    font-size: .8em;
+
   }
 }
 
@@ -347,6 +351,7 @@ html, body {
   }
 
   .thankyou {
-    font-size: 1em;
+    font-size: .75em;
+
   }
 }
