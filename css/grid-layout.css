@@ -256,7 +256,7 @@ html, body {
 
   .Item-Retail {
     font-size: .8em;
-  }
+
 
   .singleline {
     grid-area: 2 / 1 / 2 / 4;
@@ -339,5 +339,6 @@ html, body {
 
   .thankyou {
     font-size: .75em;
+
   }
 }

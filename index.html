@@ -13,9 +13,6 @@
   <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-  <script type="text/javascript" src="js/itemList.js"></script>
-  <script type="text/javascript" src="js/index.js"></script>
-
 </head>
   <body>
     <div class="grid-container">
@@ -55,7 +52,7 @@
         <input type="hidden" id="donateTotal" name="amount" value="0.00">
         <!-- Display the payment button: -->
         <input type="submit" name="submit" value="DONATE NOW  "
-               alt="Donate" class="donatebutton2">
+               alt="Donate" class="donatebutton2" onClick="dbSubmit()">
         <img alt="" width="1" height="1"
              src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
       </form>
@@ -113,11 +110,29 @@
     </div>
     <footer>
       <div class ="email-support">
+
         <div>questions? please contact
           <span class="valign-center"><i class="material-icons">email</i></span>
           <!-- <i class="material-icons">alternate_email</i> -->
           <a href ="mailto: curbside@stanthonysf.org">curbside@stanthonysf.org</a></div>
       </div>
     </footer>
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+    <script>
+    // Initializing Firebase
+    var config = {
+      apiKey: `{process.env.apiKey}`,
+      authDomain: "virtualcurbside-d2842.firebaseapp.com",
+      databaseURL: "https://virtualcurbside-d2842.firebaseio.com",
+      projectId: "virtualcurbside-d2842",
+      storageBucket: "virtualcurbside-d2842.appspot.com",
+      messagingSenderId: `{process.env.messagingSenderId}`
+    };
+    firebase.initializeApp(config);
+    </script>
+    <script type="text/javascript" src="js/itemList.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
   </body>
 </html>
