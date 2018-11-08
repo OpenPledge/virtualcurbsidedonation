@@ -256,6 +256,7 @@ html, body {
     margin-left: 10%;
     font-size: 2em;
   }
+
 /* if viewed on a small phone */
 @media screen and (min-width: 371px) and (max-width: 767px) {
   .grid-container {
@@ -391,4 +392,8 @@ html, body {
   .donatebutton2 {
     font-size: 2em;
   }
+}
+
+.responsivebreak {
+  display: block;
 }
