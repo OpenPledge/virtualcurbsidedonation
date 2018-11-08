@@ -90,6 +90,28 @@ html, body {
   margin-top: -100px;
 }
 
+.donatebutton2 {
+	color: white !important;
+	background-color: #6E645C;
+	padding: 15px;
+	width: 60%;
+	margin-left: 20%;
+	margin-bottom: 10px;
+	border: none;
+	font-size: 2.5em;
+	font-weight: 400;
+	font-family: 'Oswald';
+	line-height: 1;
+	text-align: center;
+	display: block;
+	margin-top: 10px;
+}
+
+.donatebutton2:hover {
+	background-color: #D77450;
+}
+
+
 .Items-List {
   display: grid;
   grid-area: 3 / 1 / 5 / 6;
@@ -229,10 +251,12 @@ html, body {
     font-size: 1em;
   }
 }
+  .donatebutton2 {
+    width: 80%;
+    margin-left: 10%;
+    font-size: 2em;
+  }
 
-.responsivebreak {
-  display: inline;
-}
 /* if viewed on a small phone */
 @media screen and (min-width: 371px) and (max-width: 767px) {
   .grid-container {
@@ -296,12 +320,16 @@ html, body {
     text-align: center;
   }
 
+  .donatebutton2 {
+    font-size: 2em;
+  }
   .thankyou {
 
     font-size: 1.1em;
 
   }
 }
+
 
 /* if viewed on a small phone */
 @media screen and (max-width: 370px) {
@@ -356,7 +384,11 @@ html, body {
 
   .thankyou {
     font-size: 1em;
+  }
 
+
+  .donatebutton2 {
+    font-size: 2em;
   }
 }
 
