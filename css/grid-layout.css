@@ -230,6 +230,9 @@ html, body {
   }
 }
 
+.responsivebreak {
+  display: inline;
+}
 /* if viewed on a small phone */
 @media screen and (min-width: 371px) and (max-width: 767px) {
   .grid-container {
@@ -300,7 +303,6 @@ html, body {
   }
 }
 
-
 /* if viewed on a small phone */
 @media screen and (max-width: 370px) {
   .grid-container {
@@ -356,4 +358,8 @@ html, body {
     font-size: 1em;
 
   }
+}
+
+.responsivebreak {
+  display: block;
 }
