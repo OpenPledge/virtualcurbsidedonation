@@ -171,10 +171,6 @@ html, body {
 }
 
 
-.responsivebreak {
-  display: inline;
-}
-
 /* if viewed on an iPad */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .grid-container {
@@ -234,9 +230,6 @@ html, body {
   }
 }
 
-.responsivebreak {
-  display: inline;
-}
 /* if viewed on a small phone */
 @media screen and (min-width: 371px) and (max-width: 767px) {
   .grid-container {
@@ -307,9 +300,6 @@ html, body {
   }
 }
 
-.responsivebreak {
-  display: block;
-}
 
 /* if viewed on a small phone */
 @media screen and (max-width: 370px) {
@@ -366,8 +356,4 @@ html, body {
     font-size: 1em;
 
   }
-}
-
-.responsivebreak {
-  display: block;
 }
