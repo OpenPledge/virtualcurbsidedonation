@@ -187,6 +187,10 @@ hr {
 	color: white;
 }
 
+.qlength {
+	width: 2.5em;
+}
+
 #snackbar {
 		visibility: hidden;
 		min-width: 10%;

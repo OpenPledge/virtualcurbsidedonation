@@ -27,7 +27,7 @@ function updateCartList(){
     for(let item of itemList){
         if(item.quantity === 1) {
             cartItems += `<div id="quantity">
-            <input id="quantity-${id}" onchange="updateQuantityFromTextBox(${id})" type="number" min="0" max="9" size="2" value="${item.quantity}" />
+            <input id="quantity-${id}" class="qlength" onchange="updateQuantityFromTextBox(${id})" type="number" min="0" max="9" size="2" value="${item.quantity}" />
             </div>`;
             cartItems += `<div id="unit">${item.unitsReceipt}</div>`;
             cartItems += `<div id="itemTitle">${item.nameReceipt}</div>`;
@@ -36,7 +36,7 @@ function updateCartList(){
             donationSummary[item.nameReceipt] = item.quantity;
         } else if (item.quantity > 1) { //Add an s to the end of the units if >1
             cartItems += `<div id="quantity">
-            <input id="quantity-${id}" onchange="updateQuantityFromTextBox(${id})" type="number" min="0" max="9" size="2" value="${item.quantity}" />
+            <input id="quantity-${id}" class="qlength" onchange="updateQuantityFromTextBox(${id})" type="number" min="0" max="9" size="2" value="${item.quantity}" />
             </div>`;
             cartItems += `<div id="unit">${item.unitsReceipt}s</div>`;
             cartItems += `<div id="itemTitle">${item.nameReceipt}</div>`;
