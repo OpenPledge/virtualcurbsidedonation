@@ -299,6 +299,7 @@ html, body {
   .singleline {
     grid-area: 2 / 1 / 2 / 4;
     width: 100%;
+    grid-template-columns: 16% 14% 22% 10% 4%;
   }
 
   .singleline > div {
@@ -362,6 +363,7 @@ html, body {
   .singleline {
     grid-area : 2 / 1 / 2 / 3;
     width: 100%;
+    grid-template-columns: 16% 14% 22% 10% 4%;
   }
 
   .singleline > div {
