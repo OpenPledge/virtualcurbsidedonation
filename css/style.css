@@ -25,6 +25,10 @@
 	top:1px;
 }
 
+html, body {
+    touch-action: auto;
+}
+
 .removebutton {
 	-moz-box-shadow:inset 0px 0px 14px -3px #f2fadc;
 	-webkit-box-shadow:inset 0px 0px 14px -3px #f2fadc;
