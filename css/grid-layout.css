@@ -109,7 +109,7 @@ html, body {
   cursor: pointer;
 }
 
-.donatebutton2:hover {
+html.nontouch .donatebutton2:hover {
 	background-color: #D77450;
 }
 
