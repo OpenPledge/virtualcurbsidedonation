@@ -88,6 +88,7 @@ html, body {
   background-color: var(--sidepanel-background);
   text-align: center;
   margin-top: -100px;
+
 }
 
 .donatebutton2 {
@@ -105,6 +106,7 @@ html, body {
 	text-align: center;
 	display: block;
 	margin-top: 10px;
+  cursor: pointer;
 }
 
 .donatebutton2:hover {
