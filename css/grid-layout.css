@@ -1,5 +1,5 @@
 :root {
-  /* Super Mario World Inspired */
+
   --titlefont: 'Oswald', sans-serif;
   --subheaderfont: Georgia;
   --teamheaderfont: arial;
@@ -9,7 +9,7 @@
   --retailfont: arial;
   --ourpricefont: Oswald;
   --ourpricecolor: #12b4cf;
-  --thankyoufont: 'Herr Von Muellerhoff', cursive;
+  --thankyoufont: sans-serif;
 }
 
 html, body {
@@ -88,7 +88,31 @@ html, body {
   background-color: var(--sidepanel-background);
   text-align: center;
   margin-top: -100px;
+
 }
+
+.donatebutton2 {
+	color: white !important;
+	background-color: #6E645C;
+	padding: 15px;
+	width: 60%;
+	margin-left: 20%;
+	margin-bottom: 10px;
+	border: none;
+	font-size: 2.5em;
+	font-weight: 400;
+	font-family: 'Oswald';
+	line-height: 1;
+	text-align: center;
+	display: block;
+	margin-top: 10px;
+  cursor: pointer;
+}
+
+html.nontouch .donatebutton2:hover {
+	background-color: #D77450;
+}
+
 
 .Items-List {
   display: grid;
@@ -101,7 +125,7 @@ html, body {
 
 .Item-Name {
   font-weight: 600;
-  font-size: 24px;
+  font-size: 1.5em;
   font-family: var(--itemtitlefont);
   color: #12b4cf;
 }
@@ -116,14 +140,14 @@ html, body {
 .Item-Units {
   font-style: italic;
   font-family: var(--itemunitretailfont);
-  font-size: 14px;
+  font-size: 1em;
   margin-bottom: 12px;
 }
 
 .Item-Retail {
   font-style: italic;
   font-family: var(--itemunitretailfont);
-  font-size: 14px;
+  font-size: 1em;
   margin-bottom: 5px;
 }
 
@@ -131,7 +155,7 @@ html, body {
   font-weight: 500;
   font-family: var(--ourpricefont);
   color: var(--ourpricecolor);
-  font-size: 20px;
+  font-size: 1.5em;
   margin-bottom: -3px;
 }
 
@@ -156,9 +180,10 @@ html, body {
 }
 
 .thankyou {
-	font-size: 2.0em;
-	font-family: 'Herr Von Muellerhoff', cursive;
+	font-size: 1.0em;
+	font-style: italic;
 	text-align: center;
+  font-family: var(--itemunitretailfont);
 }
 
 #close {
@@ -168,6 +193,7 @@ html, body {
 #close:hover {
   font: blue;
 }
+
 
 /* if viewed on an iPad */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -184,8 +210,21 @@ html, body {
     grid-gap: 10px;
   }
 
+  .Item-Name {
+    font-size: .8em;
+  }
+
+
+  .Item-Units {
+    font-size: .7em;
+  }
+
+  .Item-Retail {
+    font-size: .7em;
+  }
+
   .Our-Price {
-    font-size: 14px;
+    font-size: .8em;
   }
 
   .singleline {
@@ -211,9 +250,14 @@ html, body {
   }
 
   .thankyou {
-    font-size: 1.5em;
+    font-size: .85em;
   }
 }
+  .donatebutton2 {
+    width: 80%;
+    margin-left: 10%;
+    font-size: 2em;
+  }
 
 /* if viewed on a small phone */
 @media screen and (min-width: 371px) and (max-width: 767px) {
@@ -228,13 +272,37 @@ html, body {
     grid-template-areas: "Item Item Item";
   }
 
+  .Item-Name {
+    font-size: 1.1em;
+  }
   .Our-Price {
-    font-size: 14px;
+    font-size: 1.0em;
+  }
+
+  .Item-Units {
+    font-size: .8em;
+  }
+
+
+  .Item-Retail {
+    font-size: .8em;
+
+  }
+
+  .Item-Units {
+    font-size: .8em;
+  }
+
+
+  .Item-Retail {
+    font-size: .8em;
+
   }
 
   .singleline {
     grid-area: 2 / 1 / 2 / 4;
     width: 100%;
+    grid-template-columns: 16% 14% 22% 10% 4%;
   }
 
   .singleline > div {
@@ -255,10 +323,16 @@ html, body {
     text-align: center;
   }
 
+  .donatebutton2 {
+    font-size: 2em;
+  }
   .thankyou {
-    font-size: 1.7em;
+
+    font-size: 1.1em;
+
   }
 }
+
 
 /* if viewed on a small phone */
 @media screen and (max-width: 370px) {
@@ -273,13 +347,26 @@ html, body {
     grid-template-areas: "Item Item";
   }
 
+  .Item-Name {
+    font-size: 1.1em;
+  }
   .Our-Price {
-    font-size: 14px;
+    font-size: 1.0em;
+  }
+
+  .Item-Units {
+    font-size: .8em;
+  }
+
+
+  .Item-Retail {
+    font-size: .8em;
   }
 
   .singleline {
     grid-area : 2 / 1 / 2 / 3;
     width: 100%;
+    grid-template-columns: 16% 14% 22% 10% 4%;
   }
 
   .singleline > div {
@@ -300,6 +387,15 @@ html, body {
   }
 
   .thankyou {
-    font-size: 1.5em;
+    font-size: 1em;
   }
+
+
+  .donatebutton2 {
+    font-size: 2em;
+  }
+}
+
+.responsivebreak {
+  display: block;
 }

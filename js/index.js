@@ -1,13 +1,7 @@
 const firestore = firebase.firestore();
 let donationTotal = 0;
-
 const settings = {timestampsInSnapshots: true};
 firestore.settings(settings);
-// // Old:
-// const date = snapshot.get('created_at');
-// // New:
-// const timestamp = snapshot.get('created_at');
-// const date = timestamp.toDate();
 
 let donationSummary = {
     "Turkey": 0,
@@ -33,7 +27,7 @@ function updateCartList(){
     for(let item of itemList){
         if(item.quantity === 1) {
             cartItems += `<div id="quantity">
-            <input id="quantity-${id}" onchange="updateQuantityFromTextBox(${id})" type="number" min="0" max="9" size="2" value="${item.quantity}" />
+            <input id="quantity-${id}" class="qlength" onchange="updateQuantityFromTextBox(${id})" type="number" min="0" max="9" size="2" value="${item.quantity}" />
             </div>`;
             cartItems += `<div id="unit">${item.unitsReceipt}</div>`;
             cartItems += `<div id="itemTitle">${item.nameReceipt}</div>`;
@@ -42,7 +36,7 @@ function updateCartList(){
             donationSummary[item.nameReceipt] = item.quantity;
         } else if (item.quantity > 1) { //Add an s to the end of the units if >1
             cartItems += `<div id="quantity">
-            <input id="quantity-${id}" onchange="updateQuantityFromTextBox(${id})" type="number" min="0" max="9" size="2" value="${item.quantity}" />
+            <input id="quantity-${id}" class="qlength" onchange="updateQuantityFromTextBox(${id})" type="number" min="0" max="9" size="2" value="${item.quantity}" />
             </div>`;
             cartItems += `<div id="unit">${item.unitsReceipt}s</div>`;
             cartItems += `<div id="itemTitle">${item.nameReceipt}</div>`;
@@ -55,7 +49,6 @@ function updateCartList(){
     cartList.innerHTML = `${emptySpace} <div class="singleline">${cartItems}</div>`;
     cartTotal.innerHTML = `Total: $${donationTotal}`;
 }
-
 
 function removeFromCart(id){
     donationTotal -= itemList[id].ourPrice * itemList[id].quantity;
@@ -102,23 +95,26 @@ function updateDonateButton(){
     combinedNames.value = paypalDescription;
 }
 
-// Method for submitting item to db - this can be running item total once we have that generated in html
+// Method for submitting item to db - this is a running item total
 function dbSubmit() {
-  // let testInsert = firestore.collection("donationSummary").doc("Chicken").set({'quantity': 0});
-  let hamDoc = firestore.collection('donationSummary').doc('Ham');
-  let getHamDoc = hamDoc.get()
-  .then(doc => {
-    if (!doc.exists) {
-      console.log('No such document!');
-    } else {
-      let currentAmount = doc.data();
-      let newAmount = currentAmount['quantity'] + donationSummary["Ham"];
-      let donationItems = firestore.collection("donationSummary").doc("Ham").update({'quantity': newAmount});
+  for (let item in donationSummary) {
+    if (donationSummary[item] > 0) {
+      let itemDoc = firestore.collection('donationSummary').doc(item);
+      let getItemDoc = itemDoc.get()
+      .then(doc => {
+        if (!doc.exists) {
+          console.log('No such document!');
+        } else {
+          let currentAmount = doc.data();
+          let newAmount = currentAmount['quantity'] + donationSummary[item];
+          let donationItems = firestore.collection("donationSummary").doc(item).update({'quantity': newAmount});
+        }
+      })
+      .catch(err => {
+        console.log('Error getting document', err);
+      });
     }
-  })
-  .catch(err => {
-    console.log('Error getting document', err);
-  });
+  }
 }
 
 
@@ -138,7 +134,7 @@ function loadItems(){
     groceryItems += `<div class="container"><img class="Item-Img" src ='${item.image}'></div>`;
     groceryItems += `<div class="Item-Name">${item.itemName}</div>`;
     groceryItems += `<div class="Item-Units">${item.servingUnits}</div>`;
-    groceryItems += `<div class="Our-Price"><font color ="black">OUR PRICE</font>: $${item.ourPrice}</div>`;
+    groceryItems += `<div class="Our-Price"><font color ="black">OUR PRICE:</font> $${item.ourPrice}</div>`;
     groceryItems += `<div class="Item-Retail">retail: $${item.retailPrice}</div>`;
     groceryItems += `<a onclick="addToCart(${id});myFunction();" class="addbutton">add to cart</a>`;
     groceryItems += `</div>`;
@@ -153,4 +149,9 @@ function myFunction() {
     let x = document.getElementById("snackbar");
     x.className = "show";
     setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+
+var touchsupport = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0)
+if (!touchsupport){ // browser doesn't support touch
+    document.documentElement.className += " non-touch"
 }
