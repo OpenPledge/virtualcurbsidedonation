@@ -91,14 +91,14 @@
 	/*margin-left: 15%;*/
 }
 
-.teamPics:hover {
+html.nontouch .teamPics:hover {
 
 
 	opacity: .6;
 }
 
 
-.team-name:hover {
+html.nontouch .team-name:hover {
 	opacity: .6;
 }
 .cartItems {
