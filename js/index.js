@@ -25,6 +25,10 @@ function updateCartList(){
     let cartItems = "";
     let emptySpace = "";
     let id = 0;
+    let removeclicktype = 'onclick';
+    let md = new MobileDetect(window.navigator.userAgent);
+    if ((md.is('iPhone') && md.userAgent() === 'Safari') || (md.is('iPhone') && md.userAgent() === 'Chrome')) { removeclicktype = 'ontouchstart'; console.log('iPhone browser'); }
+
     for(let item of itemList){
         if(item.quantity === 1) {
             cartItems += `<div id="quantity">
@@ -33,7 +37,7 @@ function updateCartList(){
             cartItems += `<div id="unit">${item.unitsReceipt}</div>`;
             cartItems += `<div id="itemTitle">${item.nameReceipt}</div>`;
             cartItems += `<div id="subtotal">$${item.quantity*item.ourPrice}</div>`
-            cartItems += `<div><a onclick="removeFromCart(${id})"><i class="material-icons icon">close</i></a></div>`;
+            cartItems += `<div><a ${clicktype}="removeFromCart(${id})"><i class="material-icons icon">close</i></a></div>`;
             donationSummary[item.nameReceipt] = item.quantity;
         } else if (item.quantity > 1) { //Add an s to the end of the units if >1
             cartItems += `<div id="quantity">
