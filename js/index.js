@@ -125,6 +125,7 @@ window.onload = function() {
     console.log('hello world');
     // checking mobile for safari
     var md = new MobileDetect(window.navigator.userAgent);
+
     if (md.is('iPhone') && md.userAgent() === 'Safari') {
         safari = true;
     }
@@ -146,7 +147,7 @@ function loadItems(){
     groceryItems += `<div class="Our-Price"><font color ="black">OUR PRICE:</font> $${item.ourPrice}</div>`;
     groceryItems += `<div class="Item-Retail">retail: $${item.retailPrice}</div>`;
 
-    groceryItems += `<a ${clickType}="addToCart(${id});snackBar();" class="addbutton">add to cart</a>`;
+    groceryItems += `<a ${clickType}="addToCart(${id});snackBar();" class="addbutton">add to cart</a>`
 
     groceryItems += `</div>`;
     id++
