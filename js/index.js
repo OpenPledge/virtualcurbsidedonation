@@ -135,8 +135,7 @@ function loadItems(){
   // checking mobile for safari
   let clicktype = 'onclick';
   let md = new MobileDetect(window.navigator.userAgent);
-  if (md.is('iPhone') && md.userAgent() === 'Safari') { clicktype = 'ontouchstart'; console.log('Safari browser'); }
-  if (md.is('iPhone') && md.userAgent() === 'Chrome') { clicktype = 'ontouchstart'; console.log('Safari browser'); }
+  if ((md.is('iPhone') && md.userAgent() === 'Safari') || (md.is('iPhone') && md.userAgent() === 'Chrome')) { clicktype = 'ontouchstart'; console.log('iPhone browser'); }
 
 
 
