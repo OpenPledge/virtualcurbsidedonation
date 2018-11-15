@@ -261,9 +261,6 @@ html.nontouch .donatebutton2:hover {
     font-size: 2em;
   }
 
-  body {
-    padding-bottom: -25px;
-}
 
 /* if viewed on a small phone */
 @media screen and (min-width: 371px) and (max-width: 767px) {
