@@ -144,14 +144,11 @@ function loadItems(){
 
 }
 
-// snackbar function
-function myFunction() {
-    let x = document.getElementById("snackbar");
-    x.className = "show";
-    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-}
-
-var touchsupport = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0)
-if (!touchsupport){ // browser doesn't support touch
-    document.documentElement.className += " non-touch"
-}
+document.addEventListener('touchstart', {});
+//
+// // snackbar function
+// function myFunction() {
+//     let x = document.getElementById("snackbar");
+//     x.className = "show";
+//     setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+// }
