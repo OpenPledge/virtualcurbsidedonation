@@ -270,6 +270,7 @@ html.nontouch .donatebutton2:hover {
   .grid-container {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(3, 0.1fr);
+    
   }
 
 
@@ -338,7 +339,11 @@ body {
   }
   .thankyou {
 
+<<<<<<< HEAD
     font-size: .8em;
+=======
+    font-size: .85em;
+>>>>>>> fc3cc4118a7de17c2971e7472ce6b91008dba28b
 
   }
 }
@@ -349,6 +354,7 @@ body {
   .grid-container {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 0.1fr);
+    
   }
 
   .Items-List {
@@ -397,7 +403,11 @@ body {
   }
 
   .thankyou {
+<<<<<<< HEAD
     font-size: .8em;
+=======
+    font-size: .85em;
+>>>>>>> fc3cc4118a7de17c2971e7472ce6b91008dba28b
   }
 
 
