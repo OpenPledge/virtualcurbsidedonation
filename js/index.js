@@ -123,13 +123,13 @@ window.onload = function() {
     updateCartList();
     loadItems();
     console.log('hello world');
-
-
+  }
+//
 function loadItems(){
   let groceryList = document.getElementById('groceryList');
   let groceryItems = "";
   let id = 0;
-  let clickType = safari ? "ontouchstart" : "onclick";
+//   let clickType = safari ? "ontouchstart" : "onclick";
 
 
   // checking mobile for safari
