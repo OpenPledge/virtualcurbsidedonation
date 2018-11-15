@@ -136,7 +136,8 @@ function loadItems(){
     groceryItems += `<div class="Item-Units">${item.servingUnits}</div>`;
     groceryItems += `<div class="Our-Price"><font color ="black">OUR PRICE:</font> $${item.ourPrice}</div>`;
     groceryItems += `<div class="Item-Retail">retail: $${item.retailPrice}</div>`;
-    groceryItems += `<a ontouchstart="addToCart(${id});snackBar();" class="addbutton">add to cart</a>`;
+    groceryItems += `<a onclick="addToCart(${id});snackBar();" class="addbutton">add to cart</a>`;
+
     groceryItems += `</div>`;
     id++
   }
