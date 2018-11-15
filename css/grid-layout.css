@@ -260,6 +260,10 @@ html.nontouch .donatebutton2:hover {
     margin-left: 10%;
     font-size: 2em;
   }
+  
+  body {
+    padding-bottom: -25px;
+}
 
 /* if viewed on a small phone */
 @media screen and (min-width: 371px) and (max-width: 767px) {
@@ -269,6 +273,10 @@ html.nontouch .donatebutton2:hover {
 
   }
 
+
+body {
+    padding-bottom: -25px;
+}
   .Items-List {
     display: grid;
     grid-area: 1 / 1 / 1 / 4;
@@ -330,9 +338,7 @@ html.nontouch .donatebutton2:hover {
     font-size: 2em;
   }
   .thankyou {
-
     font-size: .85em;
-
   }
 }
 
@@ -392,7 +398,7 @@ html.nontouch .donatebutton2:hover {
   }
 
   .thankyou {
-    font-size: .8em;
+    font-size: .85em;
   }
 
 
