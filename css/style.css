@@ -5,7 +5,6 @@
 	border-radius:28px;*/
 	border: none;
 	display:inline-block;
-	cursor:pointer;
 	color:#ffffff;
 	font-family: Oswald;
   font-weight: 400;
@@ -43,7 +42,7 @@ html, body {
 	background-color:#6E645C;
 	border:1px solid #b2b8ad;
 	display:inline-block;
-	cursor:pointer;
+	cursor: pointer;
 	color:#6E645;
 	font-family:Arial;
 	font-size:7px;
@@ -51,6 +50,7 @@ html, body {
 	padding:0px 0px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #ced9bf;
+
 }
 .removebutton:hover {
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #9ba892), color-stop(1, #dbe6c4));
@@ -61,6 +61,7 @@ html, body {
 	background:linear-gradient(to bottom, #9ba892 5%, #dbe6c4 100%);
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#9ba892', endColorstr='#dbe6c4',GradientType=0);
 	background-color:#9ba892;
+	cursor: pointer;
 }
 .removebutton:active {
 	position:relative;
@@ -196,4 +197,4 @@ hr {
 @keyframes fadeout {
 		from {top: 0px; opacity: 1;}
 		to {top: 0; opacity: 0;}
-}*/*/
+}*/
