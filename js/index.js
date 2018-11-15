@@ -3,6 +3,7 @@ let donationTotal = 0;
 const settings = {timestampsInSnapshots: true};
 firestore.settings(settings);
 
+let safari = false;
 let donationSummary = {
     "Turkey": 0,
     "Ham": 0,
@@ -124,9 +125,9 @@ window.onload = function() {
     console.log('hello world');
     // checking mobile for safari
     var md = new MobileDetect(window.navigator.userAgent);
-    if (md.is('iPhone') && md.userAgent() === 'Safari') { clicktype = 'ontouchstart'; console.log('Safari browser'); }
-
-
+    if (md.is('iPhone') && md.userAgent() === 'Safari') {
+        safari = true;
+    }
 
 }
 
@@ -134,6 +135,8 @@ function loadItems(){
   let groceryList = document.getElementById('groceryList');
   let groceryItems = "";
   let id = 0;
+  let clickType = safari ? "ontouchstart" : "onclick";
+
 
   for(let item of itemList){
     groceryItems += `<div class ="Item">`;
@@ -143,7 +146,7 @@ function loadItems(){
     groceryItems += `<div class="Our-Price"><font color ="black">OUR PRICE:</font> $${item.ourPrice}</div>`;
     groceryItems += `<div class="Item-Retail">retail: $${item.retailPrice}</div>`;
 
-    groceryItems += `<a onclick="addToCart(${id});snackBar();" class="addbutton">add to cart</a>`;
+    groceryItems += `<a ${clickType}="addToCart(${id});snackBar();" class="addbutton">add to cart</a>`;
 
     groceryItems += `</div>`;
     id++
