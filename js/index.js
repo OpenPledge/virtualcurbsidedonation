@@ -122,18 +122,18 @@ window.onload = function() {
     updateCartList();
     loadItems();
     console.log('hello world');
-    // checking mobile for safari
-    var md = new MobileDetect(window.navigator.userAgent);
-    if (md.is('iPhone') && md.userAgent() === 'Safari') { clicktype = 'ontouchstart'; console.log('Safari browser'); }
-
-
-
 }
 
 function loadItems(){
   let groceryList = document.getElementById('groceryList');
   let groceryItems = "";
   let id = 0;
+
+  // checking mobile for safari
+  let clicktype = 'onclick';
+  let md = new MobileDetect(window.navigator.userAgent);
+  if (md.is('iPhone') && md.userAgent() === 'Safari') { clicktype = 'ontouchstart'; console.log('Safari browser'); }
+
 
   for(let item of itemList){
     groceryItems += `<div class ="Item">`;
@@ -142,8 +142,7 @@ function loadItems(){
     groceryItems += `<div class="Item-Units">${item.servingUnits}</div>`;
     groceryItems += `<div class="Our-Price"><font color ="black">OUR PRICE:</font> $${item.ourPrice}</div>`;
     groceryItems += `<div class="Item-Retail">retail: $${item.retailPrice}</div>`;
-
-    groceryItems += `<a onclick="addToCart(${id});snackBar();" class="addbutton">add to cart</a>`;
+    groceryItems += `<a ${clicktype}="addToCart(${id});" class="addbutton">add to cart</a>`;
 
     groceryItems += `</div>`;
     id++
@@ -153,11 +152,10 @@ function loadItems(){
 }
 
 // snackbar function
-
-function snackBar() {
-
-    let x = document.getElementById("snackbar");
-    x.className = "show";
-    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-}
-
+//
+// function snackBar() {
+//
+//     let x = document.getElementById("snackbar");
+//     x.className = "show";
+//     setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+// }

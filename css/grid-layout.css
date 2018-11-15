@@ -17,6 +17,8 @@ html, body {
     overflow-x: hidden;
 }
 
+
+
 .grid-container {
   display: grid;
   height: 100%;
@@ -258,6 +260,10 @@ html.nontouch .donatebutton2:hover {
     margin-left: 10%;
     font-size: 2em;
   }
+  
+  body {
+    padding-bottom: -25px;
+}
 
 /* if viewed on a small phone */
 @media screen and (min-width: 371px) and (max-width: 767px) {
@@ -266,6 +272,10 @@ html.nontouch .donatebutton2:hover {
     grid-template-rows: repeat(3, 0.1fr);
   }
 
+
+body {
+    padding-bottom: -25px;
+}
   .Items-List {
     display: grid;
     grid-area: 1 / 1 / 1 / 4;
@@ -328,7 +338,7 @@ html.nontouch .donatebutton2:hover {
   }
   .thankyou {
 
-    font-size: 1.1em;
+    font-size: .8em;
 
   }
 }
@@ -387,7 +397,7 @@ html.nontouch .donatebutton2:hover {
   }
 
   .thankyou {
-    font-size: 1em;
+    font-size: .8em;
   }
 
 
