@@ -61,6 +61,7 @@ html, body {
 	background:linear-gradient(to bottom, #9ba892 5%, #dbe6c4 100%);
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#9ba892', endColorstr='#dbe6c4',GradientType=0);
 	background-color:#9ba892;
+	cursor: pointer;
 }
 .removebutton:active {
 	position:relative;
@@ -196,4 +197,4 @@ hr {
 @keyframes fadeout {
 		from {top: 0px; opacity: 1;}
 		to {top: 0; opacity: 0;}
-}*/*/
+}*/
