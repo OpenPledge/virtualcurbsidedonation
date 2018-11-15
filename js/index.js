@@ -32,7 +32,7 @@ function updateCartList(){
             cartItems += `<div id="unit">${item.unitsReceipt}</div>`;
             cartItems += `<div id="itemTitle">${item.nameReceipt}</div>`;
             cartItems += `<div id="subtotal">$${item.quantity*item.ourPrice}</div>`
-            cartItems += `<div><a ontouchstart="removeFromCart(${id})"><i class="material-icons icon">close</i></a></div>`;
+            cartItems += `<div><a onclick="removeFromCart(${id})"><i class="material-icons icon">close</i></a></div>`;
             donationSummary[item.nameReceipt] = item.quantity;
         } else if (item.quantity > 1) { //Add an s to the end of the units if >1
             cartItems += `<div id="quantity">
@@ -41,7 +41,7 @@ function updateCartList(){
             cartItems += `<div id="unit">${item.unitsReceipt}s</div>`;
             cartItems += `<div id="itemTitle">${item.nameReceipt}</div>`;
             cartItems += `<div id="subtotal">$${item.quantity*item.ourPrice}</div>`
-            cartItems += `<div><a ontouchstart="removeFromCart(${id})"><i class="material-icons icon">close</i></a></div>`;
+            cartItems += `<div><a onclick="removeFromCart(${id})"><i class="material-icons icon">close</i></a></div>`;
             donationSummary[item.nameReceipt] = item.quantity;
         }
         id++;
@@ -136,7 +136,7 @@ function loadItems(){
     groceryItems += `<div class="Item-Units">${item.servingUnits}</div>`;
     groceryItems += `<div class="Our-Price"><font color ="black">OUR PRICE:</font> $${item.ourPrice}</div>`;
     groceryItems += `<div class="Item-Retail">retail: $${item.retailPrice}</div>`;
-    groceryItems += `<a ontouchstart="addToCart(${id});snackBar();" class="addbutton">add to cart</a>`;
+    groceryItems += `<a onclick="addToCart(${id});snackBar();" class="addbutton">add to cart</a>`;
     groceryItems += `</div>`;
     id++
   }
