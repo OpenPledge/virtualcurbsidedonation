@@ -264,7 +264,7 @@ html.nontouch .donatebutton2:hover {
   .grid-container {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(3, 0.1fr);
-    margin-bottom: 25px;
+    
   }
 
   .Items-List {
@@ -340,7 +340,7 @@ html.nontouch .donatebutton2:hover {
   .grid-container {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 0.1fr);
-    margin-bottom: 25px;
+    
   }
 
   .Items-List {
