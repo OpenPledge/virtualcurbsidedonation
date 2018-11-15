@@ -122,6 +122,12 @@ window.onload = function() {
     updateCartList();
     loadItems();
     console.log('hello world');
+    // checking mobile for safari
+    var md = new MobileDetect(window.navigator.userAgent);
+    if (md.is('iPhone') && md.userAgent() === 'Safari') { clicktype = 'ontouchstart'; console.log('Safari browser'); }
+
+
+
 }
 
 function loadItems(){
@@ -137,7 +143,7 @@ function loadItems(){
     groceryItems += `<div class="Our-Price"><font color ="black">OUR PRICE:</font> $${item.ourPrice}</div>`;
     groceryItems += `<div class="Item-Retail">retail: $${item.retailPrice}</div>`;
 
-    groceryItems += `<a onclick="addToCart(${id});myFunction();" class="addbutton">add to cart</a>`;
+    groceryItems += `<a onclick="addToCart(${id});snackBar();" class="addbutton">add to cart</a>`;
 
     groceryItems += `</div>`;
     id++
@@ -147,13 +153,11 @@ function loadItems(){
 }
 
 // snackbar function
-function myFunction() {
+
+function snackBar() {
+
     let x = document.getElementById("snackbar");
     x.className = "show";
     setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
 }
 
-var touchsupport = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0)
-if (!touchsupport){ // browser doesn't support touch
-    document.documentElement.className += " non-touch"
-}
