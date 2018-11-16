@@ -134,6 +134,11 @@
   <script type="text/javascript" src="js/itemList.js"></script>
   <script type="text/javascript" src="js/mobile-detect.js"></script>
   <script type="text/javascript" src="js/index.js"></script>
-
+  <script>
+      // Disallow Internet Explorer and refer to Chrome/Firefox
+      if ("ActiveXObject" in window){
+          document.body.innerHTML = 'Unfortunately, the virtual shopping experience is not available on Internet Explorer, but is available on <a href="https://www.google.com/chrome/browser/">Google Chrome</a>, <a href="https://www.mozilla.org/firefox">Mozilla Firefox</a>, Safari, and all mobile phone browsers.';
+      }
+  </script>
 </body>
 </html>
