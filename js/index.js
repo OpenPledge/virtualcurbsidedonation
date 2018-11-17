@@ -56,6 +56,17 @@ function updateCartList(){
     cartTotal.innerHTML = `Total: $${donationTotal}`;
 }
 
+function makeDonateButton(){
+  let donatebuttonclick = document.getElementById('donatebuttonclick');
+
+  let dclicktype = 'onclick';
+  let md = new MobileDetect(window.navigator.userAgent);
+  if ((md.is('iPhone') && md.userAgent() === 'Safari') || (md.is('iPhone') && md.userAgent() === 'Chrome')) { dclicktype = 'ontouchstart'; console.log('iPhone browser'); }
+
+  donatebuttonclick.innerHTML = `<input type="submit" name="submit" value="DONATE NOW" alt="Donate" class="donatebutton2" ${dclicktype}="dbSubmit()">`;
+  console.log('makedonatbuttn');
+}
+
 function removeFromCart(id){
     donationTotal -= itemList[id].ourPrice * itemList[id].quantity;
     itemList[id].quantity = 0;
@@ -128,6 +139,7 @@ window.onload = function() {
     updateCartList();
     loadItems();
     console.log('hello world');
+    makeDonateButton();
   }
 //
 function loadItems(){
