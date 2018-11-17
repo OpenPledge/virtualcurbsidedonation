@@ -306,7 +306,8 @@ html.nontouch .donatebutton2:hover {
   .singleline {
     grid-area: 2 / 1 / 2 / 4;
     width: 100%;
-    grid-template-columns: 12% 14% 25% 10% 4%;
+    font-size: 1em;
+    grid-template-columns: 16% 14% 25% 10% 4%;
   }
 
   .singleline > div {
@@ -372,7 +373,9 @@ html.nontouch .donatebutton2:hover {
   .singleline {
     grid-area : 2 / 1 / 2 / 3;
     width: 100%;
-    grid-template-columns: 12% 14% 25% 10% 4%;
+
+    font-size: 1em;
+    grid-template-columns: 16% 14% 25% 10% 4%;
   }
 
   .singleline > div {
