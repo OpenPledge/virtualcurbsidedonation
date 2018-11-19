@@ -22,6 +22,7 @@
 .addbutton:active {
 	position:relative;
 	top:1px;
+	background-color: #D77450;
 }
 
 html, body {
