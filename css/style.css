@@ -73,37 +73,38 @@ html, body {
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
 	background-color:#12b3cf;
+	font-family: sans-serif;
 	margin-top: 20px;
 }
 
 .team-name {
   text-align: center;
-  font-family: arial;
+  font-family: sans-serif;
 	font-weight: 600;
-  font-size: 14px;
+  font-size: 15px;
   color: white;
 	background-color:#12b3cf;
-	margin-top: 4px;
+	margin-top: 2px;
 
 }
 
 .teamPics {
-  /*border-radius: 40%;*/
-	width: 68px;
-	height: 68px;
+  border-radius: 100%;
+	width: 75px;
+	height: 75px;
 	/*border: 3px solid white;*/
 	background-color: white;
 	/*margin-left: 15%;*/
 }
 
-html.nontouch .teamPics:hover {
+.teamPics:hover {
 
 
 	opacity: .6;
 }
 
 
-html.nontouch .team-name:hover {
+.team-name:hover {
 	opacity: .6;
 }
 .cartItems {
