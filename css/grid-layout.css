@@ -112,6 +112,7 @@ html, body {
   cursor: pointer;
 }
 
+
 .donatebutton2:hover {
 	background-color: #D77450;
 }
@@ -120,7 +121,7 @@ html, body {
 .Items-List {
   display: grid;
   grid-area: 3 / 1 / 5 / 6;
-  padding: 20px 5px 30px 5px;
+  padding: 0px 5px 30px 5px;
   grid-template-areas: "Item Item Item Item" "Item Item Item Item" "Item Item Item Item";
   font-family: sans-serif;
   text-align: center;
@@ -268,11 +269,7 @@ html, body {
     font-size: .93em;
   }
 }
-  .donatebutton2 {
-    width: 80%;
-    margin-left: 10%;
-    font-size: 2em;
-  }
+
 
 
 /* if viewed on a small phone */
@@ -351,18 +348,19 @@ html, body {
     font-size: .93em;
 
   }
+  .teamPics {
+    border-radius: 100%;
+
+  	width: 70px;
+  	height: 70px;
+
+  	/*border: 3px solid white;*/
+  	background-color: white;
+  	/*margin-left: 15%;*/
+  }
+
 }
 
-.teamPics {
-  border-radius: 100%;
-
-	width: 70px;
-	height: 70px;
-
-	/*border: 3px solid white;*/
-	background-color: white;
-	/*margin-left: 15%;*/
-}
 
 
 
@@ -432,19 +430,16 @@ html, body {
   .donatebutton2 {
     font-size: 2em;
   }
-}
 
-.responsivebreak {
-  display: block;
-}
+  .teamPics {
+    border-radius: 100%;
 
-.teamPics {
-  border-radius: 100%;
+  	width: 70px;
+  	height: 70px;
 
-	width: 70px;
-	height: 70px;
+  	/*border: 3px solid white;*/
+  	background-color: white;
+  	/*margin-left: 15%;*/
+  }
 
-	/*border: 3px solid white;*/
-	background-color: white;
-	/*margin-left: 15%;*/
 }
