@@ -2,7 +2,7 @@
 
   --titlefont: 'Oswald', sans-serif;
   --subheaderfont: Georgia;
-  --teamheaderfont: arial;
+  --teamheaderfont: sans-serif;
   --sidepanel-background: #12b4cf;
   --itemtitlefont: arial;
   --itemunitretailfont: sans-serif;
@@ -31,7 +31,7 @@ html, body {
   text-align: center;
   font-family: var(--teamheaderfont);
   margin-bottom: 5px;
-  font-size: 12px;
+  font-size: 15px;
   color: white;
   font-weight: 500;
   background-color: #12b4cf;
@@ -68,12 +68,12 @@ html, body {
     background-image: url("../img/blankreceipt.png");
     background-size: 100% 100%;
     position: relative;
-    width: 33vw;
+    width: 36vw;
     cursor: pointer;
 }
 
 .singleline > div {
-    margin-left: 5vw;
+    margin-left: 6vw;
 }
 
 .bottomline {
