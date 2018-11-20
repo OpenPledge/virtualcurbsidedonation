@@ -44,9 +44,9 @@ var itemList = [
     "quantity": 0,
     "image": "img/beans.png",
     "itemName": "Beans",
-    "servingUnits": "40lbs bag",
-    "ourPrice": 70,
-    "retailPrice": 100,
+    "servingUnits": "20lbs bag",
+    "ourPrice": 40,
+    "retailPrice": 58,
     "unitsReceipt": "bag",
     "nameReceipt": "Beans"
   },
