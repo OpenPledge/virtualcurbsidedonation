@@ -1,0 +1,194 @@
+.addbutton {
+	background-color:#12b3cf;
+	/*-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;*/
+	border: none;
+	display:inline-block;
+	color:#ffffff;
+	font-family: Oswald;
+  font-weight: 400;
+	font-size:18px;
+	padding:6px 14px;
+	text-decoration:none;
+	-webkit-box-align: end;
+	    -ms-flex-align: end;
+	        align-items: end;
+	cursor: pointer;
+
+}
+.addbutton:hover {
+	background-color:#6CD0E1;
+	color: #ffffff;
+}
+.addbutton:active {
+	position:relative;
+	top:1px;
+	background-color: #D77450;
+}
+
+html, body {
+    -ms-touch-action: auto;
+        touch-action: auto;
+}
+
+.removebutton {
+	-webkit-box-shadow:inset 0px 0px 14px -3px #f2fadc;
+	box-shadow:inset 0px 0px 14px -3px #f2fadc;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dbe6c4), color-stop(1, #9ba892));
+	background:-webkit-linear-gradient(top, #6E645C 5%, #9ba892 100%);
+	background:-o-linear-gradient(top, #6E645C 5%, #9ba892 100%);
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(5%, #6E645C), to(#9ba892));
+	background:linear-gradient(to bottom, #6E645C 5%, #9ba892 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dbe6c4', endColorstr='#9ba892',GradientType=0);
+	background-color:#6E645C;
+	border:1px solid #b2b8ad;
+	display:inline-block;
+	cursor: pointer;
+	color:#6E645;
+	font-family:Arial;
+	font-size:7px;
+	font-weight:bold;
+	padding:0px 0px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ced9bf;
+
+}
+.removebutton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #9ba892), color-stop(1, #dbe6c4));
+	background:-webkit-linear-gradient(top, #9ba892 5%, #dbe6c4 100%);
+	background:-o-linear-gradient(top, #9ba892 5%, #dbe6c4 100%);
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(5%, #9ba892), to(#dbe6c4));
+	background:linear-gradient(to bottom, #9ba892 5%, #dbe6c4 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#9ba892', endColorstr='#dbe6c4',GradientType=0);
+	background-color:#9ba892;
+	cursor: pointer;
+}
+.removebutton:active {
+	position:relative;
+	top:1px;
+}
+
+.team {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+	background-color:#12b3cf;
+	font-family: sans-serif;
+	margin-top: 20px;
+}
+
+.team-name {
+  text-align: center;
+  font-family: sans-serif;
+
+	font-weight: 500;
+  font-size: 20px;
+  color: white;
+	background-color:#12b3cf;
+	margin-top: -3px;
+
+
+}
+
+.individual-info:hover {
+	opacity: .6;
+	font-style: italic;
+}
+
+
+.cartItems {
+	font-family: Oswald, Arial;
+	font-size: 16px;
+	text-decoration:none;
+
+}
+.cartRow {
+
+}
+
+.icon {
+	vertical-align: text-bottom;
+}
+
+.cartTotal {
+	font-family: Oswald, Arial;
+	font-size: 26px;
+	text-decoration:none;
+	text-align: center;
+	margin-top: 60px;
+
+}
+
+.email-support {
+	background-color: #6CD0E1;
+	font-family: Oswald;
+	font-size: 24px;
+  text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+a	{
+	text-decoration: none;
+
+}
+
+a:hover {
+	color: #d77450;
+}
+
+hr {
+	border-top: 1px solid;
+	color: white;
+}
+
+.qlength {
+	width: 2.5em;
+}
+/*
+#snackbar {
+		visibility: hidden;
+		min-width: 10%;
+		background-color: #6CD0E1;
+		color: #fff;
+		font-family: 'Oswald';
+		text-align: center;
+		border-radius: 2px;
+		padding: 16px;
+		position: fixed;
+		z-index: 1;
+		right: 0%;
+		top: 0px;
+		font-size: 19px;
+}
+*/
+
+/*#snackbar.show {
+		visibility: visible;
+		-webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+		animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+		from {top: 0px; opacity: 0;}
+		to {top:0px; opacity: 1;}
+}
+
+@keyframes fadein {
+		from {top: 0; opacity: 0;}
+		to {top: 0px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+		from {top: 0px; opacity: 1;}
+		to {top: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+		from {top: 0px; opacity: 1;}
+		to {top: 0; opacity: 0;}
+}*/

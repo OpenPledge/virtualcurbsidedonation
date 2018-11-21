@@ -1,0 +1,68 @@
+Items-List {
+  display: -ms-grid;
+  /*grid-area: 3 / 1 / 5 / 6;*/
+  padding: 5px 5px 30px 5px;
+  grid-template-areas: "Item Item Item Item" "Item Item Item Item" "Item Item Item Item";
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.Item-1 {
+  grid-row: 3;
+  grid-column: 1;
+}
+
+.Item-2 {
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.Item-3 {
+  grid-row: 3;
+  grid-column: 3;
+}
+
+.Item-4 {
+  grid-row: 3;
+  grid-column: 4;
+}
+
+.Item-5 {
+  grid-row: 4;
+  grid-column: 1;
+}
+
+.Item-6 {
+  grid-row: 4;
+  grid-column: 2;
+}
+
+.Item-7 {
+  grid-row: 4;
+  grid-column: 3;
+}
+
+.Item-8 {
+  grid-row: 4;
+  grid-column: 4;
+}
+
+.Item-9 {
+  grid-row: 5;
+  grid-column: 1;
+}
+
+.Item-10 {
+  grid-row: 5;
+  grid-column: 2;
+}
+
+.Item-11 {
+  grid-row: 5;
+  grid-column: 3;
+}
+
+.Item-12 {
+  grid-row: 5;
+  grid-column: 4;
+}
