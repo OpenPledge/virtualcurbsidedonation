@@ -286,14 +286,6 @@ html, body {
   }
 
   .Item-Retail {
-    font-size: .8em;
-  }
-
-  .Item-Units {
-    font-size: .8em;
-  }
-
-  .Item-Retail {
     font-size: .95em;
   }
 
@@ -359,6 +351,7 @@ html, body {
   .Item-Name {
     font-size: 1.1em;
   }
+
   .Our-Price {
     font-size: 1.0em;
   }

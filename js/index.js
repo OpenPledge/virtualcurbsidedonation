@@ -4,6 +4,7 @@ const settings = {timestampsInSnapshots: true};
 firestore.settings(settings);
 
 let safari = false;
+let addMessage = false;
 let donationSummary = {
     "Turkey": 0,
     "Ham": 0,
@@ -71,6 +72,9 @@ function removeFromCart(id){
     donationTotal -= itemList[id].ourPrice * itemList[id].quantity;
     itemList[id].quantity = 0;
     donationSummary[itemList[id].nameReceipt] = itemList[id].quantity;
+    let newId = id.toString();
+    let addMessage = "addMessage" + newId;
+    document.getElementById(addMessage).innerHTML = "add to cart";
     updateCartList();
 }
 
@@ -134,7 +138,6 @@ function dbSubmit() {
   }
 }
 
-
 window.onload = function() {
     updateCartList();
     loadItems();
@@ -148,9 +151,9 @@ function loadItems(){
   let id = 0;
 //   let clickType = safari ? "ontouchstart" : "onclick";
 
-
   // checking mobile for safari
   let clicktype = 'onclick';
+  let buttonText = "add to cart";
   let md = new MobileDetect(window.navigator.userAgent);
   if ((md.is('iPhone') && md.userAgent() === 'Safari') || (md.is('iPhone') && md.userAgent() === 'Chrome')) { clicktype = 'ontouchstart'; console.log('iPhone browser'); }
 
@@ -163,14 +166,20 @@ function loadItems(){
     groceryItems += `<div class="Item-Units">${item.servingUnits}</div>`;
     groceryItems += `<div class="Our-Price"><font color ="black">OUR PRICE:</font> $${item.ourPrice}</div>`;
     groceryItems += `<div class="Item-Retail">retail: $${item.retailPrice}</div>`;
-    groceryItems += `<a ${clicktype}="addToCart(${id});" class="addbutton">add to cart</a>`;
+    groceryItems += `<a ${clicktype}="addToCart(${id});addMessageChange(${id});" class="addbutton" id="addMessage${id}">${buttonText}</a>`;
 
     groceryItems += `</div>`;
     id++
   }
   groceryList.innerHTML = `${groceryItems}`;
-
 }
+
+function addMessageChange(id) {
+  let newId = id.toString();
+  let addMessage = "addMessage" + newId;
+  document.getElementById(addMessage).innerHTML = `<a style="background-color:#D77450;">"item added"</a>`;
+}
+
 
 // snackbar function
 //
