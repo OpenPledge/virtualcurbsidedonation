@@ -3,12 +3,12 @@
   --titlefont: 'Oswald', sans-serif;
   --subheaderfont: Georgia;
   --teamheaderfont: sans-serif;
-  --sidepanel-background: #12b4cf;
+  --sidepanel-background: #f8cd7f;
   --itemtitlefont: arial;
   --itemunitretailfont: sans-serif;
   --retailfont: arial;
   --ourpricefont: Oswald;
-  --ourpricecolor: #12b4cf;
+  --ourpricecolor: #D77540;
   --thankyoufont: sans-serif;
 }
 
@@ -32,9 +32,9 @@ html, body {
   font-family: var(--teamheaderfont);
   margin-bottom: 5px;
   font-size: 15px;
-  color: white;
+  color: #411213;
   font-weight: 500;
-  background-color: #12b4cf;
+  background-color: #f8cd7f;
 }
 
 .Receipt {
@@ -64,7 +64,7 @@ html, body {
 .singleline {
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: 14% 12% 24% 10% 5%;
+    grid-template-columns: 14% 12% 30% 8% 5%;
     background-image: url("../img/blankreceipt.png");
     background-size: 100% 100%;
     position: relative;
@@ -96,7 +96,7 @@ html, body {
 
 .donatebutton2 {
 	color: white !important;
-	background-color: #6E645C;
+	background-color: #C33D31;
 	padding: 15px;
 	width: 80%;
 	margin-left: 10%;
@@ -114,7 +114,7 @@ html, body {
 
 
 .donatebutton2:hover {
-	background-color: #D77450;
+	background-color: #411213;
 }
 
 
@@ -131,7 +131,7 @@ html, body {
   font-weight: 600;
   font-size: 1.5em;
   font-family: var(--itemtitlefont);
-  color: #12b4cf;
+  color: #D77540;
 }
 
 .Item-Img {
@@ -404,7 +404,7 @@ html, body {
     width: 100%;
 
     font-size: .92em;
-    grid-template-columns: 16% 14% 22% 10% 4%;
+    grid-template-columns: 16% 10% 24% 10% 4%;
 
   }
 
