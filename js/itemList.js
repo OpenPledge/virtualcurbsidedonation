@@ -88,8 +88,10 @@ var itemList = [
   
   {
     "quantity": 0,
+
     "image": "img/holidayham.png",
     "itemName": "Holiday Ham",
+
     "servingUnits": "case of (6)",
 
     "ourPrice": 60,
