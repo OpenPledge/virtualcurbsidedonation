@@ -1,5 +1,5 @@
 .addbutton {
-	background-color:#12b3cf;
+	background-color:#C33D31;
 	/*-moz-border-radius:28px;
 	-webkit-border-radius:28px;
 	border-radius:28px;*/
@@ -16,7 +16,7 @@
 
 }
 .addbutton:hover {
-	background-color:#6CD0E1;
+	background-color:#ffcd05;
 	color: #ffffff;
 }
 .addbutton:active {
@@ -73,7 +73,7 @@ html, body {
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-	background-color:#12b3cf;
+	background-color:#f8cd7f;
 	font-family: sans-serif;
 	margin-top: 20px;
 }
@@ -82,10 +82,10 @@ html, body {
   text-align: center;
   font-family: sans-serif;
 
-	font-weight: 500;
+	font-weight: 600;
   font-size: 20px;
-  color: white;
-	background-color:#12b3cf;
+  color: #411213;
+	background-color:#f8cd7f;
 	margin-top: -3px;
 
 
@@ -121,7 +121,7 @@ html, body {
 }
 
 .email-support {
-	background-color: #6CD0E1;
+	background-color: #C33D31;
 	font-family: Oswald;
 	font-size: 24px;
   text-align: center;
