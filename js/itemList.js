@@ -1,7 +1,7 @@
 var itemList = [
   {
     "quantity": 0,
-    "image": "img/christmas/jacket.png",
+    "image": "img/jacket.png",
     "itemName": "Winter Jacket",
     "servingUnits": "one jacket",
     "ourPrice": 42,
@@ -11,7 +11,7 @@ var itemList = [
   },
   {
     "quantity": 0,
-    "image": "img/christmas/briefs.jpg",
+    "image": "img/briefs.jpg",
     "itemName": "Underwear",
     "servingUnits": "pack of 24",
     "ourPrice": 21,
@@ -21,7 +21,7 @@ var itemList = [
   },
     {
     "quantity": 0,
-    "image": "img/christmas/raincoat.jpg",
+    "image": "img/raincoat.jpg",
     "itemName": "Rain Gear",
     "servingUnits": "set",
     "ourPrice": 56,
@@ -32,7 +32,7 @@ var itemList = [
   
   {
     "quantity": 0,
-    "image": "img/christmas/socks.png",
+    "image": "img/socks.png",
     "itemName": "Socks",
     "servingUnits": "pack of 60",
     "ourPrice": 24,
