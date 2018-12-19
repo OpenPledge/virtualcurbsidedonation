@@ -36,7 +36,8 @@ var itemList = [
     "quantity": 0,
     "image": "img/briefs.jpg",
     "itemName": "Underwear",
-    "servingUnits": "pack of 48",
+
+    "servingUnits": "48-pack",
     "ourPrice": 48,
     "retailPrice": 60,
     "unitsReceipt": "pack",
@@ -47,7 +48,7 @@ var itemList = [
     "quantity": 0,
     "image": "img/jacket.png",
     "itemName": "Winter Jacket",
-    "servingUnits": "one jacket",
+    "servingUnits": "each",
     "ourPrice": 42,
     "retailPrice": 60,
     "unitsReceipt": "each",
@@ -74,6 +75,7 @@ var itemList = [
     "unitsReceipt": "sets",
     "nameReceipt": "Kids PJs",
   },
+   
    {
     "quantity": 0,
     "image": "img/boots.png",
@@ -84,8 +86,7 @@ var itemList = [
     "unitsReceipt": "pair",
     "nameReceipt": "Boots"
   },
-  
-  
+
   {
     "quantity": 0,
     "image": "img/holidayham.png",
