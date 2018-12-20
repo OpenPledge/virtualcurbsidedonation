@@ -19,7 +19,7 @@ var itemList = [
     "ourPrice": 120,
     "retailPrice": 175,
     "unitsReceipt": "pack",
-    "nameReceipt": "Socks&nbsp;Bulk"
+    "nameReceipt": "Socks&nbsp;(Bulk)"
   },
   
   {
@@ -30,7 +30,7 @@ var itemList = [
     "ourPrice": 18,
     "retailPrice": 20,
     "unitsReceipt": "pack",
-    "nameReceipt": "Kid&nbsp;Socks"
+    "nameReceipt": "Socks&nbsp;(Kids)"
   },
     {
     "quantity": 0,
