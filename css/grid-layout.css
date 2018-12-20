@@ -70,10 +70,11 @@ html, body {
     position: relative;
     width: 36vw;
     cursor: pointer;
+    white-space: nowrap;
 }
 
 .singleline > div {
-    margin-left: 5vw;
+    margin-left: 6vw;
 }
 
 .bottomline {
