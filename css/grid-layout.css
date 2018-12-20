@@ -73,7 +73,7 @@ html, body {
 }
 
 .singleline > div {
-    margin-left: 6vw;
+    margin-left: 5vw;
 }
 
 .bottomline {
@@ -151,7 +151,7 @@ html, body {
 .Item-Retail {
   font-style: italic;
   font-family: var(--itemunitretailfont);
-  font-size: 1em;
+  font-size: .9em;
   margin-bottom: 5px;
 }
 
@@ -159,7 +159,7 @@ html, body {
   font-weight: 500;
   font-family: var(--ourpricefont);
   color: var(--ourpricecolor);
-  font-size: 1.5em;
+  font-size: 1.3em;
   margin-bottom: -3px;
 }
 

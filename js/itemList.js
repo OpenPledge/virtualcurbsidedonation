@@ -2,7 +2,7 @@ var itemList = [
   {
     "quantity": 0,
     "image": "img/socks.png",
-    "itemName": "Adult Socks",
+    "itemName": "Socks",
     "servingUnits": "30-pack",
     "ourPrice": 25,
     "retailPrice": 35,
@@ -13,24 +13,24 @@ var itemList = [
   
   {
     "quantity": 0,
-    "image": "img/bulksocks.jpeg",
-    "itemName": "Adult Socks",
-    "servingUnits": "(bulk) 150-pack",
+    "image": "img/socks.jpg",
+    "itemName": "Socks",
+    "servingUnits": "<strong>(bulk)</strong> 150-pack",
     "ourPrice": 120,
     "retailPrice": 175,
     "unitsReceipt": "pack",
-    "nameReceipt": "Socks-bulk"
+    "nameReceipt": "Socks Bulk"
   },
   
   {
     "quantity": 0,
     "image": "img/kidsocks.jpg",
-    "itemName": "Kid's Socks",
+    "itemName": "Kid Socks",
     "servingUnits": "24-pack",
     "ourPrice": 18,
     "retailPrice": 20,
     "unitsReceipt": "pack",
-    "nameReceipt": "Kid's Socks"
+    "nameReceipt": "Kid Socks"
   },
     {
     "quantity": 0,
@@ -47,12 +47,12 @@ var itemList = [
   {
     "quantity": 0,
     "image": "img/jacket.png",
-    "itemName": "Winter Jacket",
+    "itemName": "Winter Coat",
     "servingUnits": "each",
     "ourPrice": 42,
     "retailPrice": 60,
-    "unitsReceipt": "each",
-    "nameReceipt": "Jacket"
+    "unitsReceipt": "unit",
+    "nameReceipt": "Coat"
   },
   
     {
@@ -68,7 +68,7 @@ var itemList = [
   {
     "quantity": 0,
     "image": "img/kidpjs.jpg",
-    "itemName": "Kid's Pajamas",
+    "itemName": "Kid PJs",
     "servingUnits": "set of 5",
     "ourPrice": 35,
     "retailPrice": 50,
@@ -79,7 +79,7 @@ var itemList = [
    {
     "quantity": 0,
     "image": "img/boots.png",
-    "itemName": "Men's Boots",
+    "itemName": "Boots",
     "servingUnits": "pair",
     "ourPrice": 75,
     "retailPrice": 90,
@@ -90,7 +90,7 @@ var itemList = [
   {
     "quantity": 0,
     "image": "img/holidayham.png",
-    "itemName": "Holiday Ham",
+    "itemName": "Ham",
     "servingUnits": "case of (6)",
 
     "ourPrice": 60,
