@@ -1,0 +1,231 @@
+[33mcommit 033536d1ab1ba9d46d773fb72ed20c724cc5e7fe[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Cindy Dovinh <cindy.dovinh@gmail.com>
+Date:   Wed Dec 19 22:13:37 2018 -0800
+
+    changed some images
+
+[33mcommit 62c9042aafdf12beb94cc75cbebb51793e16f109[m
+Author: Cindy Dovinh <cindy.dovinh@gmail.com>
+Date:   Wed Dec 19 21:56:19 2018 -0800
+
+    fix receipt
+
+[33mcommit d6334f51b073876c26964ac4d24dccc7dfa2c166[m
+Author: Cindy Dovinh <cindy.dovinh@gmail.com>
+Date:   Wed Dec 19 21:51:38 2018 -0800
+
+    added no-wrap to receipt lines
+
+[33mcommit 94841d2e23873a6e58f6e3721de3ee7fc5fe4511[m
+Author: Cindy Dovinh <cindy.dovinh@gmail.com>
+Date:   Wed Dec 19 21:47:21 2018 -0800
+
+    additional styling - fixed font sizes
+
+[33mcommit 9227d19a975783cfaa55a20e34064323ec80516c[m
+Author: Cindy Dovinh <cindy.dovinh@gmail.com>
+Date:   Tue Dec 18 16:44:04 2018 -0800
+
+    adjust items
+
+[33mcommit 2175599024c1f3e1185a8f70617cc257b3131f54[m
+Merge: 7971d33 38c4e22
+Author: Cindy Dovinh <cindy.dovinh@gmail.com>
+Date:   Tue Dec 18 16:02:10 2018 -0800
+
+    adjustments
+
+[33mcommit 38c4e22a7424cda4700bbcb817879f16402f85ce[m
+Author: Cindy Dovinh <cindy.dovinh@gmail.com>
+Date:   Tue Dec 18 15:52:19 2018 -0800
+
+    Update itemList.js
+
+[33mcommit d494c7efca5536b2de0759f02487c43005ae55af[m
+Author: Cindy Dovinh <cindy.dovinh@gmail.com>
+Date:   Tue Dec 18 15:44:34 2018 -0800
+
+    new styling for xmas (#95)
+
+[33mcommit 7971d33d91d51b608d39c4406b1d7e353c092369[m
+Author: Cindy Dovinh <cindy.dovinh@gmail.com>
+Date:   Tue Dec 18 15:42:23 2018 -0800
+
+    new styling for xmas
+
+[33mcommit eb7cd4249450e8cd01d84e3bc0c6b1b24b056c76[m
+Author: Cindy Dovinh <cindy.dovinh@gmail.com>
+Date:   Tue Dec 18 10:27:13 2018 -0800
+
+    Update itemList.js
+
+[33mcommit 3d0184b25f6f6861c8f89c8fcd19d0df0f21a664[m
+Author: Cindy Dovinh <cindy.dovinh@gmail.com>
+Date:   Tue Dec 18 10:07:11 2018 -0800
+
+    moved images
+
+[33mcommit 45dde463cccea71d25be0ebaccdbd1186d03484c[m
+Author: Cindy Dovinh <cindy.dovinh@gmail.com>
+Date:   Tue Dec 18 10:02:04 2018 -0800
+
+    added xmas
+
+[33mcommit c457cb58151466a4873880909e976b9defdac8e5[m
+Author: Cindy Dovinh <cindy.dovinh@gmail.com>
+Date:   Tue Dec 18 09:59:56 2018 -0800
+
+    changed to xmas list items
+
+[33mcommit a676670dfaf4f6aa5e622d3bd4131697f84d3bd2[m
+Author: Cindy Dovinh <cindy.dovinh@gmail.com>
+Date:   Mon Nov 26 23:40:21 2018 -0800
+
+    Update index.js
+
+[33mcommit c22292b0a9a0ad8cfa080d7b1338b3d3042089c9[m
+Author: Cindy Dovinh <cindy.dovinh@gmail.com>
+Date:   Fri Nov 23 16:16:31 2018 -0800
+
+    added ontouchstart check for iPad
+
+[33mcommit 5766546516e49c11f6844b0746aa53e6a7758f7d[m
+Author: Cindy Dovinh <cindy.dovinh@gmail.com>
+Date:   Wed Nov 21 11:09:25 2018 -0800
+
+    Update indexie.html
+
+[33mcommit f7cd16693a0ea954b2e4622930f31b606dc0927a[m
+Author: Cindy Dovinh <cindy.dovinh@gmail.com>
+Date:   Wed Nov 21 11:08:30 2018 -0800
+
+    IE (#94)
+
+[33mcommit b8cac3222a1a52f5094962d5333ef8e394d4ede1[m
+Author: Cindy Dovinh <cindy.dovinh@gmail.com>
+Date:   Tue Nov 20 07:35:49 2018 -0800
+
+    edit note about IE
+
+[33mcommit 4f5f1a48a53733e1e20ca8f0623588e38466cb4a[m
+Author: Cindy Dovinh <cindy.dovinh@gmail.com>
+Date:   Mon Nov 19 16:04:23 2018 -0800
+
+    Update itemList.js
+    
+    changed price of beans
+
+[33mcommit 0188bd3fb3e56b57550f6b1134e99e377848a0db[m
+Author: Cindy Dovinh <cindy.dovinh@gmail.com>
+Date:   Mon Nov 19 00:57:02 2018 -0800
+
+    removed paypal verbiage
+
+[33mcommit d3ca6382449f814d0a82d062408ec56d70c98c6b[m
+Author: Cindy Dovinh <cindy.dovinh@gmail.com>
+Date:   Mon Nov 19 00:53:19 2018 -0800
+
+    added color onclick add-to cart
+
+[33mcommit 4b922f1291dc41806b95840d41c86c4ce38f5b9f[m
+Author: Cindy Dovinh <cindy.dovinh@gmail.com>
+Date:   Mon Nov 19 00:47:21 2018 -0800
+
+    iframe size
+
+[33mcommit 7a5bb84e26f8e2f63c8e85369583cb1b3469dfca[m
+Author: Cindy Dovinh <cindy.dovinh@gmail.com>
+Date:   Mon Nov 19 00:43:32 2018 -0800
+
+    fix
+
+[33mcommit 1f3b1366a0df85c56867f3d4702b5e5f7ff9445c[m
+Merge: 47fd08a 1cbc7ca
+Author: Cindy Dovinh <cindy.dovinh@gmail.com>
+Date:   Mon Nov 19 00:40:58 2018 -0800
+
+    Merge branch 'master' of https://github.com/OpenPledge/virtualcurbsidedonation
+
+[33mcommit 47fd08a5545edb808d2c6e450d18bb3cb55b432d[m
+Author: Cindy Dovinh <cindy.dovinh@gmail.com>
+Date:   Mon Nov 19 00:40:30 2018 -0800
+
+    fixes
+
+[33mcommit 1cbc7ca04dbdac0af44658953460c190995c4db8[m
+Author: Cindy Dovinh <cindy.dovinh@gmail.com>
+Date:   Mon Nov 19 00:30:45 2018 -0800
+
+    Update grid-layout.css
+
+[33mcommit 347d36bae4793704689534b045837d6eb095cd76[m
+Author: Cindy Dovinh <cindy.dovinh@gmail.com>
+Date:   Mon Nov 19 00:23:37 2018 -0800
+
+    cleanup
+
+[33mcommit a3ab2896608cc312f1857e3786ab218d2e28a97d[m
+Author: Cindy Dovinh <cindy.dovinh@gmail.com>
+Date:   Mon Nov 19 00:16:33 2018 -0800
+
+    heights
+
+[33mcommit 64a524a7e7c889e66d565dacb19e92d44f3412b0[m
+Author: Cindy Dovinh <cindy.dovinh@gmail.com>
+Date:   Mon Nov 19 00:14:36 2018 -0800
+
+    iframe height on mobile
+
+[33mcommit c4a652661b15f35791e0128284b3789152e3f0d6[m
+Author: Cindy Dovinh <cindy.dovinh@gmail.com>
+Date:   Mon Nov 19 00:12:57 2018 -0800
+
+    minor fixes with pics
+
+[33mcommit 29de1f17f9e435043691658a0c0fb79fbe8c6003[m
+Author: Cindy Dovinh <cindy.dovinh@gmail.com>
+Date:   Mon Nov 19 00:06:33 2018 -0800
+
+    font
+
+[33mcommit 0e907d89883b25c3e4e1b7d8283ba73496ff733d[m
+Author: Cindy Dovinh <cindy.dovinh@gmail.com>
+Date:   Sun Nov 18 23:45:36 2018 -0800
+
+    Snackbar (#93)
+    
+    * added color to hover over donate button
+    
+    * added cursor: pointer to remove button/single line
+    
+    * round team pics
+    
+    * some resizing
+    
+    * minor fix
+
+[33mcommit 1d87b5ee35d799df9c437326bd1f22e7491a9c33[m
+Author: Cindy Dovinh <cindy.dovinh@gmail.com>
+Date:   Sun Nov 18 23:37:16 2018 -0800
+
+    Snackbar (#92)
+    
+    * added color to hover over donate button
+    
+    * added cursor: pointer to remove button/single line
+    
+    * round team pics
+    
+    * some resizing
+
+[33mcommit 18a040df59208fe93d43f1b3fa2ba8378156fba2[m
+Author: Cindy Dovinh <cindy.dovinh@gmail.com>
+Date:   Sun Nov 18 23:01:23 2018 -0800
+
+    Snackbar (#91)
+    
+    * added color to hover over donate button
+    
+    * added cursor: pointer to remove button/single line
+    
+    * round team pics
