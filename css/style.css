@@ -78,6 +78,15 @@ html, body {
 	margin-top: 20px;
 }
 
+.companylogo {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+	background-color:#12b3cf;
+	font-family: sans-serif;
+	margin-top: 20px;
+}
+
 .team-name {
   text-align: center;
   font-family: sans-serif;
