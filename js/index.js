@@ -31,7 +31,7 @@ function updateCartList(){
     if ((md.is('iPhone') && md.userAgent() === 'Safari') || (md.is('iPhone') && md.userAgent() === 'Chrome')) { rclicktype = 'ontouchstart'; console.log('iPhone browser'); }
     if ((md.is('iPad') && md.userAgent() === 'Safari') || (md.is('iPad') && md.userAgent() === 'Chrome')) { rclicktype = 'ontouchstart'; console.log('iPad browser'); }
 
-    for(let item of itemlistxmas){
+    for(let item of itemList){
         if(item.quantity === 1) {
             cartItems += `<div id="quantity">
             <input id="quantity-${id}" class="qlength" onchange="updateQuantityFromTextBox(${id})" type="number" min="0" max="9" size="2" value="${item.quantity}" />
