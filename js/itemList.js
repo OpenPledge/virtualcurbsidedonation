@@ -24,8 +24,8 @@ var itemList = [
     "image": "img/raincoat.jpg",
     "itemName": "Rain Gear",
     "servingUnits": "set",
-    "ourPrice": 56,
-    "retailPrice": 30,
+    "ourPrice": 30,
+    "retailPrice": 54,
     "unitsReceipt": "set",
     "nameReceipt": "RainGear"
   },
